@@ -1,0 +1,111 @@
+/******** main.css ********/
+
+/**** Général *****************/
+
+html{
+    font-family: calibri ;
+    font-size: 62.5%; /* Pour fixer 1rem = 10px */
+    padding : 0 ; /* Pas de marge intérieure */
+}
+
+body{
+    padding : 0 ;     /* Pas de marge intérieure */
+    margin : 0 ;      /* Pas de marge extérieure */
+    font-size: 1.4em; /* Taille de base des caractères pour toute la page : 14px */
+}
+
+p{
+    margin : 0 ;
+    margin-bottom: 1rem ;
+}
+
+/**** Menu *****************/
+nav{
+    padding : 0 ;
+    background-color : #081a32 
+      
+}
+
+nav ul{
+    padding : 0 ; margin : 0 ;
+    list-style-type: none ; /* Pas de puce */
+}
+
+nav li{
+    padding : 0 ; margin : 0 ;
+    text-align: center; 
+    border-bottom: 1px solid #DDD ;
+}
+
+nav li:last-of-type{
+    border : none ; /* pas de bordure pour le dernier li */
+}
+
+nav a{
+    
+    
+    display: block ; /* Un lien occupe toute la largeur de son père ce qui permet de cliquer ailleurs que sur le texte */ 
+    color: #FFFFFF 
+    text-decoration: none; 
+}
+
+
+/******** Entete **************************/
+header{
+    margin : 0 ;
+    padding : 0.5rem 4rem 2rem 4rem ; /* marges intérieures haute, droite, basse et gauche */
+    /* Image de fond, calée en bas à gauche */
+    background: url("../images/town2.jpg") no-repeat bottom left  ;
+    background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
+    background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
+    min-height : 45vw ; /* Hauteur minimale : 45% de la largeur */
+}
+
+header h1{
+    margin : 0 ;
+    color : #FFF;    /* Couleur du texte */
+    font-size: 5rem ;  
+}
+header h2{
+    color : #B3E5FC;
+    margin: 0  ;
+    font-size: 3.5rem ;
+    font-weight: normal ; /* Graisse */
+    font-style: italic ;
+}
+
+/********* H2 ***********************/
+main h2, aside h2{ /* Configuration des h2 du main et des h2 du aside */
+    padding : 0.3em 0 0.2em 0; 
+    margin : 0 ; 
+    color : #555 ;
+    font-size: 3rem ;
+    clear : left ;/* Pour arrêter le float left des images */
+}
+
+/***** Contenu principal ************/
+main, aside{ /* et secondaire */
+    padding : 2rem 3rem ;
+    color : #444 ; 
+    text-align: justify ; 
+    padding : 2rem 3rem ;
+}
+
+main p{padding-top : 0 ;}
+
+main img{
+    float: left ; /* Pour mettre côté à côte image et texte */
+    padding-right: 1.5rem;
+}
+
+/******* Contenu secondaire **************/
+aside{ 
+    padding : 1rem 3rem 2rem 3rem ; 
+    border-top : 1px solid #0288D1 ; 
+    text-align: justify ;
+}
+
+aside h2{color : #666 ;}
+
+/***** Pied de page ************/
+
