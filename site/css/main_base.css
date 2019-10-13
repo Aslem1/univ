@@ -1,7 +1,6 @@
 /******** main.css ********/
 
 /**** Général *****************/
-
 html{
     font-family: calibri ;
     font-size: 62.5%; /* Pour fixer 1rem = 10px */
@@ -22,7 +21,6 @@ p{
 /**** Menu *****************/
 nav{
     padding : 0 ;
-    background-color : #081a32 
       
 }
 
@@ -44,9 +42,7 @@ nav li:last-of-type{
 nav a{
     
     
-    display: block ; /* Un lien occupe toute la largeur de son père ce qui permet de cliquer ailleurs que sur le texte */ 
-    color: #FFFFFF 
-    text-decoration: none; 
+    display: block ; /* Un lien occupe toute la largeur de son père ce qui permet de cliquer ailleurs que sur le texte */    
 }
 
 
