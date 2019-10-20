@@ -14,7 +14,7 @@ else:
 
 print ("-----------------------------------------------------------------------------------------")
 
-#Correction openclassroom
+#Correction 
 
 # Programme testant si une année, saisie par l'utilisateur,
 # est bissextile ou non
