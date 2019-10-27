@@ -61,7 +61,7 @@ while n < 1000 :
     n = n + 1
     print("coords: {}, {} ". format(xcor(), ycor()))
     #if xcor() == x_0 and ycor() == y_0 :
-    if math.isclose (xcor() and ycor() == y_0 :
+    if math.isclose (xcor() and ycor()) == y_0 :
         break    
 else:
     print ("Je ne suis pas revenu à l'origine")
