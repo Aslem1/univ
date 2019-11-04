@@ -44,7 +44,7 @@ print ()
 somme=0
 for Ri in R:
     somme = somme + Ri
-print (
+print (f"Somme : {somme}")
 
 #Donnez la position de la valeur maximale de R. En cas d’occurrences multiples du maximum, donnez la position de la première occurrence.
 
