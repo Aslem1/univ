@@ -31,18 +31,6 @@ img {
     margin: auto;
 }
 
-h1 {
-    font-weight: bold;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-h3 {
-    font-weight: bold;
-}
 
 /**** Menu *****************/
 nav{
@@ -89,6 +77,7 @@ nav a:hover{
 
 }
 
+
 /******** Entete **************************/
 header{
     margin : 1rem;
@@ -102,29 +91,6 @@ header{
     height: 50px;
 }
 
-header h1{
-    margin : 0 ;
-    color : #383B53;    /* Couleur du texte */
-    font-size: 4rem ; 
-    padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
-    text-align: justify;
-}
-header h2{
-    color : #B3E5FC;
-    margin: 0  ;
-    font-size: 3rem ;
-    font-weight: normal ; /* Graisse */
-    font-style: italic ;
-}
-
-/********* H2 ***********************/
-main h2, aside h2{ /* Configuration des h2 du main et des h2 du aside */
-    padding : 0.3em 0 0.2em 0; 
-    margin : 0 ; 
-    color : #66717E ;
-    font-size: 3rem ;
-    clear : left ;/* Pour arrêter le float left des images */
-}
 
 /***** Contenu principal ************/
 main, aside{ /* et secondaire */
@@ -149,7 +115,6 @@ aside{
     text-align: justify ;
 }
 
-aside h2{color : #666 ;}
 
 /***** Pied de page ************/
 footer {
@@ -160,11 +125,26 @@ footer {
 }
 
 /***** Bouton ************/
-.bouton {
-	border-radius:12px 0 12px 0;
-	background: #f5f5f5;
-	border:none;
-	color:#555;
-	font:bold 12px Verdana;
-	padding:6px 0 6px 0;
+.bouton1 {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
 }
+.bouton1:hover{
+    background-color:#4095c6;
+}
+@media all and (max-width:30em){
+    .bouton1{
+        display:block;
+        margin:0.2em auto;
+    }
+} 
