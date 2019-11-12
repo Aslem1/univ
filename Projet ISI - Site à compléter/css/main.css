@@ -10,8 +10,8 @@ html{
 }
 
 body{
-    padding : 0 ;     /* Pas de marge intérieure */
-    margin : 0 ;      /* Pas de marge extérieure */
+    padding : 0 ;     /* Marge intérieure */
+    margin : 1rem ;      /* Marge extérieure */
     font-size: 1.4em; /* Taille de base des caractères pour toute la page : 14px */
 }
 
@@ -65,7 +65,8 @@ nav a{
 
 nav a:hover{
     color: #331832;
-    background-color: #f1ecce;
+    background-color: #C0C0C0;
+    background-size: 100%;
     transition-duration: 1s;
 }
 
@@ -87,8 +88,7 @@ header{
     /*background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
     min-height : 18vw ; /* Hauteur minimale : 45% de la largeur */
     background-size: 100%;
-    width: 1320px;
-    height: 50px;
+
 }
 
 
@@ -122,6 +122,7 @@ footer {
     color: white;
     padding: 1rem 1rem 0.2rem 2rem;
     font-size: 2rem;
+    position: sticky; 
 }
 
 /***** Bouton ************/
