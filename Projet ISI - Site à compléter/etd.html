@@ -17,12 +17,12 @@
             </nav>
         </header>
         <main>
-            <form id="pourBDprof">
+            <form id="pourBDetd">
                 <!-- FORMULAIRE-->
                 <select type="text" name="requeteChoisie"> <!--Requêtes -->
-                    <option value='select * from plats'>Tout les plats</option>
-                    <option value='select * from plats where tarif >= 5'>Tout les plats à 5€ ou plus</option>
-                    <option value='select * from plats where nom like "%Jus%" or nom like "%jus%"'>Tout les plats comportant le mot "jus"</option>
+                    <option value="SELECT p.name as Nom, p.price as Prix, tp.name as Type FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.Temps_service < 7">Les plats qui se servent en moins de 7 minutes</option>
+                    <option value="SELECT * FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.name = 'Entrée'">Toutes les entrées</option>
+                    <option value='SELECT * FROM `Plats` p where p.name like "%Jus%" or p.name like "%jus%"'>Tout les plats comportant le mot "jus"</option>
                 </select>
                 <input type="submit" class="bouton1"> <!--Bouton -->
             </form><!-- FERMER FORMULAIRE-->
