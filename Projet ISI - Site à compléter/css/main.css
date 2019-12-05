@@ -87,7 +87,10 @@ header{
     background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
     /*background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
     min-height : 18vw ; /* Hauteur minimale : 45% de la largeur */
+    background: url(../documents/binary-2910663_960_720.webp) no-repeat; 
     background-size: 100%;
+    width: 100%;
+    height: 30rem;
 
 }
 
