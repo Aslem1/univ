@@ -6,7 +6,7 @@ define("L1ISI2019126", "root") ;
 define("14ab402d", "") ;
 
 // Sur le serveur ftpueweb
-define("base_de_donnees","L1ISI2019126db" ) ;
+define("acces_BD","L1ISI2019126db" ) ;
 define("login", "L1ISI2019126") ;
 define("mot_de_passe", "14ab402d") ;
 
