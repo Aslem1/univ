@@ -16,37 +16,40 @@
                     <li><a href="bilan.html" >Bilan</a></li>
                 </ul>
             </nav>
+            <h1>Etudiant</h1>
         </header>
         <main>
-            <form id="pourBDetd">
-                <!-- FORMULAIRE-->
-                <select type="text" name="requeteChoisie"> <!--Requêtes -->
-                    <option
-                            value="SELECT p.name as Nom, p.price as Prix, tp.name as Type FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.Temps_service < 7"
-                            >
-                        Les plats qui se servent en moins de 7 minutes
-                    </option>
+            <article>
+                <p>Veuillez choisir une requête à exécuter.</p>
+                <form id="pourBDetd">
+                    <!-- FORMULAIRE-->
+                    <select type="text" name="requeteChoisie"> <!--Requêtes -->
+                        <option
+                                value="SELECT p.name as Nom, p.price as Prix, tp.name as Type FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.Temps_service < 7"
+                                >
+                            Les plats qui se servent en moins de 7 minutes
+                        </option>
 
-                    <option 
-                            value='SELECT p.name as nom, p.price as prix FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.name = "Entrée"'>
-                        Toutes les entrées
-                    </option>
+                        <option 
+                                value='SELECT p.name as nom, p.price as prix FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.name = "Entrée"'>
+                            Toutes les entrées
+                        </option>
 
-                    <option 
-                            value='SELECT * FROM `Plats` p where p.name like "%Jus%" or p.name like "%jus%"'
-                            >
-                        Tout les plats comportant le mot "jus"
-                    </option>
-                </select>
-                <input type="submit" class="bouton1"> <!--Bouton -->
-            </form><!-- FERMER FORMULAIRE-->
-            <div class="sortieBD">
-                <table></table>
-            </div>
-            <p class="messageErreur"></p>
-
+                        <option 
+                                value='SELECT * FROM `Plats` p where p.name like "%Jus%" or p.name like "%jus%"'
+                                >
+                            Tout les plats comportant le mot "jus"
+                        </option>
+                    </select>
+                    <input type="submit" class="bouton1"> <!--Bouton -->
+                </form><!-- FERMER FORMULAIRE-->
+                <div class="sortieBD">
+                    <table></table>
+                </div>
+                <p class="messageErreur"></p>
+            </article>
         </main>
         <aside></aside>
-        <footer>Agathe Perrin</footer>
+        <footer>Agathe Perrin, L1 informatique</footer>
     </body>
 </html>

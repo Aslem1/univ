@@ -1,52 +1,56 @@
 /******** main.css ********/
 
 /**** Général *****************/
-
+*{
+    padding: 0; /* Marge intérieure */
+    margin: 0; /* Marge extérieure */
+    font-family: 'verdana', sans-serif, arial; 
+}
 html{
-    font-family: calibri ;
     font-size: 62.5%; /* Pour fixer 1rem = 10px */
-    padding : 0 ; /* Pas de marge intérieure */
     background-color: #F7F7F2;
 }
 
 body{
-    padding : 0 ;     /* Marge intérieure */
-    margin : 1rem ;      /* Marge extérieure */
-    font-size: 1.4em; /* Taille de base des caractères pour toute la page : 14px */
+    font-size: 2rem; /* Taille de base des caractères pour toute la page*/
+    
+}
+
+main>article {
+    width: 80%;
+    margin: auto;
 }
 
 p{
     margin : 0 ;
     margin-bottom: 1rem ;
-    font-family: 'roboto', sans-serif;
+    padding: 1.5rem;
 }
 
 h1, h2, h3 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    padding: 1rem;
 }
 
 img {
-    width: 80%;
-    max-width: 35rem; 
-    margin: auto;
+    width: 100%;
+    max-width: 100rem; 
+    padding: 2rem;
+    margin: 3rem;
 }
 
 
 /**** Menu *****************/
 nav{
-    padding : 0 ;
     background-color : #66717E;
-    /*background-color : rgb(100,100,100);*/
 
 }
 
 nav ul{
-    padding : 0 ; margin : 0 ;
     list-style-type: none ; /* Pas de puce */
 }
 
 nav li{
-    padding : 0 ; margin : 0 ;
     text-align: center; 
     border-bottom: 1px solid #DDD ;
 }
@@ -81,22 +85,16 @@ nav a:hover{
 
 /******** Entete **************************/
 header{
-    margin : 1rem;
-    padding : 0.2rem 0.2rem 0.2rem 0.2rem ; /* marges intérieures haute, droite, basse et gauche */
-    /* Image de fond, calée en bas à gauche */
-    background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
-    /*background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
-    min-height : 18vw ; /* Hauteur minimale : 45% de la largeur */
-    background: url(../documents/binary-2910663_960_720.webp) no-repeat; 
-    background-size: 100%;
+    min-height : 7vw ; /* Hauteur minimale*/
+    background-size: 100%; /* L'image s'étend sur pour couvrir tout le fond du header */
     width: 100%;
-    height: 30rem;
+    height: 10rem;
 
 }
 
 
 /***** Contenu principal ************/
-main, aside{ /* et secondaire */
+main{ 
     padding : 1rem 2rem;
     color : #444 ; 
     text-align: justify ; 
@@ -113,8 +111,7 @@ main img{
 
 /******* Contenu secondaire **************/
 aside{ 
-    padding : 1rem 3rem 2rem 3rem ; 
-    border-top : 1px solid #0288D1 ; 
+    padding : 1rem 3rem 2rem 3rem ;
     text-align: justify ;
 }
 
@@ -125,7 +122,10 @@ footer {
     color: white;
     padding: 1rem 1rem 0.2rem 2rem;
     font-size: 2rem;
-    position: sticky; 
+    position: absolute;
+    top: 96%;
+    width: 98.8%;
+    height: 3.1%;
 }
 
 /***** Bouton ************/
@@ -136,7 +136,6 @@ footer {
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
     font-weight:300;
     color:#FFFFFF;
     background-color:#4eb5f1;
