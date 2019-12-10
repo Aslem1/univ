@@ -13,7 +13,10 @@ html{
 
 body{
     font-size: 2rem; /* Taille de base des caractères pour toute la page*/
-    
+    background-image: url(../documents/notebook-1280538_1280.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
 }
 
 main>article {
@@ -24,12 +27,22 @@ main>article {
 p{
     margin : 0 ;
     margin-bottom: 1rem ;
-    padding: 1.5rem;
+    padding: 1rem;
+    margin: 2rem;
 }
 
-h1, h2, h3 {
+h1{
     font-family: 'Lucida Sans Unicode', sans-serif;
-    padding: 1rem;
+    padding: 2.5rem;
+    color: black;
+}
+
+h2 {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    padding: 7rem;
+    color: black;
+    font-size: 5rem;
+
 }
 
 img {
@@ -42,7 +55,9 @@ img {
 
 /**** Menu *****************/
 nav{
-    background-color : #66717E;
+    background: transparent;
+    padding: 2rem;
+    position: fixed;
 
 }
 
@@ -52,7 +67,6 @@ nav ul{
 
 nav li{
     text-align: center; 
-    border-bottom: 1px solid #DDD ;
 }
 
 nav li:last-of-type{
@@ -96,7 +110,7 @@ header{
 /***** Contenu principal ************/
 main{ 
     padding : 1rem 2rem;
-    color : #444 ; 
+    color:black; 
     text-align: justify ; 
     padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
 }
@@ -151,3 +165,10 @@ footer {
         margin:0.2em auto;
     }
 } 
+
+.aadi-header-sticky.aadi-header-transparent.aadi-header-v11,
+.aadi-header-sticky.aadi-header-transparent.aadi-header-v11 .aadi-top-header,
+.aadi-header-sticky.aadi-header-transparent.aadi-header-v11 .aadi-bottom-header,
+#main-header .aadi-header-collaspe {
+    background-color: #fff !important;
+}
