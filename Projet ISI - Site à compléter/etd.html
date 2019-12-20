@@ -16,32 +16,29 @@
                     <li><a href="bilan.html" >Bilan</a></li>
                 </ul>
             </nav>
-            <h1>Etudiant</h1>
+            <h1>TEA ISI Informatique</h1>
         </header>
         <main>
             <article>
-                <p>Veuillez choisir une requête à exécuter.</p>
+                <h2>Etudiant</h2>
                 <form id="pourBDetd">
                     <!-- FORMULAIRE-->
-                    <select type="text" name="requeteChoisie"> <!--Requêtes -->
-                        <option
-                                value="SELECT p.name as Nom, p.price as Prix, tp.name as Type FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.Temps_service < 7"
-                                >
-                            Les plats qui se servent en moins de 7 minutes
-                        </option>
+                    <p>Veuillez choisir une requête à exécuter : <!-- Pour aligner le texte et le select -->
+                        <select type="text" name="requeteChoisie"> <!--Requêtes -->
+                            <option value="SELECT p.name as Nom, p.price as Prix, tp.name as Type FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.Temps_service < 7">
+                                Les plats qui se servent en moins de 7 minutes
+                            </option>
 
-                        <option 
-                                value='SELECT p.name as nom, p.price as prix FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.name = "Entrée"'>
-                            Toutes les entrées
-                        </option>
+                            <option value='SELECT p.name as nom, p.price as prix FROM `Plats` p, `type_plats` tp WHERE p.type = tp.id AND tp.name = "Entrée"'>
+                                Toutes les entrées
+                            </option>
 
-                        <option 
-                                value='SELECT * FROM `Plats` p where p.name like "%Jus%" or p.name like "%jus%"'
-                                >
-                            Tout les plats comportant le mot "jus"
-                        </option>
-                    </select>
-                    <input type="submit" class="bouton1"> <!--Bouton -->
+                            <option value='SELECT * FROM `Plats` p where p.name like "%Jus%" or p.name like "%jus%"'>
+                                Tout les plats comportant le mot "jus"
+                            </option>
+                        </select>
+                        <input type="submit" class="bouton1"> <!--Bouton -->
+                    </p>
                 </form><!-- FERMER FORMULAIRE-->
                 <div class="sortieBD">
                     <table></table>

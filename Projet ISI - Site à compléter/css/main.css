@@ -9,47 +9,49 @@
 html{
     font-size: 62.5%; /* Pour fixer 1rem = 10px */
     background-color: #F7F7F2;
+    height: 100%;
 }
 
 body{
     font-size: 2rem; /* Taille de base des caractères pour toute la page*/
-    background-image: url(../documents/notebook-1280538_1280.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+    background: url(../documents/notebook-1280538_1280.webp) no-repeat;
+    background-size: 100%;
+    min-height: 100%;
 }
 
-main>article {
+main > article {
     width: 80%;
+    height: 35vw;
     margin: auto;
+    background-color: rgb(209, 202, 201, 0.5);
+    overflow-y: auto;
 }
 
 p{
     margin : 0 ;
-    margin-bottom: 1rem ;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 h1{
     font-family: 'Lucida Sans Unicode', sans-serif;
     padding: 2.5rem;
-    color: black;
+    padding-top: 7rem;
+    color: lightgrey;
 }
 
 h2 {
     font-family: 'Lucida Sans Unicode', sans-serif;
-    padding: 7rem;
+    padding: 1rem;
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
 
 }
 
 img {
-    width: 100%;
-    max-width: 100rem; 
-    padding: 2rem;
-    margin: 3rem;
+    width: 50%;
+    max-width: 100rem;
+    margin: 0 2rem;
 }
 
 
@@ -58,19 +60,22 @@ nav{
     background: transparent;
     padding: 2rem;
     position: fixed;
-
+    width: 100%;
 }
 
 nav ul{
     list-style-type: none ; /* Pas de puce */
+    width: 100%;
 }
 
 nav li{
-    text-align: center; 
+    text-align: center;
+    width: 20%;
+    border : none ; /* pas de bordure pour les li */
 }
 
-nav li:last-of-type{
-    border : none ; /* pas de bordure pour le dernier li */
+nav li:first-child{
+    margin-left : 20% ; /* pas de bordure pour le dernier li */
 }
 
 nav a{
@@ -109,18 +114,13 @@ header{
 
 /***** Contenu principal ************/
 main{ 
-    padding : 1rem 2rem;
     color:black; 
-    text-align: justify ; 
-    padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
+    text-align: justify;
+    padding : 0;
 }
 
-main p{padding-top : 0 ;}
-
-main img{
-    float: none; /* Pour mettre côté à côte image et texte */
-    padding-left: 10rem;
-
+main p{
+    padding-top : 0 ;
 }
 
 /******* Contenu secondaire **************/
@@ -136,7 +136,7 @@ footer {
     color: white;
     padding: 1rem 1rem 0.2rem 2rem;
     font-size: 2rem;
-    position: absolute;
+    position: fixed;
     top: 96%;
     width: 98.8%;
     height: 3.1%;
@@ -156,19 +156,54 @@ footer {
     text-align:center;
     transition: all 0.2s;
 }
+
 .bouton1:hover{
     background-color:#4095c6;
 }
+
 @media all and (max-width:30em){
     .bouton1{
         display:block;
         margin:0.2em auto;
     }
-} 
 
-.aadi-header-sticky.aadi-header-transparent.aadi-header-v11,
-.aadi-header-sticky.aadi-header-transparent.aadi-header-v11 .aadi-top-header,
-.aadi-header-sticky.aadi-header-transparent.aadi-header-v11 .aadi-bottom-header,
-#main-header .aadi-header-collaspe {
-    background-color: #fff !important;
+}
+
+/***** aligner les images *******/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/***** gestion tableau *******/
+table {
+    width: 100%;
+}
+
+th {
+    height: 2rem;
+    text-align: left;
+    background-color: #70604B;
+    color: white;
+}
+
+td {
+    height: 1.2rem;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(242, 242, 242, 0.5);
+}
+
+tr:hover {
+    background-color: #f5f5f5;
 }
