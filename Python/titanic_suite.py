@@ -43,14 +43,14 @@ print (f"Age moyen des personnes à bord : {question5()}")
 
 
 
-#Quel est le nom du premier homme de 42 ans ayant survécu ?
-def question 6():
+'''Quel est le nom du premier homme de 42 ans ayant survécu ?
+def question6():
      with open('titanic.csv', newline ='') as f:
         lecteur = csv.reader(f, delimiter=',', quotechar='"')
         next(lecteur)
         age=
         if age == "42"
-        
+        '''
 
 
 #Combien de personnes ont payé le tarif maximum ?
