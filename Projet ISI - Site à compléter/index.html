@@ -16,24 +16,30 @@
                     <li><a href="bilan.html" >Bilan</a></li>
                 </ul>
             </nav>
+            <h1>TEA ISI Informatique</h1>
         </header>
         <main>
-            <form id="pourBDprof">
-                <!-- FORMULAIRE-->
-                <select type="text" name="requeteChoisie"> <!--Requêtes -->
-                    <option value='select * from plats'>Tout les plats</option>
-                    <option value='select * from plats where tarif >= 5'>Tout les plats à 5€ ou plus</option>
-                    <option value='select * from plats where nom like "%Jus%" or nom like "%jus%"'>Tout les plats comportant le mot "jus"</option>
-                </select>
-                <input type="submit" class="bouton1"> <!--Bouton -->
-            </form><!-- FERMER FORMULAIRE-->
-            <div class="sortieBD">
-                <table></table>
-            </div>
-            <p class="messageErreur"></p>
-
+            <article>
+                <h2>Professeur</h2>
+                
+                <form id="pourBDprof">
+                    <!-- FORMULAIRE-->
+                    <p>Veuillez choisir une requête à exécuter : <!-- Pour aligner le texte et le select -->
+                        <select type="text" name="requeteChoisie"> <!--Requêtes -->
+                            <option value='select * from plats'>Tout les plats</option>
+                            <option value='select * from plats where tarif >= 5'>Tout les plats à 5€ ou plus</option>
+                            <option value='select * from plats where nom like "%Jus%" or nom like "%jus%"'>Tout les plats comportant le mot "jus"</option>
+                        </select>
+                        <input type="submit" class="bouton1"> <!--Bouton -->
+                    </p>
+                </form><!-- FERMER FORMULAIRE-->
+                <div class="sortieBD">
+                    <table></table>
+                </div>
+                <p class="messageErreur"></p>
+            </article>
         </main>
         <aside></aside>
-        <footer>Agathe Perrin</footer>
+        <footer>Agathe Perrin, L1 informatique</footer>
     </body>
 </html>
