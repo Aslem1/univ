@@ -1,0 +1,7 @@
+/******** layout.css ********/
+
+/*organisation des blocs  les   uns   par   rapport   aux   autres*/
+
+
+/**** Général *****************/
+body>nav ul { display: flex; } /*sélectionner toute balise ul se trouvant dans un nav qui est fils direct dela balise body et lui appliquer un affichage de type flex*/

@@ -1,0 +1,74 @@
+/******** look.css ********/
+/*description couleurs, espacements, polices, bordures ... */
+
+
+/**** Général *****************/
+*{
+    font-family: arial, calibri, sans-serif;
+}
+
+html{ font-size: 62.5%; }
+
+main > article {
+    padding: 1rem;
+}
+
+h1,ul,h2 {
+    color:#eee;  
+}
+
+h3 {
+    color:#dcb872;
+    font-size:1.8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/**** Menu *****************/
+a {
+    padding-top: 1.5rem; 
+    padding-right: 1rem;
+    font-size: 3rem;
+}
+
+/**** Entete *****************/
+header{
+    padding : 0.2rem 0;
+}
+
+h1 {
+    background-color: rgba (38, 45, 55, 0.4);
+}
+
+/***** Pied de page ************/
+
+/***** Class ************/
+.bouton {
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    text-align: center;
+    padding:6px 0 6px 0;
+    font:Bold 13px Arial;
+    background:#1d3956;
+    color:#fff;
+    width:90px;
+    border-radius:2px;
+    border:1px solid #ccc;
+}
+
+.images {
+    margin-top: 1rem;
+    height: 375px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1650px;
+}
