@@ -18,14 +18,21 @@ public class SystemeImperial {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in); //Créer un objet Scanner
-		System.out.print("Saisissez un poids en kilogrammes : "); //Récupération entrée utilisateur
-		double kg = input.nextDouble();
-		double lbs = kg * 2.20462;
-                double oz = kg * 35.2739199982575;
-		System.out.print(" Dans le système impérial, cela représente :"+ lbs +(" lbs ")+ ("et ") + oz +(" oz") ); //Output entrée utilisateur
+        System.out.print("Saisissez un poids en kilogrammes : "); //Récupération entrée utilisateur
+        double kg = input.nextDouble();
+        double lbs = conversionKilogrammeVersLivre(kg);
+        double oz = conversionKilogrammeVersOnce(kg);
+        System.out.print(" Dans le système impérial, cela représente :"+ lbs +(" lbs ")+ ("et ") + oz +(" oz") ); //Output entrée utilisateur
+    }
+    
+    public static double conversionKilogrammeVersLivre(double kilogramme){
+        double lbs = kilogramme * 2.20462;
+        return lbs;
+    }
+    
+    public static double conversionKilogrammeVersOnce(double kilogramme){
+        double oz = kilogramme * 35.2739199982575;
+        return oz;
     }
 }
-/**
-public static double conversionKilogrammeVersLivre(double kilogramme)
-public static double conversionKilogrammeVersOnce(double kilogramme)
- */
+

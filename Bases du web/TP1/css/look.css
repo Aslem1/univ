@@ -18,7 +18,7 @@ h1,ul,h2 {
 }
 
 h3 {
-    color:#dcb872;
+    color:green;
     font-size:1.8rem;
 }
 
@@ -28,6 +28,8 @@ h2 {
 
 p {
     font-size: 1.5rem;
+    color: #0c2727;
+    text-align:justify;
 }
 
 /**** Menu *****************/
@@ -35,8 +37,33 @@ a {
     padding-top: 1.5rem; 
     padding-right: 1rem;
     font-size: 3rem;
+    color:  #0c2727;
+
 }
 
+nav > ul > li {
+    text-align: center;
+    width: 12.5%; /* Taille des cases menus */
+    height: 100%;
+}
+
+nav a {
+    display: block ;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 4rem;
+    padding-top: 1.5rem;
+}
+
+nav a:hover {
+    color:#dcb872;
+    background-color: #123c4d;
+    transition-duration: 1s;
+}
+
+nav {
+    background-color: #174b60;
+}
 /**** Entete *****************/
 header{
     padding : 0.2rem 0;
@@ -46,7 +73,19 @@ h1 {
     background-color: rgba (38, 45, 55, 0.4);
 }
 
+nav li{
+    margin: auto;
+}
+
+header{
+
+}
+
 /***** Pied de page ************/
+footer {
+    background-color: #174b60;
+
+}
 
 /***** Class ************/
 .bouton {
@@ -57,7 +96,7 @@ h1 {
     text-align: center;
     padding:6px 0 6px 0;
     font:Bold 13px Arial;
-    background:#1d3956;
+    background:rgb(18, 57, 73);
     color:#fff;
     width:90px;
     border-radius:2px;
@@ -67,8 +106,19 @@ h1 {
 .images {
     margin-top: 1rem;
     height: 375px;
-    position: relative;
+    /*position: relative;*/
     margin-left: auto;
     margin-right: auto;
-    min-width: 1650px;
+    width: 100%;
+} 
+
+.opacite {
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+
+}
+
+.sousTitre {
+    color: #dcb872;
 }
