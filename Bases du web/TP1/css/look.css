@@ -20,16 +20,20 @@ h1,ul,h2 {
 h3 {
     color:green;
     font-size:1.8rem;
+    text-align: left;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
 }
 
 p {
     font-size: 1.5rem;
     color: #0c2727;
     text-align:justify;
+    
 }
 
 /**** Menu *****************/
@@ -83,7 +87,6 @@ header{
 
 /***** Pied de page ************/
 footer {
-    background-color: #174b60;
 
 }
 
@@ -122,3 +125,26 @@ footer {
 .sousTitre {
     color: #dcb872;
 }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+/* Bottom left text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+    width: 273px;
+    height: 53px;
+    text-align: center;
+
+} 
