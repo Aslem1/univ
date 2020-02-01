@@ -33,13 +33,12 @@ p {
     font-size: 1.5rem;
     color: #0c2727;
     text-align:justify;
-    
+
 }
 
 /**** Menu *****************/
 a {
     padding-top: 1.5rem; 
-    padding-right: 1rem;
     font-size: 3rem;
     color:  #0c2727;
 
@@ -47,7 +46,6 @@ a {
 
 nav > ul > li {
     text-align: center;
-    width: 12.5%; /* Taille des cases menus */
     height: 100%;
 }
 
@@ -57,9 +55,11 @@ nav a {
     text-decoration: none;
     height: 4rem;
     padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-nav a:hover {
+footer a:hover, nav a:hover {
     color:#dcb872;
     background-color: #123c4d;
     transition-duration: 1s;
@@ -68,27 +68,28 @@ nav a:hover {
 nav {
     background-color: #174b60;
 }
+
+
 /**** Entete *****************/
 header{
-    padding : 0.2rem 0;
 }
 
 h1 {
     background-color: rgba (38, 45, 55, 0.4);
 }
 
-nav li{
-    margin: auto;
-}
-
-header{
-
-}
 
 /***** Pied de page ************/
 footer {
-
+    background-color: #174b60;
+    height: 4rem;
 }
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 /***** Class ************/
 .bouton {
@@ -106,14 +107,6 @@ footer {
     border:1px solid #ccc;
 }
 
-.images {
-    margin-top: 1rem;
-    height: 375px;
-    /*position: relative;*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-} 
 
 .opacite {
     opacity: 0.5;
@@ -126,14 +119,64 @@ footer {
     color: #dcb872;
 }
 
+
+
 /* Container holding the image and the text */
 .container {
     position: relative;
+    margin-top: 1rem;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover
 }
+
+#aurore {
+    background-image: url("../images/aurore_boreale.jpg");
+}
+
+#chute {
+    background-image: url("../images/chuteDEau.jpg");
+}
+
+#sapin {
+    background-image: url("../images/sapin.jpg");
+}
+
+#fuji {
+    background-image: url("../images/mount-fuji-2305606_1280.webp");
+}
+
+#hongKong {
+    background-image: url("../images/hong-kong-864884_1280.webp");
+}
+
+#palais {
+    background-image: url("../images/towards-the-garden.jpg");
+}
+
+#kabylie {
+    background-image: url("../images/kabylie-2365667_1280.jpg");
+}
+
+#pyramides {
+    background-image: url("../images/pyramids-2371501_1280.webp");
+}
+
+#plage {
+    background-image: url("../images/madagascar-4287921_1280.webp");
+}
+
+#index {
+    background-image: url("../images/UNF_GCASsite_sustainpage_hero.jpg");
+}
+
 
 /* Bottom left text */
 .text-block {
-    position: absolute;
     bottom: 20px;
     right: 20px;
     background-color: white;
@@ -141,10 +184,17 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     opacity: 0.6;
-    top: 0px;
+    top: 10px;
     left: 0px;
     width: 273px;
     height: 53px;
     text-align: center;
 
 } 
+
+.text-block h3 {
+    height: 33%;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+}
