@@ -58,9 +58,8 @@ def dechiffrage (chiffres):
     #compter nb de lettres dans var chiffre
     #trouver mot possibles (de même taille)
     for ch in chiffres:
-        
-    #trouver les mots dont la première lettre correspond au premier chiffre 
-    #recommencer pour chaque lettre
+        #trouver les mots dont la première lettre correspond au premier chiffre 
+        #recommencer pour chaque lettre
     #elimination au fur et à mesure
     #renvoyer tableau résultat
 print (dechiffrage ("666"))  #Doit renvoyer {"mon", "nom", "non"}
