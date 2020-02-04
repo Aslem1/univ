@@ -1,0 +1,202 @@
+/*** decors.css ***/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    /**** Constantes ****************/
+    --couleurFondTransparent: rgba(256, 256, 256, 0.9);
+    --couleurTexte: #666;
+    --couleurDiscrete: darkgrey;
+    /**** /Constantes ****************/
+}
+
+
+/**** Général *********************/
+
+body {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    color: var(--couleurTexte);
+    padding: 0 0rem;
+    background-color: #DDD;
+}
+
+
+/***** Classe génériques ********************************/
+
+.inverse {
+    background-color: var(--couleurTexte);
+    color: var(--couleurDiscrete);
+}
+
+.lienSecondaire {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lienSecondaire:hover {
+    background-color: #ddd;
+}
+
+.fixe {
+    position: fixed;
+}
+
+
+/******** HEADER ****************/
+
+body>header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    background-color: var(--couleurFondTransparent);
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+body>header.fixe {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body>header h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+body>header h2 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+
+/**** MENU **************************************/
+
+nav {
+    margin: 1rem 1rem 0 1rem;
+    padding-left: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    border-radius: 3px 3px 0 0;
+}
+
+nav a:hover {
+    background-color: darkgrey;
+}
+
+nav a.actuel {
+    background-color: #666;
+    color: #DDD;
+}
+
+
+/********* Positionnement du contenu principal ***/
+
+main {
+    width: 100%;
+    position: relative;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    /* min-width: 800px; */
+    line-height: 1.3rem;
+}
+
+
+/*********** Articles **************************************************/
+
+
+/* @media screen and (max-width:800px) {
+    main {
+        width: 100%;
+        min-width: 200px;
+    }
+} */
+
+main em {
+    font-style: italic;
+}
+
+article {
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+section {
+    margin-bottom: 2rem;
+    /*overflow: hidden ;*/
+}
+
+article h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+article h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    padding: 0.5rem 0 1rem 0;
+}
+
+article ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+article ul li {
+    padding-bottom: 1rem;
+}
+
+
+/****** zone d'info *********/
+
+.info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0rem 1rem;
+    max-width: 1rem;
+    max-height: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/**************** Footer ************************************/
+
+body>footer {
+    padding: 5px 0 15px 25px;
+    background-color: var(--couleurFondTransparent);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+body>footer p {
+    padding: 5px 0 0 0;
+    display: inline-block;
+}
