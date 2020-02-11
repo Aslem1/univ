@@ -16,20 +16,16 @@ strong{ font-weight: bold ;}
 
 
 html {
-    font-size: 1.2rem;
+    font-size: 3vw;
     text-align: justify;
-    padding: 1rem;
-    margin: 2rem;
 }
 
 /**** Header ****/
-header {
-    background-image:.header_page {
-        background-image: url("../images/bgHeader.jpg");
-        background-size: cover;
-        background-position: bottom;
-        color: var(--couleur-texte-sur-fond-fonce);
-    }
+.header_page {
+    background-image: url("../images/bgHeader.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: var(--couleur-texte-sur-fond-fonce);
     height: 100vh;
     color: white;
     text-align: center;
@@ -37,49 +33,81 @@ header {
 
 .header_page h1{
     font-size: 20vw; /* VW signifie Viewport Width */
+    margin-bottom: 5vh;
 }
 
 
-h2 {
+.header_page h2 {
     font-size: 10vw;
-}
-
-h3 {
-    background-image: url(../images/banner1.jpg);
-    height: 2rem;
-    width: 100%;
-    text-align: left;
-    margin: 1rem;
-    color:#ffffff ;
+    margin-bottom: 5vh;
 }
 
 p{
     text-align: justify;
+    font-size: 3vw;
+    line-height: 1.5rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleur-texte-sur-fond-fonce);
+
 }
 
 /****** sections **********/
-.preoccupations {
-
+main > section {
+    margin-top: 1rem;
 }
 
-.li {
-
+.contact > section {
+    margin-top: 0;
+    height: 38vh;
 }
 
-img {
-    width: 100%;
-    height:56.25vw;
+section h3 {
+    background-color: var(--couleur-fond-fonce);
+    color: var(--couleur-texte-sur-fond-fonce);
+    font-size: 4vw;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+figcaption, .reference ul, .preoccupations article {
+    width: 90%;
+    margin: auto;
+}
+
+figcaption h4, .niv1 h4, .preoccupations h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+figure img {
+    width: 100vw;
+    height: 56.25vw;
     max-height: 10rem;
     object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /*** Références ************/
 
-.reference {
-
+.niv1 {
+    margin-top: 1rem;
 }
 
+.niv2 {
+    list-style-type: circle;
+    margin-top: 0.2rem;
+}
 
+.niv2 li {
+    margin-top: 0.2rem;
+}
 
 /**** solutions ******/
 
@@ -89,33 +117,51 @@ img {
 
 /*** bouton contact ******/
 .bouton {
+    display: block;
     text-align: center;
-    padding: 1rem;
-    color: white;
-    background-image: url(../images/bg_footer.jpg);
-    width: 10rem;
-    height: 3rem;
+    color: var(--couleur-texte-sur-fond-fonce);
+    background-color: var(--couleur-fond-fonce);
+    padding: 0.5rem;
+    width: 30vw;
+    margin: auto;
+    border-radius: 0.5rem;
 }
 
 
 
 /****** Footer *******/
 footer{
+    margin-top: 1rem;
     /* Positionnement flex pour placer les deux fils du footer côte à côte */  
+    background-color: var(--couleur-fond-fonce);
+    color: var(--couleur-texte-sur-fond-fonce);
     display: flex ;
     flex-wrap: wrap ;
     justify-content: space-between ;
 }
 
-
+footer a {
+    padding: 1rem;
+}
 
 
 
 /***** PAGE CONTACTS ******/
 /* Ici on indique les spécificités de la page contact
 on aurait aussi pu créer une feuille de style supplémentaire
-Dans ce cas, la page contact serait liée à la feuil de style principal.css et contact.css */ 
+Dans ce cas, la page contact serait liée à la feuille de style principal.css et contact.css */ 
 
+
+.contact > section > .niv2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.contact li {
+    font-size: 4vw;
+}
 
 /**** Coordonnées *****/
 
@@ -124,12 +170,29 @@ Dans ce cas, la page contact serait liée à la feuil de style principal.css et 
 /***** Carte ****/
 .map {
     width: 100%;  
-    height: 56.25vw;
+    height: 80%;
 }
 
 
 /*** Formulaire ****/
 .formulaire {
-    display:flex;
+    width: 90%;
+    margin: auto;
 }
 
+.formulaire input[type=email], .formulaire label, .formulaire textarea {
+    display:block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.formulaire textarea {
+    margin-bottom: 2rem;
+}
+
+.formulaire input[type=submit] {
+    text-decoration: none;
+    border: none;
+    background-color: var(--couleur-fond-fonce);
+    color: var(--couleur-texte-sur-fond-fonce);
+}

@@ -8,61 +8,57 @@
         <title>Web I - TP n°2</title>
         <!-- Empêcher le redimensionnement automatique de la page par les navigateurs mobiles -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/principal.css">
-        <link rel="stylesheet" href="css/reset.css">
     </head>
 
     <body>
         <header class="header_page">
-            <figure>
-                <img src="../images/bgHeader.jpg" alt="pont">
-                <figcaption><h1>Voyages sereins</h1>
-                    <h2>Contact <a href="index.html">Accueil</a></h2>
-                </figcaption>
-            </figure>
+            <h1>Voyages sereins</h1>
+            <h2>Contact</h2>
+            <a class="bouton" href="../index.html">Accueil</a>
         </header>
 
-        <main>
+        <main class="contact">
 
             <section class="reference">
                 <h3>Nos coordonnées</h3>
-                <article>
-                    <ul>
-                        <li class="li">contact@voyages-serein.fr</li>
-                        <li class="li">06.XX.55.23</li>
-                        <li class="li">40, av. des Plages 44000 Nantes</li>
-                    </ul>
-                </article>
+                <ul class="niv2">
+                    <li>contact@voyages-serein.fr</li>
+                    <li>06.XX.55.23</li>
+                    <li>40, av. des Plages 44000 Nantes</li>
+                </ul>
             </section>
 
             <section class="reference">
                 <h3>Plan d'accès</h3>
-                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.92481194247!2d-0.3315920840859912!3d45.69248087910427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4800f36b09a7e3bb%3A0xd0aae045b13c6590!2sTransatco%20Voyages!5e0!3m2!1sfr!2sfr!4v1580221515871!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.92481194247!2d-0.3315920840859912!3d45.69248087910427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4800f36b09a7e3bb%3A0xd0aae045b13c6590!2sTransatco%20Voyages!5e0!3m2!1sfr!2sfr!4v1580221515871!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
             </section>
-
-            <!-- *********  Footer  ********** -->
-            <footer>
+            <section>
                 <h3>Ecrivez-nous</h3>
-                <form method="get" class="form-example">
+                <form method="get" class="formulaire">
 
-                    <div class="formulaire">
+                    <div>
                         <label for="email">email</label>
                         <input type="email" name="email" id="email">
                     </div>
                     <label for="story">Message</label>
 
-                    <textarea class="formulaire" id="message" name="message"
+                    <textarea id="message" name="message"
                               rows="5" cols="33">
                     </textarea>
-                    
+
                     <div class="bouton">
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
+            </section>
 
-                <p>Mentions Légales</p>
-                <p>Plan du site</p>
-            </footer>
         </main>
+        <!-- *********  Footer  ********** -->
+        <footer>
+            <a href="#">Mentions Légales</a>
+            <a href="#">Plan du site</a>
+        </footer>
     </body>
 </html>
