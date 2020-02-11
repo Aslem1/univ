@@ -1,0 +1,132 @@
+/***** styles.css ********/
+
+/*Modèle de boîte */
+*, *:before, *:after{
+    box-sizing: border-box ;
+}
+
+/**** page ********/
+
+html {
+    font-size: 62.5%;
+    padding: 1rem
+}
+
+body {
+    font-family: arial;
+    background: #FDFDFD;
+    font-size: 1.2em;
+    color: #445f7b;
+}
+
+body > header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2rem;
+    order: 2;
+    line-height: 2 ;
+}
+
+header h2 {font-size: 3rem;line-height: 2}
+article{ padding : 1rem 0 ; }
+
+/**** Composant listePersonnes **********/
+
+.listePersonnes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+/******** Composant personne *********/
+
+/*Mise en forme*/
+.personne {
+    min-width: 20rem ;
+    width: 23%;
+    background: #FFF;
+    margin-left: 1rem;
+    overflow: hidden;
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.personne img {
+    padding: 25% 28%;
+    transition: 0.5s all ease;
+}
+
+.personne img {
+    width: 100%;
+    /* Pour ajuster l'image à son conteneur */
+}
+
+.personne figcaption {
+    width: 50%;
+    height: 100%;
+    padding: 1em;
+    background: #2c3f52;
+    color: #EEE;
+    position: absolute; top: 0; left: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s;
+}
+
+.personne:hover figcaption{
+    visibility:visible;
+    transform: scale(1);
+}
+
+.personne:hover img {
+    transform: translateX(25%);
+}
+
+.personne figcaption h3 {
+    color: #FFF;
+    font-weight: bold ;
+    margin: 0;
+}
+
+.personne figcaption p:not(.bouton) {
+    flex: 1;
+    margin-top : 1em ;
+    color: #EEE;
+    line-height: 1.3 ;
+}
+
+.personne figure {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+/***** Bouton ****/
+
+.personne .bouton a {
+    text-decoration: none;
+    color: inherit;
+    background-color: #77d730;
+    padding: 0.3em 0.5em;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    display: inline-block;
+    
+}
+
+.personne .bouton a:hover {
+    transform:  scale(1.1);
+    background-color: #82ec36;
+    color: white;
+}
+
+/*** Animation d'une personne *****/
+
+

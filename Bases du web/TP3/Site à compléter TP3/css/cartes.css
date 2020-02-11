@@ -10,6 +10,11 @@
         flex-grow: 1;
     }
     
+ul class="cartes"{
+    flex:start;
+    flex-direction: row;
+}
+
 @media only screen and (min-width: 0em, max-width: 20em) {
     .cartes {
         flex-basis: 1;
