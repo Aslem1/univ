@@ -1,0 +1,5 @@
+CLO
+ORG 30
+DB "HELLO, WORLD !"
+DB 0D
+END
