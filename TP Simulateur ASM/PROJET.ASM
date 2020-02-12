@@ -17,28 +17,22 @@ ORG 1
 MOV DL,A0
 MOV AL,00
 OUT 02
-boucle:
+
+boucleA:
 MOV AL,[DL]
 OUT 02
-ADD DL,1
-CMP AL,FB
+INC DL
+MOV CL,B0
 
-JNZ boucle
+JNZ boucleA
 
-CLO
-
-MOV AL,CE
+boucleB:
+MOV AL,[CL]
 OUT 02
+ADD CL,1
+MOV CL,FB
 
-ORG 2
-MOV DL,A0
-MOV AL,00
-OUT 02
-boucle:
-MOV AL,[DL]
-OUT 02
-ADD DL,1
-CMP AL,FB
+JNZ boucleB
 
 END
 
