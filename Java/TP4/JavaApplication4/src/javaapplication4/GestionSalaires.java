@@ -10,5 +10,11 @@ package javaapplication4;
  * @author aperrin
  */
 public class GestionSalaires {
-    
+    private ArrayList <Double> salaires;
+    public GestionSalaires (ArrayList <Double> s){
+        this.salaire = s;
+    }
+    public Double min () {
+        
+    }
 }
