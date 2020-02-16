@@ -47,10 +47,11 @@
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: start;
-    align-content: start;
+    align-content: stretch;
     display: flex;
+    flex-direction: column;
 }
 
-.element relief {
-    align-items: end;
+.perso { /* autre solution : cibler le 9eme élément -> .element:nth-of-type(9) */
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
 }
