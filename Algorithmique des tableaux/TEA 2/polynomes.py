@@ -44,3 +44,8 @@ def eval_iter(P, x):
     return somme
 l = [1, 2, 5, 6]
 print(eval_iter(l, 3))
+
+#Question 5
+def add_poly(P, Q):
+    print("Je t'aime tellement...")
+    
