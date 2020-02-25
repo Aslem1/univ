@@ -1,6 +1,7 @@
 html {
   background-color: black;
     color: white;
+    list-style-type: none;
 }
 
 /****** Menu principal **********/
