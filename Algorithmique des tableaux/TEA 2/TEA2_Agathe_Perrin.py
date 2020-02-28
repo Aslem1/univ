@@ -1,15 +1,4 @@
 #Question 1
-'''
-def rndi_poly(n,min=-5,max=5):
-    import random
-    for n in random.randit (min,max):
-        tab = [] #creation tableau
-        for n in tab: #boucler n fois
-            tab.append(n) #ajouter valeur aleatoire tableau
-            print ("test"+ n) #afficher tableau
-'''
-
-#Question 1 - Autre solution (qui fonctionne)
 def rndi_poly(n, min=-5, max=5):
     import random
     tab = []
@@ -47,5 +36,35 @@ print(eval_iter(l, 3))
 
 #Question 5
 def add_poly(P, Q):
-    print("Je t'aime tellement...")
-    
+    if len(P) >= len(Q):
+        max_tab = P
+        min_tab = Q
+    else:
+        max_tab = Q
+        min_tab = P
+        
+    for i in range (len(min_tab)):
+        max_tab[i] = max_tab[i] + min_tab [i]
+    while max_tab[-1] == 0:
+        del (max_tab[-1])
+    return max_tab
+P = [1, 3 ]
+Q = [2, 1, -3]
+print (Q[-1])
+print( add_poly(P, Q))
+
+
+#Question 6
+def mult_poly(P, Q):
+    R=[0]*(len(Q)+len(P)-1)
+    for i in range(len(P)):
+        for j in range(len(Q)):
+            R[i+j]=R[i+j]+(P[i]*Q[j])
+    while R[-1] == 0:
+        del (R[-1])
+    return R
+
+print(mult_poly([0, 1], [0, 0, 1]))
+#[0, 0, 0, 1]
+print(mult_poly([4, -3, 12], [2, 0, 5, 0, 3]))
+#[8, -6, 44, -15, 72, -9, 36]
