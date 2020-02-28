@@ -1,0 +1,152 @@
+/*** gabarit-look.css ***/
+
+.gabarit {
+    font-family: 'Lato', sans-serif;
+    padding: 1rem;
+    /*    Du plus clair au plus foncé*/
+    --dominant1: #F8F8F8;
+    --dominant2: #A6A6A6;
+    --dominant3: #7C7C7C;
+    --dominant4: #747474;
+    --gris: #636363;
+    --dominant5: #3F3F3F;
+    --tonique1: #f89425;
+    --second1: #35656b;
+    --second2: #09343a;
+}
+
+
+/*** Menu principal ******/
+
+.menu-principal {
+    display: flex;
+    justify-content:space-around;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    background-color: var(--second1);
+    color: var(--dominant1);
+    font-size: 2rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 3px 3px 2px var(--dominant2);
+    transition: all ease-in-out 0.3s;
+    /*justify-content: center;*/
+}
+
+.menu-principal a:hover {
+    transform: scale(1.2) rotateZ(11deg);
+}
+
+
+/*** corps ***/
+
+.corps {
+    padding: 1rem 0;
+}
+
+
+/**** menu-secondaire ******/
+
+.menu-secondaire {
+    float: left;
+}
+
+.menu-secondaire li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    margin: 0rem 0.5rem 0.5rem 0;
+    background-color: var(--dominant1);
+    color: var(--second2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.menu-secondaire li:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .14), 0 5px 3px -2px rgba(0, 0, 0, .2), 0 3px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.principal ul {
+    padding: 0rem 2rem;
+    background-image: url(../../../images/home_image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal ul li {
+    background-color: var(--gris);
+    opacity: 0.97;
+    color: #ddd;
+    padding: 2rem 1rem;
+    margin: 0.5rem;
+    transition: 0.5s all ease;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.principal ul li:nth-child(even) { /*Une élement /2 de la même taille*/
+    flex: 1 0 40%;
+}
+
+.principal ul li:nth-child(odd) { /*Une élement /2 de la même taille*/
+    flex: 0 1 10%;
+}
+
+.principal ul li:last-child::after { /*Une élement /2 de la même taille*/
+    display: block;
+    content:"";
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../images/asterisque.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 100%;
+    top: -120%;
+}
+
+.principal ul li:hover {
+    opacity: 0.8;
+}
+
+
+.principal li p {
+    font-size: 2rem;
+    text-transform: uppercase;    
+}
+
+.principal > p {
+    margin-left: 17%;
+}
+
+/****** Pied **********/
+
+.pied {
+    text-align: center;
+    background-color: var(--dominant1);
+    color: var(--second2);
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pied a {
+    color: inherit;
+    /* text-decoration: none ; */
+    transition: all ease 0.3s;
+}
+
+.pied a:hover {
+    letter-spacing: 2px;
+}

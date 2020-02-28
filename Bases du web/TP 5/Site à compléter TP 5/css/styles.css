@@ -1,0 +1,102 @@
+/****** Général **********/
+--couleur-titres-important: #333;
+--couleur-sous-titres: #666;
+--couleur-legendes: #999;
+
+/****** Menu principal **********/
+
+figcaption {
+    /*padding-left: 2rem;*/
+    color: var(--couleur-legendes);
+}
+
+p {
+    font-size: 1rem;
+    padding-left: 2rem;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/****** Corps **********/
+
+body {
+    padding: 1rem;
+}
+
+li {
+    width: 45%;
+    text-decoration: none;
+}
+
+/****** Titres **********/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-left: 1.3rem;
+    padding-top: 0.5rem;
+    color: var(--couleur-titres-important);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    color: var(--couleur-sous-titres);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+    display: none;
+}
+
+h4 {
+    text-align: right;
+}
+
+/****** Classes **********/
+.liste_accueil > li {
+    margin-bottom: 1rem;
+    color: black;
+    padding-left: 2rem;
+    text-transform: uppercase; /*le texte est forcé en majuscule.*/
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartes li {
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.trait_dessus {
+    border-top: 1px ridge;
+    color: var(--couleur-legendes);
+    margin: 1rem;
+}
+
+
+/****** Images **********/
+
+img {
+    width: 100%;
+}
+
+
+
+
+/****** Pied **********/

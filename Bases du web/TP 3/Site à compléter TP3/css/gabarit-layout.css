@@ -1,0 +1,16 @@
+/*** gabarit-layout.css ***/
+
+* {
+    box-sizing: border-box;
+}
+
+nav.menu-principal a{
+    padding: 10px 10px 10px 10px; 
+}
+
+.menu-secondaire{
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

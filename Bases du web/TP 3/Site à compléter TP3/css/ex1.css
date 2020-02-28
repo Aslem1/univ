@@ -1,0 +1,57 @@
+/**** ex1.css ***/
+
+
+/*** Mises en forme de base, ne pas modifier *******/
+
+.ensemble {
+    background-color: #FFF;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    height: 33rem;
+}
+
+.element {
+    display: flex;
+    min-width: 7rem;
+    min-height: 5rem;
+    border: 1px solid #555;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px #555;
+}
+
+.element:nth-of-type(2n) p {
+    margin: 2rem 0;
+}
+
+.element p {
+    font-size: 1rem;
+    padding: 1rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    background-color: #555;
+    color: #EEE;
+    border-radius: 50%;
+}
+
+
+/**** / Fin des mises en forme de base *********/
+
+
+/*** Partie à modifier ********/
+
+.ensemble {
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: start;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.perso { /* autre solution : cibler le 9eme élément -> .element:nth-of-type(9) */
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
