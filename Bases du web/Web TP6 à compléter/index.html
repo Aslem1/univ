@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript</title>
+    <script type="text/javascript" src="js/comportements.js"></script>
+    <link rel="styleSheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercices javascript</h1>
+    </header>
+    <article class="introduction">
+       <h2>Introduction</h2>
+        <p>Voici une série d'exercices d'initiation à JavaScript.</p>
+        <p>Chaque exercice doit traiter des éléments html compris dans cette page web.</p>
+        <p>Créez un dossier <em>js</em>. Dans celui-ci, créez un fichier javascript nommé <em>comportements.js</em> que vous lierez à cette page web.</p>
+        <p>Dans <em>comportements.js</em>, créez le squelette d'un programme javascript, avec l'appel à une fonction principale lorsque le navigateur a fini de recevoir la page web.</p>
+        <p>Vous structurerez le programme principal et y placerez des commentaires afin que l'on indentifie clairement les instructions de chaque exercice.</p>
+    </article>
+    <article>
+        <h2>Sélectionner des éléments de la page web et utiliser leurs propriétés</h2>
+        <section class="cours">
+            <h3>Vous devrez savoir</h3>
+            <h4>Afficher des résultats dans la console de debbogage du navigateur.</h4>
+            <p>L'instruction <code>console.log("Bonjour")</code> permet d'afficher un texte dans la console. Pour visualiser la console, dans votre navigateur, tapez <em>F12</em> et trouvez l'onglet <em>Console</em>.</p>
+            <h4>Sélectionner un groupe d'éléments de la page web à l'aide de la fonction <em>document.querySelectorAll</em>.</h4>
+            <p>Par exemple <code>document.querySelectorAll("nav.principal a")</code> permet de sélectionner tous les liens du menu dont la classe est <em>principal</em>.</p>
+            <p>Entre les parenthèse de la fonction <em>querySelectorAll</em>, on place le paramètre indiquant quelle sélection on souhaite effectuer. Le paramètre est un <strong>sélecteur css</strong>. On peut donc utiliser <code>document.querySelectorAll(".c1")</code> pour sélectionner tous les élément possédant la classe <em>c1</em>, ou encore <code>document.querySelectorAll("#ex img")</code> pour sélectionner toutes les images incluses dans l'élément dont l'id est <em>ex</em>.</p>
+            <p>Il est possible de stocker le résultat de cette sélection dans une variable avec <code>let liensDuMenuPrincipal = document.querySelectorAll("nav.principal a")</code>, qui crée la variable <em>liensDuMenuPrincipal</em> et y place les éléments sélectionnés.</p> 
+            <h4>Utiliser une propriété propre à un ensemble d'éléments.</h4>
+               <p>Si la variable <em>liensDuMenuPrincipal</em> contient tous les liens du menu principal, alors <code>liensDuMenuPrincipal.length</code> désigne le nombre de liens présents dans cet ensemble. Il est possible de stocker cette valeur dans une variable pour la réutiliser plus tard.</p>
+            
+            
+        </section>
+        <section class="exercices">
+            <h3>Exercice 1</h3>
+            <p>Complétez le squelette du programme afin qu'il affiche "Je suis le programme principal !" dans la console.</p>
+            <p>Sélectionnez tous les <em>li</em> de la liste <em>#ingredients</em>, déterminez le nombre d'éléments présents dans cette liste et affichez ce résultat dans la console.</p>
+            <p>Cherchez à afficher cette information sous la forme "J'ai trouvé 4 ingrédients". Pour concaténer un texte et une variable, utilisez l'opérateur +.</p>
+            <p>Ingrédients :</p>
+            <ul id="ingredients">
+                <li>Salade</li>
+                <li>Tomates</li>
+                <li>Oignons</li>
+                <li>Sauce blanche</li>
+            </ul>
+        </section>
+    </article>
+<article>
+    <h2>Sélectionner un élément de la page web, utiliser ses méthodes et propriétés</h2>
+    <section class="cours">
+     <h3>Vous devrez savoir</h3> 
+     <h4>Sélectionner un élément grâce à son <em>id</em></h4>
+     <p>Si un élément possède l'id <em>premierArticle</em>, il est possible de le sélectionner grâce à l'instruction <code>document.getElementById('premierArticle')</code>.</p>
+     <p>On peut placer l'élément sélectionné dans une variable afin de le réutiliser plus tard : <code>let lePremierArticle = document.getElementById('premierArticle')</code></p>
+     <h4>Sélectionner un élément grâce à un sélecteur css</h4>
+     <p>Nous avons vu que <code>querySelectorAll</code> permet de sélectionner plusieurs éléments de la page web.</p>
+     <p>Par exemple, avec <code>document.querySelectorAll("main img")</code>, je sélectionne toutes les images du <em>main</em>.</p>
+     <p>Pour sélectionner un seul élément de la page web, nous disponsons de la méthode <code>querySelector</code>, ainsi <code>document.querySelector('main img')</code> permet de sélectionner <strong>la première image</strong> du <em>main</em>.</p>
+     
+     
+     
+      <h4>Accéder aux propriétés d'un élément</h4>
+        <p>Si la variable <em>lePremierArticle</em> contient un élément de la page web, on peut accéder à la liste de ses classes grâce à <code>lePremierArticle.classList.</code></p>
+        <h4>Appliquer quelques méthodes de traitement à un élément</h4>
+        <p>Il est possible de modifier la liste des classes d'un élément.</p>
+        <p>L'ajout d'une classe est réalisable grâce à la méthode <em>add</em> : <code>document.getElementById('premierArticle').classList.add('nouvelleClasse')</code></p>
+        <p>La suppression d'une classe est effectuée par la méthode <em>remove</em> : <code>document.getElementById('premierArticle').classList.remove('nomDeClasse')</code></p>
+      
+      
+    </section>
+    <section class="exercices">
+        <h3>Exercice 2</h3>
+        <p>Dans la console, affichez les classes de l'élément dont l'identifiant est <em>elemEx2</em>.</p>
+        <p>Ces classes sont définies dans la feuille de style de la page web, tout comme la classe <em>inverse</em>.</p>
+        <p>Complétez le programme de façon à ce qu'il enlève la classe <em>control</em> à cet élément.</p>
+        <p>Faites en sorte que le programme ajoute la classe <em>inverse</em> à cet élément.</p>
+        <p id="elemEx2" class="relief control aere">elemEx2, c'est moi :-) !</p>
+        
+    </section>
+</article>
+   
+<article>
+   <h2>Accéder aux attributs et au texte d'un élement</h2>
+    <section class="cours">
+      <h3>Vous devrez savoir</h3>
+      <h4>Placer du texte dans un élément</h4>
+      <p>Le contenu textuel d'un élément de la page web est une propriété dont on peut modifier la valeur avec <code>document.getElementById('premierParagraphe').textContent="nouveau contenu"</code>.</p> 
+      <h4>Récupérer la valeur d'un attribut</h4> 
+      <p>Rappel : le texte <code>&lt;img src="images/toto.jpg" alt="la tête de Toto" id="imageToto"&gt;</code> permet d'insérer une image dans une page web.</p>
+        <p>Ici, <em>src</em> et <em>alt</em> sont des <strong>attributs</strong> de la balise <em>img</em>.</p>
+         <p>Le contenu d'un attribut est une information que le programme javascript peut récupérer de la manière suivante : </p>
+         <p><code><pre>
+         let image = document.getElementById('imageToto') ;
+         let nomFichierImage = image.getAttribute('src') ;
+         // La variable nomFichierImage contient à présent la valeur "images/toto.jpg"
+         </pre>
+         </code>
+      </p>
+   
+    <h4>Modifier la valeur d'un attribut</h4> 
+      <p>Un programme peut modifier la valeur d'un attribut gâce à la méthode <em>setAttribute</em>.</p>
+        <p>Cette méthode nécessite deux paramètres : le nom de l'attribut à modifier, et la valeur que l'on souhaite lui donner.</p>
+        <p>Par exemple <code>image.setAttribute("src", "images/pifou.jpg")</code> permet de donner la valeur "pifou.jpg" à l'attribut <em>src</em> de l'élément désigné par <em>image</em>.</p>
+       </section>
+    <section class="exercices">
+        <h3>Exercice 3</h3>
+        <p>Dans le paragraphe qui suit, placez le texte "ha ok, j'ai compris !"</p>
+        <p id="reussite" class="relief">Je n'ai pas encore compris :-(</p>
+        <p>Dans la console, affichez la valeur de l'attribut <em>alt</em> de l'image qui suit.</p>
+        
+        <figure>
+            <img src="images/dog.png" alt="C'est un bon chienchien ça !" id="dog">
+            <figcaption id="legendeDog"></figcaption>
+        </figure>
+        <p>Complétez le programme pour que le texte de l'attribut <em>alt</em> soit placé dans la balise <em>figcaption</em>.</p>
+    </section>
+</article>
+  
+  <article>
+   <h2>Gérer les événements crées par l'utilisateur</h2>
+    <section class="cours">
+      <h3>Vous devrez savoir</h3>
+      <h4>Relier un élément, un événement le concernant et une fonction de gestion de l''événement.</h4>
+      <p>Si vous voulez détecter que l'internaute clique sur un élément de la page web, vous devez créer un <em>écouteur d'événement</em> lié à cet élément, qui permettra de déclencher l'exécution d'un sous-programme lorsque le clic surviendra.</p>
+        <p>Par exemple <code>document.getElementById("m").addEventListener("click",agrandir);</code> indique que lorsqu'on clique sur l'élément dont l'id est <em>m</em>, il faut exécuter la fonction <em>agrandir</em>.</p>
+        <p>La fonction <em>agrandir</em> est un <em>gestionnaire d'événement</em>, nous devrons écrire cette fonction, par exemple :</p>
+        <code>
+            <pre>
+        function agrandir(){
+            document.getElementById("m").classList.add('grand') ;
+            // Ajoute la classe 'grand' à l'élément dont l'id est m
+        }
+            </pre>
+        </code>
+      
+       </section>
+    <section class="exercices">
+        <h3>Exercice 4</h3>
+        <p>Lorsqu'on clique sur ce bouton<span class="control" id="boutonEffacerEx4">Effacer</span>, on veut afficher "Evénement détecté !" dans la console.</p>
+        <p>Mettez en place l'écouteur d'événement, puis créez la fonction permettant de traiter l'événement.</p>
+        <p>Modifiez le gestionnaire d'événement pour qu'un clic sur le bouton permette d'effacer la figure qui suit.</p>
+        <p>Pour effacer la figure, vous lui donnerez la classe 'invisible'.</p>
+        
+        <figure id="figureEx4">
+            <img src="images/dog.png" alt="C'est un bon chienchien ça !" id="dog">
+            <figcaption id="legendeDog"></figcaption>
+        </figure>
+        <p>Complétez le programme pour que l'appui sur ce bouton <span class="control" id="boutonAfficherEx4">Afficher</span> permette de réafficher la figure</p>
+        <p>Bonus : on veut que ce bouton <span class="control" id="boutonDoubleEx4">Montrer/masquer</span> permette d’effacer la figure si elle est visible et de l’afficher si elle est cachée. Vous pourrez modifier le texte du bouton en fonction de l'action qu'il permettra d'accomplir : masquer ou afficher.</p>
+    </section>
+</article>
+ 
+ <article>
+   <h2>Traiter un ensemble d'éléments</h2>
+    <section class="cours">
+      <h3>Vous devrez savoir</h3>
+      <h4>Parcourir un ensemble</h4>
+     <p>Les selecteurs d'éléments tels que <em>querySelectorAll</em> permettent de récupérer plusieurs éléments de la page web.</p>
+     <p>Il n'est pas possible de traiter plusieurs éléments à la fois</p>
+     <p>Ex : si l'on considère ce programme</p>
+      <code>
+<pre>    // Sélection de tous les liens de menu
+    let liens = document.querySelectorAll("nav a") ;
+            
+    // Tentative de modification des classes
+    liens.classList.add('grand') ;</pre>
+        </code>
+    <p>On a un problème avec la fonction <em>add</em> car dans la variable <em>liens</em> contient un ensemble (un tableau) de liens et non un élément unique.</p>
+    <p>Pour appliquer la fonction <em>add</em> à chaque lien, il va falloir parcourir l'ensemble des liens.</p>
+    <p>Il existe plusieurs façon d'effectuer ce parcours, par exemple :</p>
+    <code>
+    <pre>
+        for(n=0; n&lt;liens.length; n++)
+        {
+            liens.item(n).classList.add('grand') ;
+            // ou liens[n].classList.add('grand') ;
+        }</pre>
+    </code>  
+     <p>La boucle <em>for</em> permet ici d'effectuer plusieurs fois le même traitement.</p>
+     <p>Ici, on va exécuter un tour de boucle pour chaque élément de l'ensemble <em>liens</em>.</p>
+      <p>A chaque tour de boucle, on applique l'ajout de classe au n<sup>ième</sup> élément de <em>liens</em>.</p>
+       </section>
+    <section class="exercices">
+        <h3>Exercice 5</h3>
+        <p>La classe 'penche' est définie dans la feuille de style liée à cette page.</p>
+        <p>Complétez le programme pour qu'il donne la classe 'penche' à toutes les images de trouvant dans la liste qui suit.</p>
+       <ul id="liste_tetes">
+           <li><img src="images/tete1.svg" alt=""></li>
+           <li><img src="images/tete2.svg" alt=""></li>
+           <li><img src="images/tete3.svg" alt=""></li>
+           <li><img src="images/tete4.svg" alt=""></li>
+       </ul>
+       <p>La classe 'centre' est définie dans la feuille de style liée à cette page.</p>
+        <p>Complétez le programme pour qu'il donne cette classe à tous les titres <em>h2</em> de la page.</p>
+    </section>
+</article>
+ 
+ 
+ <article>
+   <h2>Manipuler l'élément cible d'un événement</h2>
+    <section class="cours">
+      <h3>Vous devrez savoir</h3>
+      <h4>Désigner l'élément qui fait l'objet d'un événement</h4>
+      <p>Dans une fonction gestionnaire d'événement, l'élément qui a reçu lévénement est désigné par le mot-clé <em>this</em>.</p>
+      <p>Par exemple, on veut qu'un clic sur un logo permette de lui attribuer la classe "grand"</p>
+      <code>
+          <pre>
+          // Sélection de l'élément dont l'id est "logo"
+          let leLogo = document.querySelector('#logo') ;
+          // Mise en place d'un écouteur pour l'événement "clic"
+          leLogo.addEventListener("click", agrandir) ;
+          // Création de la fonction de gestion de l'événement
+          function agrandir(){
+              // Ajouter une classe à l'élément qui a reçu l'événement
+              this.classList.add("grand) ;
+          }
+          </pre>
+      </code>
+      
+      
+      
+     
+       </section>
+    <section class="exercices" id="ex6">
+        <h3>Exercice 6</h3>
+        <p>Faites en sorte qu'un clic sur cette image lui donne la classe "penche"</p>
+       <p><img src="images/dog.png" alt="" class="petite arrondi"></p>
+       <p>Complétez le programme pour qu'un clic sur l'une des images de l'exercice 5 lui enlève la classe "penche"</p>
+       <p>Toujours sur les images de l'exercice 5, améliorez le programme pour qu'un clic sur une image "droite" lui redonne la classe "penche".</p>
+       <p>Lorsque la souris entre dans une image de l'exercice 5, on veut que l'image se penche,  et qu'elle reprenne une position normale lorsque la souris sort de l'image.</p>
+    </section>
+</article>
+ 
+ 
+    <script src="js/comportements.js"></script>
+</body>
+
+</html>

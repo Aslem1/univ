@@ -1,0 +1,171 @@
+/* CSS Document */
+html{
+    --couleur-foncee : #203030 ;
+    --couleur-texte-fonce : #304040 ;
+    --couleur-claire : #EEE ;
+    font-size: 15px;
+}
+body {
+    background-color: var(--couleur-foncee) ;
+    color: var(--couleur-claire);
+     font-family: "Open Sans", sans-serif, Arial, serif;
+    padding: 1rem 1rem ;
+}
+img{
+    outline: none ;
+}
+h1, h2{
+    background-color:var(--couleur-claire) ;
+    color: var( --couleur-texte-fonce) ;
+     border-radius: 3px 3px 3px 3px;
+    text-align: center; 
+    box-shadow: 1px 1px 3px inset;
+    background: url(full-bloom.png);
+    background-attachment: fixed ;
+}
+
+h1 {
+    padding: 1rem 2rem;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    padding: 1rem 0.5rem;
+    margin: 3.5rem 0rem 1.5rem 0rem;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--couleur-claire)
+}
+
+h4 {
+    margin: 0.5rem;
+    padding: 0;
+}
+
+p {
+    margin: 0rem 0 1rem 0.5rem;
+}
+
+code {
+    font-family: monospace;
+    font-size: 120%;
+}
+
+ul,
+ol {
+    margin: 5px 20px 5px 20px;
+
+}
+
+.cours {
+    padding: 0.5rem;
+}
+
+.cours li {
+    margin-bottom: 0.5rem;
+}
+
+.monte,
+.descend {
+    font-size: 80%;
+}
+
+
+
+.relief {
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    margin-right: 10px;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.control {
+    white-space: nowrap;
+    padding: 0 0.5rem;
+    margin: 5px 5px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(250, 250, 250);
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+    border: solid 1px rgb(123, 123, 123);
+    -moz-box-shadow: 2px 2px 3px rgb(58, 58, 58);
+    -webkit-box-shadow: 2px 2px 3px rgb(58, 58, 58);
+    box-shadow: 2px 2px 3px rgb(58, 58, 58);
+    background-color: rgb(122, 122, 122);
+    transition: all 0.4s ease;
+}
+
+.control:hover {
+    background-color: rgb(89, 89, 89);
+}
+
+.aere {
+    padding: 1rem 2rem;
+}
+
+.inverse {
+    transform: rotateZ(180deg);
+}
+
+#dog {
+    width: 20%;
+    min-width: 10rem;
+}
+
+figure {
+    text-align: center;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.invisible {
+    /*    transform: scaleY(0) ;*/
+    opacity: 0;
+}
+
+ol#olEx2_5 {
+    min-height: 30px;
+    border: solid 1px rgb(197, 197, 197);
+    width: 100px;
+}
+
+#liste_tetes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+img {
+    transition: 0.5s all ease;
+}
+
+#liste_tetes img {
+    width: 10rem;
+}
+
+.penche {
+    transform: rotateZ(20deg);
+}
+
+.centre {
+    text-align: center;
+}
+
+.petite {
+    width: 7rem;
+}
+
+.arrondi {
+    border-radius: 50%;
+}
