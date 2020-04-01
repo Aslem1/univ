@@ -20,6 +20,9 @@ public class Ingredient {
 	
 	/**
 	 * Constructeur de la classe ingrédient.
+	 * Utiliser avec le mot clé new et this
+	 * Sert à créer des ingrédients
+	 * public nomDeLaClasse (paramètres...)
 	 * @param nom
 	 * @param calories
 	 * @param glucide
@@ -35,11 +38,12 @@ public class Ingredient {
 		this.proteine = proteine;
 	}
 	
-	/*/
+	/*
 	 * Liste des getter.
 	 */
 	public String getNom() {
-		return nom;
+		return this.nom;
+		//this pas obligatoire parce que pas ambigue sur le nom de la variable
 	}
 	
 	public long getCalories() {
@@ -59,7 +63,7 @@ public class Ingredient {
 	}
 	
 	
-	/*/
+	/*
 	 * Convertit ingrédient en chaine de caractères. 
 	 */
 	@Override
