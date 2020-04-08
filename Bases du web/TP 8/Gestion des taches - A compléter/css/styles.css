@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* tache.scss */
+.tache {
+  box-sizing: border-box;
+  z-index: 1;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 12rem;
+  height: calc(1.2 * 12rem);
+  padding: 0rem;
+  border-radius: 5px;
+  background: #FFF;
+  border: 1px solid #aaa;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+  .tache* {
+    box-sizing: border-box; }
+  .tache.invisible {
+    display: none; }
+  .tache.accomplie {
+    background-color: #aaa;
+    color: #FFF; }
+  .tache em {
+    font-weight: bold;
+    font-style: normal; }
+  .tache .header {
+    border-radius: 5px 5px 0 0;
+    background-color: #EEE; }
+  .tache .principal {
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    margin: 0; }
+  .tache .quoi {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+  .tache .qui {
+    flex: 0;
+    transition: all 0.6s ease;
+    text-align: right;
+    padding: 0.3rem 0.5rem; }
+  .tache.saisie {
+    padding: 1rem; }
+    .tache.saisie .quoi, .tache.saisie .qui {
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: normal;
+      padding: 2px;
+      text-align: left; }
+    .tache.saisie .principal {
+      align-items: flex-start; }
+    .tache.saisie label {
+      margin: 0rem 0 0rem 0; }
+    .tache.saisie input {
+      width: 100%;
+      margin-bottom: 0.5rem; }
+    .tache.saisie input.validation {
+      width: auto;
+      margin: 0rem;
+      border-radius: 5px;
+      background-color: rgba(1, 135, 134, 0.95);
+      color: #FFF;
+      padding: 4px 6px;
+      border-width: 0;
+      transition: all 0.3s ease; }
+      .tache.saisie input.validation:hover {
+        transform: scale(1.1); }
+  .tache .controles {
+    padding: 0;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem; }
+    .tache .controles .btn {
+      text-align: center;
+      transition: all 0.2s ease;
+      padding: 0.2rem 0.5rem;
+      background-color: rgba(1, 135, 134, 0.95);
+      color: #FFF;
+      border-radius: 1rem;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12); }
+      .tache .controles .btn:hover {
+        transform: scale(1.1);
+        background-color: #15908f;
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
+      .tache .controles .btn:active {
+        background-color: #7bc1c0;
+        color: #eee; }
+      .tache .controles .btn.suppression {
+        background-color: #822; }
+  .tache .controle {
+    cursor: pointer; }
+
+/******** Mon reset **********/
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+/**** Constantes ****************/
+/**** /Constantes ****************/
+/***** Mixins ********************/
+/***** /Mixins ********************/
+/**** Général *********************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  padding: 0 0rem;
+  background-color: #DDD; }
+
+/***** Classe génériques ********************************/
+.inverse {
+  background-color: #666;
+  color: darkgrey; }
+
+.lienSecondaire {
+  text-decoration: none;
+  color: inherit; }
+
+.lienSecondaire:hover {
+  background-color: #ddd; }
+
+/******** HEADER ****************/
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.25);
+  z-index: 10; }
+
+body > header h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; }
+
+body > header h2 {
+  font-size: 1.3rem; }
+
+/**** MENU **************************************/
+nav {
+  margin: 1rem 1rem 0 1rem;
+  padding-left: 10px; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px;
+  transition: 0.5s ease;
+  transition-property: background, color;
+  border-radius: 3px 3px 0 0; }
+
+nav a:hover {
+  background-color: darkgrey; }
+
+nav a.actuel {
+  background-color: #666;
+  color: #DDD; }
+
+/********* Positionnement du contenu principal ***/
+main {
+  width: 100%;
+  position: relative;
+  padding-bottom: 3rem;
+  padding-top: 10rem; }
+
+/*********** Articles **************************************************/
+main {
+  min-width: 800px;
+  line-height: 1.3rem; }
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+    min-width: 200px; } }
+
+main em {
+  font-style: italic; }
+
+article {
+  padding: 0 1rem;
+  text-align: justify;
+  margin-bottom: 1rem; }
+
+section {
+  margin-bottom: 2rem;
+  /*overflow: hidden ;*/ }
+
+article h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem  0 0.5rem 0; }
+
+article h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0rem; }
+
+article p {
+  padding: 0.5rem 0 1rem 0; }
+
+article ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding: 0rem; }
+
+article ul li {
+  padding-bottom: 0.5rem; }
+
+ol {
+  list-style-type: decimal;
+  margin-left: 3rem; }
+  ol li {
+    line-height: 2; }
+
+/******** taches ********************/
+.taches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 100%; }
+
+/****** zone d'info *********/
+.info {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 10;
+  padding: 0rem 1rem;
+  max-height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  padding: 0.5rem; }
+
+.info:empty {
+  border: none; }
+
+/************** Aside **********************/
+aside article {
+  padding: 0;
+  border: 1px darkgrey solid;
+  border-radius: 3px;
+  padding: 1em;
+  box-shadow: -3px 3px 5px #212121; }
+
+aside h2 {
+  margin-bottom: 1em;
+  font-weight: bold; }
+
+aside h3 {
+  border: none; }
+
+/**************** Footer ************************************/
+body > footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 5px 0 15px 25px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
+  z-index: 10; }
+
+body > footer p {
+  padding: 5px 0 0 0;
+  display: inline-block; }
+
+/**** responsive ********/
+@media screen and (min-width: 800px) {
+  body {
+    padding: 0 1rem; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,159 @@
+@import 'reset', 'tache' ;
+
+/******** Mon reset **********/
+*{box-sizing: border-box ;}
+html{font-size : 14px ;}
+/**** Constantes ****************/
+$couleurFondTransparent :  rgba(256,256,256,0.9) ;
+$couleurTexte : #666 ;
+$couleurDiscrete : darkgrey ;
+$couleurFondActionPositive : #3c948b ;
+$couleurTexteActionPositive : #F4F4F4 ;
+$couleurFondActionNegative :  #DF6C4F ;
+$couleurFondActionActive : #343434 ;
+$couleurShip : #E1E3E4;
+
+$couleurTexteShip : #E1E3E4 ;
+$couleurShip :#666;
+/**** /Constantes ****************/
+
+/***** Mixins ********************/
+@mixin fondTransparent{ 
+    background-color: $couleurFondTransparent ;
+}
+
+@mixin maTransition($propriete :all){ 
+    transition : $propriete 0.3s ease-in-out ;}
+
+/***** /Mixins ********************/
+
+/**** Général *********************/
+body{ font-family: 'Open Sans', sans-serif; color : $couleurTexte; padding :0 0rem ; background-color: #DDD ;}
+
+
+/***** Classe génériques ********************************/
+
+.inverse{background-color: $couleurTexte; color : $couleurDiscrete ;}
+
+.lienSecondaire{ text-decoration : none ; color :  inherit ;}
+.lienSecondaire:hover{  background-color: #ddd ;}
+
+
+
+
+/******** HEADER ****************/
+body>header{ position : fixed ;  top : 0 ; left : 0 ;width : 100% ; padding : 1.5rem 1.5rem 0 1.5rem ; @include fondTransparent;
+box-shadow: 0 -3px 20px rgba(0,0,0,0.25) ;
+    z-index : 10 ;
+}
+
+body>header h1{ font-size : 1.7rem ; font-weight: bold ; margin-bottom: 0.5rem}
+body>header h2{ font-size : 1.3rem ;
+}
+
+/**** MENU **************************************/
+nav {margin : 1rem 1rem 0 1rem ; padding-left : 10px ; }
+
+nav li{display: inline-block ;   }
+
+nav a{text-decoration: none ; color : inherit ; display : block ; padding : 10px ; transition : 0.5s ease  ; transition-property: background, color ;
+    border-radius: 3px 3px 0 0 ;}
+
+nav a:hover{background-color: darkgrey ; }
+
+nav a.actuel{background-color: #666; color : #DDD ;
+}
+
+/********* Positionnement du contenu principal ***/
+
+main{width : 100% ; position: relative ; 
+padding-bottom: 3rem;padding-top: 10rem;} 
+ 
+
+/*********** Articles **************************************************/
+main{ min-width : 800px ; line-height: 1.3rem ; }
+
+@media screen and (max-width:800px){ main{width : 100% ; min-width :200px ;}}
+
+main em{font-style: italic ;}
+
+article{ padding : 0 1rem ; text-align: justify ;
+margin-bottom: 1rem ;}
+
+section{ margin-bottom : 2rem ; /*overflow: hidden ;*/}
+
+article h2{font-weight: bold ; font-size: 1.3rem ; padding : 1rem  0 0.5rem 0 ;}
+
+article h3{font-weight: bold ; font-size: 1.3rem ; padding-bottom : 0.3rem ;
+    margin-bottom: 0rem ;
+
+}
+
+article p{padding : 0.5rem 0 1rem 0;}
+article ul{list-style-type:disc ; list-style-position: outside; padding : 0rem ;}
+article ul li{ padding-bottom: 0.5rem ;}
+
+ol{
+    list-style-type: decimal ;
+    margin-left: 3rem ;
+    
+    li{line-height: 2 ;}
+}
+
+/******** taches ********************/
+.taches{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 100%;
+}
+
+
+
+/****** zone d'info *********/
+.info{
+    position : fixed ; bottom : 1.5rem ; right : 1rem ; z-index : 10 ;padding : 0rem 1rem ;
+    max-height: 2em ;
+    overflow: hidden ;
+    white-space: nowrap;
+    border : 1px solid $couleurDiscrete ;
+    border-radius: 4px ;
+    padding : 0.5rem ;
+}
+.info:empty{border : none ;}
+
+/************** Aside **********************/
+aside{
+   
+    article{padding : 0 ; border: 1px $couleurDiscrete solid ;
+    border-radius: 3px ;
+    padding : 1em ;
+    box-shadow: -3px 3px 5px #212121;
+    }
+    h2{
+        margin-bottom: 1em ;
+        font-weight: bold ;   
+    }
+    h3{border : none ;}
+}
+
+/**************** Footer ************************************/
+body>footer{
+    position : fixed ; bottom: 0 ; left : 0 ;
+    padding : 5px 0 15px 25px;
+    width : 100% ;
+    @include fondTransparent;
+box-shadow: 0 3px 20px rgba(0,0,0,0.25) ;
+    z-index: 10 ;
+}
+
+body>footer p { padding : 5px 0 0 0; display : inline-block ;}
+
+
+/**** responsive ********/
+ @media screen and (min-width : 800px) {
+  body {
+    padding : 0 1rem ;
+  }
+}
