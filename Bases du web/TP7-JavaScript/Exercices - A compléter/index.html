@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript</title>
+    <link rel="styleSheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Exercices javascript - Suite</h1>
+    </header>
+    <article class="introduction">
+       <h2>Introduction</h2>
+        <p>Voici une série d'exercices d'initiation à JavaScript.</p>
+        <p>Chaque exercice doit traiter des éléments html compris dans cette page web.</p>
+        <p>Créez un dossier <em>js</em>. Dans celui-ci, créez un fichier javascript nommé <em>comportements.js</em> que vous lierez à cette page web.</p>
+        <p>Dans <em>comportements.js</em>, créez le squelette d'un programme javascript, avec l'appel à une fonction principale lorsque le navigateur a fini de recevoir la page web.</p>
+        <p>Vous structurerez le programme principal et y placerez des commentaires afin que l'on indentifie clairement les instructions de chaque exercice.</p>
+    </article>
+
+     
+ 
+  <article>
+   <h2>Manipulation du DOM</h2>
+    <section class="cours">
+      <h3>Vous devrez savoir</h3>
+      <h4>Supprimer un élément</h4>
+      <p>Pour supprimer un élément, on applique la méthode <em>removeChild</em> à son père.</p>
+      <p>Cette méthode reçoit en paramètre l'élément enfant à supprimer.</p>
+      <p>Par exemple, pour supprimer une balise <em>img</em> dans une balise <em>figure</em> :</p>
+      <code>
+          <pre>
+          // Sélection de l'élément à supprimer
+          let image = document.querySelector('#laOuJeVeux figure image') ;
+          // Sélection du père
+          let figure = image.parentNode ;
+          // Ou figure = = document.querySelector('#laOuJeVeux figure') ;
+          // Suppression
+          figure.removeChild(image) ;
+          </pre>
+      </code>
+       </section>
+    <section class="exercices" id="ex1">
+        <h3>Exercice 1</h3>
+       <p>Quand on clique sur <span class="control" id="boutonSupprimerEx1">Supprimer</span>, le premier élément de la liste qui suit doit être supprimé.</p>
+       <ul>
+           <li>Premier</li>
+           <li>Deuxième</li>
+           <li>Troisième</li>
+           <li>Dernier</li>
+       </ul>
+    </section>
+   
+      
+   
+</article> 
+   <section class="cours">
+   <h3>Vous devrez savoir</h3>
+   <h4>Créer et insérer un élément</h4>
+   <p>La méthode <em>document.createElement</em> permet de créer un nouvel élément à insérer dans la page web.</p>
+    <p>La méthode <em>appendChild</em> permet d'ajouter un élément à l'intérieur d'un autre, en dernière position.</p>
+     <p>Par exemple, pour créer une balise <em>img</em> et l'insérer à la fin d'un paragraphe :</p>
+      <code>
+          <pre>
+          // Création de l'élément
+          let nouvelleImage = document.createElement('image') ;
+          // Sélection du lieu d'insertion
+          let paragrapheDInsertion = document.querySelector('#laOuJeVeux p') ;
+          // Insertion
+          pere.appendChild(nouvelleImage) ;
+          </pre>
+      </code>
+   
+  
+    </section>
+    <section class="exercices" id="ex2">
+        <h3>Exercice 2</h3>
+       <p>Quand on clique sur <span class="control" id="boutonDeplacerEx2">Déplacer</span>, le premier élément de la liste qui suit doit passer en dernière position.</p>
+       <ul>
+           <li>Premier</li>
+           <li>Deuxième</li>
+           <li>Troisième</li>
+           <li>Dernier</li>
+       </ul>
+    </section>
+   
+    <h2>Gestion d'évènement et manipulation du DOM</h2>
+    <p>Vous devez savoir :</p>
+    <ul>
+        <li>Relier un élément, un évènement le concernant et un gestionnaire d'évènement chargé de traiter l'évènement en question. Par exemple <code>document.getElementById("m").addEventListener("click",traiter);</code> indique que lorsqu'on clique sur l'élément dont l'id est <em>m</em>, il faut exécuter la fonction <em>traiter</em>.</li>
+        <li>Dans un sous-programme de gestion d'un évènement, faire référence à l'élément qui a déclenché l'évènement. Par exemple <code>this.classList.add('penche') ;</code> permet de donner la classe "penche" à l'élement qui a reçu l'événement.</li>
+    </ul>
+     <section class="exercices" id="ex3">
+    <h3>Exercice 3 : masquage d'un élément</h3>
+    <p>La feuille de style de cette page définit la classe "invisible", qui permet demasquer un élément.</p>
+    <p>On veut obtenir le comportement suivant : lorsqu'on clique sur la liste, son premier élément devient invisible, il réapparaît lorsqu'on clique sur<span class="control reaf">tout réafficher</span>.</p>
+    <ul id="ingredients">
+        <li>Salade</li>
+        <li>Tomate</li>
+        <li>Oignons</li>
+        <li>Sauce blanche</li>
+    </ul>
+    </section>
+<section class="exercices" id="ex4">
+    <h3>Exercice 4 : masquage de l'élément récepteur de l'évènement</h3>
+    <p>Lorsqu'on clique sur un élément de la liste, masquer cet élément, réafficher tous les éléments lorsqu'on clique sur<span class="control reaf">tout réafficher</span>.</p>
+    <ul id="lesPrenoms">
+        <li>Jenny</li>
+        <li>Paul</li>
+        <li>Léa</li>
+        <li>Bob</li>
+    </ul>
+    </section>
+    <section class="exercices" id="ex5">
+    <h3>Exercice 5 : masquage d'un ensemble d'éléments</h3>
+    <p>Lorsqu'on clique sur un élément, masquer tous ceux qui appartiennent à la même classe, réafficher tous les éléments lorsqu'on clique sur<span class="control reaf" >tout réafficher</span>.</p>
+    <ul id="lettresEtNombres">
+        <li class="texte">A</li>
+        <li class="texte">B</li>
+        <li class="nombre">56</li>
+        <li class="nombre">1024</li>
+        <li class="texte">C</li>
+        <li class="nombre">243</li>
+    </ul>
+    </section>
+    
+<section class="exercices" id="ex6">
+    <h3>Exercice 6 : déplacement de l'élément ciblé, parmi des frères</h3>
+    <p>Cliquer sur un élément de la liste provoque la modification suivante : l'élément est déplacé en dernière position.</p>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+    </section>
+    <script src="js/comportements.js"></script>
+</body>
+
+</html>
