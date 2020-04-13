@@ -1,0 +1,172 @@
+/* tache.scss */
+@mixin masque()
+{
+    transform : scaleY(0) ;
+    opacity:0 ; 
+}
+
+@mixin affiche()
+{
+    transform : scaleY(1) ;
+    opacity:1 ; 
+}
+
+.tache{
+    box-sizing: border-box;
+    &* {
+        box-sizing: border-box;
+    }
+    $nombreOr: 1.2 ;//1.618;
+    $largeur: 12rem;
+    $hauteur: calc(#{$nombreOr} * #{$largeur});
+    $hauteur-max: calc($nombreOr * 20rem);
+    $couleur-fond: #FFF;
+    $couleur-texte-important: #444;
+    $couleur-texte-secondaire: #555555;
+    $couleur-texte-labeur: #2a2a2a;
+    $couleur-icone: #F89C1B;
+    $couleur-bordure: #aaa;
+    $couleur-bouton-repos: #EEE;
+    $couleur-fond-controles: #EEE ;
+    $couleur-bouton-positif-repos: rgba(1, 135, 134, 0.95); //#018786 ;
+    $couleur-texte-bouton-repos: #FFF;
+    $couleur-bouton-hover: #15908f;
+    $couleur-bouton-actif: #7bc1c0;
+    $couleur-texte-bouton-actif: #eee;
+    $couleur-bouton-discret-hover: #ccc;
+    $couleur-bouton-discret-actif: #aaa;
+    $couleur-bordure-bouton: #999;
+    $couleur-alert : #822 ;
+    z-index: 1;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+   // justify-content: space-between;
+    flex: 0 0 $largeur;
+    height: $hauteur;
+    padding: 0rem;
+    border-radius: 5px;
+    background:$couleur-fond;
+    border: 1px solid $couleur-bordure;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+    0 3px 1px -2px rgba(0, 0, 0, .2),
+    0 1px 5px 0 rgba(0, 0, 0, .12);
+    
+    &.invisible{
+        display: none ;
+    }
+    
+    &.accomplie{
+        background-color: $couleur-bordure ;
+        color : $couleur-fond ;
+    }
+    
+    em {
+        font-weight: bold;
+        font-style: normal;
+    }
+    .header {
+        border-radius : 5px 5px 0 0;    
+        background-color: $couleur-fond-controles ; 
+    }
+    .principal {
+        padding: 0.5rem;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s ease;
+        margin : 0 ;
+    }
+    
+    .quoi{
+        font-weight: bold ;
+        font-size : 1.5rem ;
+        line-height: 2rem ;
+    }
+     
+     .qui {
+        flex : 0 ;
+        transition: all 0.6s ease;
+         text-align: right;
+        padding : 0.3rem 0.5rem ;
+    }
+ 
+    
+    // Saisie d'une tache
+    &.saisie{
+        padding : 1rem ;
+        
+        .quoi, .qui{
+            font-size: 1rem ;
+            line-height: 1;
+            font-weight: normal ;
+            padding : 2px ;
+            text-align: left ;
+        }
+        .principal{
+            align-items: flex-start ;
+        }
+        label{
+            margin : 0rem 0 0rem 0;
+        }
+        input{width: 100% ; margin-bottom: 0.5rem}
+        
+        input.validation{
+            width : auto ;
+            margin : 0rem  ;
+            border-radius: 5px ;
+            background-color: $couleur-bouton-positif-repos;
+            color : $couleur-texte-bouton-repos ;
+            padding : 4px 6px ;
+            border-width: 0 ;
+            transition : all 0.3s ease ;
+            &:hover{ transform : scale(1.1) ;
+        }
+        
+        }
+    }// /saisie
+    
+
+     .controles {
+        padding: 0;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        
+        .btn {
+            text-align: center;
+            transition: all 0.2s ease;
+            padding: 0.2rem 0.5rem;
+            background-color: $couleur-bouton-positif-repos;
+            color: $couleur-texte-bouton-repos;
+            border-radius: 1rem;
+            box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+            &:hover {
+                transform: scale(1.1) ;
+                background-color: $couleur-bouton-hover;
+                box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+            }
+            &:active {
+                
+                background-color: $couleur-bouton-actif;
+                color: $couleur-texte-bouton-actif;
+            }
+            &.suppression{
+                background-color: $couleur-alert ;
+            }
+            
+        }
+     
+
+    }
+    .controle{
+         cursor: pointer ;
+    }
+    
+   
+      
+    }// tache

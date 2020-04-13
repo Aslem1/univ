@@ -1,0 +1,14 @@
+{
+    "sass.enabled": false,
+    "path": {
+        "scss/styles.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": true
+        }
+    }
+}

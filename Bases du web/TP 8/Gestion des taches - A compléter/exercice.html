@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TP JS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <header>
+        <h1>Bases du web</h1>
+        <h2>Programmation Javascript</h2>
+<nav>
+            <ul>
+                <li><a href="index.html">Consigne</a></li>
+                <li><a href="exercice.html"  class="actuel">Exercice</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="taches">
+            <div class="tache saisie">
+                <header class="titre">
+                    Nouvelle tâche
+                </header>
+                <form class="principal">
+                    <label for="quoi">Quoi ?</label>
+                    <input type="text" class="quoi">
+                    <label for="qui">Qui ?</label>
+                    <input type="text" class="qui">
+                    <input type="submit" class="controle validation btn" value="OK">           
+                </form>
+            </div>
+             <li class="tache invisible">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Quoi</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Qui</p>
+                    </footer>
+                </li>
+        </article>
+        <article>
+
+            <h3>Tâches à effectuer <span class="effectif"></span></h3>
+            <ul class="taches a_effectuer">
+                <li class="tache">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Réparer la moto</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Gwendoline</p>
+                    </footer>
+                </li>
+                <li class="tache">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Faire du sport</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Bob</p>
+                    </footer>
+                </li>
+                
+                <li class="tache">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Remplir le frigo</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Tanguy</p>
+                    </footer>
+                </li>
+
+
+            </ul>
+
+        </article>
+        
+       <article>
+
+            <h3>Tâches accomplies <span class="effectif"></span></h3>
+            <ul class="taches accomplies">
+                <li class="tache accomplie">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Réserver l'escape game</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Gwendoline</p>
+                    </footer>
+                </li>
+                <li class="tache accomplie">
+                    <header class="controles">
+                        <span class="controle validation btn">V</span>
+                        <span class="controle suppression btn">X</span>
+                    </header>
+                    <section class="principal">
+                        <p class="quoi">Trouver un stage</p>
+                    </section>
+                    <footer>
+                        <p class="qui">Sammy</p>
+                    </footer>
+                </li>
+                
+            </ul>
+
+        </article> 
+       
+    </main>
+    <section class="info"></section>
+    <footer>
+        <p>Mineure Informatique</p>
+    </footer>
+
+    <script src="js/comportements.js"></script>
+</body>
+
+</html>

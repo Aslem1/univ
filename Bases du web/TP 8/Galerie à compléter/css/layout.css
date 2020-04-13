@@ -1,0 +1,46 @@
+/*** layout.css ***/
+
+*, *::after, *::before{box-sizing: border-box ;}
+body{
+    padding : 0 2rem ;
+    position: relative ;
+    height : 100vh ;
+     max-width: 600px ;
+    margin : auto ;
+}
+
+#galerie figure{
+    margin-bottom: 1rem ;
+}
+
+#vignettes{
+    margin-bottom : 2rem ;
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+
+#vignettes img{
+    width : 4.5rem ;
+    margin-bottom: 0.5rem ;
+}
+
+#vignettes li:last-of-type img{ margin-right: 0 ;}
+
+#grandeImage {
+	width: 100% ;
+}
+
+#titreImage{min-height: 3.5rem ;
+    padding : 0.5rem 0 1rem  0;
+    font-size: 1.5rem ;
+}
+
+body>footer{
+    position: absolute;
+    width : 100% ;
+    bottom: 0 ;
+    left : 0 ;
+    padding: 0.5rem 1rem  ;
+    text-align: right ;
+}
