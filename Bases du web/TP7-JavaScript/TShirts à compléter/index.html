@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T-Shirts</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+       <link rel="stylesheet" href="css/materialize.min.css">
+
+       <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+   <body>
+    <header>
+        <h1>Programmation Javascript</h1>
+        <h2>T-Shirts</h2>
+<!--
+      <nav>
+        <ul> 
+            <li><a  href="index.html">Exercice 1</a></li>
+            <li><a  href="exercice2.html">Exercice 2</a></li>
+        </ul>
+    </nav>
+-->
+    </header>
+ <section id="corps"> <!-- Contient la partie variable de la page -->
+        <header><h2>Exercice 2</h2></header>
+        <main>
+            <article>
+      <form method="get" action="calculerCout.php" id="commandeTS">
+      
+          <label for="saisieNbTS">Nombre de t-shirts :</label>
+          <input type="number" name="nbTS"  
+                 id="saisieNbTS"
+                 class="validate"
+                  value="1"
+                  /><!-- Champ de saisie d'un nombre -->
+      	
+    </form> 
+   
+    <p id="zoneRetourClient"></p>
+                
+
+            </article> 
+            
+            <article>
+                  <h3>Travail à réaliser</h3>
+                  <p>On veut que le programme affiche un message de la forme "Vous avez choisi de commander 3 t-shirts, pour un montant de 45€" dans la zone dont l'id est <em>zoneRetourClient</em>.</p>
+                  <p>Cherchez quel événement est généré par la modification d'un champs de saisie.</p>
+                  <p>Mettez en place l'écouteur et le gestionnaire d'événement adéquats et testez leur fonctionnement, en faisant simplement afficher un message dans la console javascript du navigateur.</p>
+                  <p>Affichez ce message dans la page web.</p>
+                  <p>Les frais de port s'élèvent à 5€. Complétez l'affichage afin qu'ils apparaissent dans la page web.</p>
+                  <p>Lorsque le montant de la commande est supérieur à 50€, les frais de port sont offerts. Modifiez le programme pour tenir compte de cette contrainte.</p>
+                  <p>Complétez le programme pour qu'il soit capable de réagir correctement si l'internaute saisit une quantité négative.</p>
+                  <p>Faites en sorte que le programme gère correctement le singulier et le pluriel du mot <em>t-shirt</em>.</p>
+            </article>  
+          
+        </main>
+        <aside>
+
+        </aside>
+    </section>
+    
+     <footer>
+        <p>Mineure Informatique - Bases du web</p>   
+</footer>
+    
+    <script src="js/comportements.js"></script>
+</body>
+</html>

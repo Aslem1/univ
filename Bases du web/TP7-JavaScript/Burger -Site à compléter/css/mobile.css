@@ -1,0 +1,202 @@
+
+html{
+    font-family:helvetica, arial, sans-serif;
+    color: #fff;
+     background: url("../images/home-bg1.jpg") fixed no-repeat center;
+    background-size: auto 100%;   
+}
+
+
+header {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width : 100% ;
+    padding: 1rem 0.5rem;
+    z-index: 2;
+    background-color: rgba(23,63,95,1) ;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center ;
+}
+
+header h1 {
+    text-align: center ;
+    font-size: 2rem ;
+}
+
+header h1 a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/**** Burger **********/
+
+header p.burger{
+    line-height: 1;
+    font-size:3rem;
+    color: #DDD;
+}
+
+/* Ajout de l'icône "burger" */
+header p.burger::before {
+    content: '\2630';
+}
+
+
+/*** Menu à déployer **********/
+
+header nav{
+    z-index: 10 ; /* Pour placer le menu au-dessus des autres éléments */
+    position: absolute ; /* Pour créer un calque spécial pour le menu */
+    top : 0 ;  /* position en y*/
+    left : -100vw ; /* position en x */
+    height : 100vh ; /* vh = viewport height. 100vh = toute la hauteur de la fenêtre du navigateur */
+    width : 100vw ; /* vw = viewport width. 100vw = toute la largeur de la fenetre du navigateur */
+    font-size: 2.5rem ;
+    text-align: center ;
+     background: #2f2f2f;
+    padding : 1.2rem 2rem;
+}
+
+nav.ouvert{
+    left : 0 ; /* Ramener le décalage du menu à 0 */
+}
+
+/**** Icone de fermeture du menu */
+#fermeture_menu{
+    text-align: right ;
+    border : none ;
+    padding : 0 ;
+    padding-bottom: 2rem ;
+}
+
+/* Ajout de l'icône de fermeture */
+#fermeture_menu::before {
+    content: '\2716';
+}
+
+
+header nav li{
+    border-bottom: solid 1px #EEE ;
+    padding : 2.5rem 0 ;
+}
+
+header nav li:last-of-type{
+    border : none ;
+}
+
+header nav ul a {
+    display:block;
+    color:#EEE;
+    text-decoration:none;
+}
+
+
+header nav ul a:hover {
+    color:white;
+    text-decoration: underline ;
+}
+/*********** Main ****************/
+main {
+    padding : 2rem 0rem ;
+    margin-top: 4rem;
+   z-index : 1 ;
+}
+
+main h2{
+   background-color: rgba(23,63,95,1) ;
+    padding: 1rem 0 ;
+    text-align: center ;
+    position: sticky ;
+    top : 4rem ;
+    font-size: 2rem
+}
+
+main h3{
+    margin : 1rem 0rem ;
+    padding : 1rem 0 ;
+    background-color:rgba(32,99,155,1) ;
+    text-align: center ;
+    font-size: 1.5rem ;
+}
+
+
+main article {
+    margin : 1rem 0rem 2rem 0rem;
+    background-color: rgba(77,77,77, 0.8);
+    padding : 0rem 0 2rem 0;
+}
+
+main article p {
+    font-size : 1.2rem ;
+    line-height: 1.3;
+   text-align: justify ;
+}
+
+main article ul{
+    list-style-type: circle ;
+    list-style-position: outside ; 
+    padding : 1rem 0 0 2rem ;  
+}
+
+main article ul li{
+    line-height: 1.5;
+    font-size: 1.2rem ;
+}
+
+/*** Placement des images des articles *****/
+figure.col{
+    padding : 1rem ;
+    display: flex ;
+    align-items: center ;
+    flex-wrap: wrap ;
+}
+
+.col img{ 
+    width : 25% ;
+    padding-bottom: 1.5rem ;
+}
+
+.col figcaption{
+    flex : 0 0 100%;
+}
+
+/*** Bouton "En savoir +" *****/
+main article p a {
+    text-align: center ;
+    text-decoration: none ;
+    display: block;
+    background-color: rgba(60,174,163,095);
+    border-radius: 3px;
+    border: medium none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.7rem 0;
+    color: #FFF;
+    letter-spacing: 3px ;
+    width:12rem;
+    margin: 0rem  auto;
+    margin-top : 1.3rem ;
+}
+
+footer {
+    padding: 1rem;
+    background-color: rgba(23,63,95,0.8) ;  
+    color: #fff;
+}
+
+footer ul {
+    font-family: "icons";
+    font-size:1.5rem;
+    display: flex;
+    justify-content: space-around ;
+}
+
+
+footer p {
+    margin-top: 1rem;
+    text-align: center;
+    color : #BBB ;
+}
