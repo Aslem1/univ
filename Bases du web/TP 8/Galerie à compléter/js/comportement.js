@@ -15,6 +15,7 @@ function principale(){
         image.addEventListener('mouseenter', onImageMouseEnter);
     })
 
+    //E -- Initialisation 
     let event = new Event('mouseenter');
     images[0].dispatchEvent(event);
 
