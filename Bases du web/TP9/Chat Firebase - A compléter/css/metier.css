@@ -1,0 +1,75 @@
+/* Mises en formes aditionnelles liées au contenu */
+
+
+/******** Affichage des messages ******************/
+
+#message{ font-size: 0.7em ;}
+#messages li{padding-bottom: 0.5em ; display: -webkit-box; display: -ms-flexbox; display: flex ;}
+
+
+.auteur{white-space:nowrap; min-width : 5em;}
+.auteur:after{content: ' :';}
+/*.auteur:before{content: '- ';}*/
+
+.contenuMessage{
+    font-style: italic ;
+    padding-left: 0.5em ;
+}
+.contenuMessage:before, .contenuMessage:after{content : '"' ;}
+
+/********* Bouton suppression **************/
+#messages li{position : relative ;}
+.fa-trash{
+    position : absolute ;
+    top : 0 ; left : -1.5em ;
+    -webkit-transition : 0.1s all ease-out ;
+    transition : 0.1s all ease-out ;}
+.fa-trash:hover{color : #0097A7 ;}
+.fa-trash:active{color : #00838F ; font-size: 95%}
+
+/******** Formulaire de saisie des messages *****************/
+#formulaire{
+    -webkit-box-sizing: border-box ;
+    box-sizing: border-box ;
+    position: fixed;
+    bottom: 2.5em;
+    left: 0;
+    width : 100% ;
+    padding : 0.5em 1em ;
+    background-color: rgba(0,0,0,0.3) ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    -webkit-box-shadow: 0px -3px 3px 0px rgba(150, 150, 150, 0.5);
+    box-shadow: 0px -3px 3px 0px rgba(150, 150, 150, 0.5);
+}
+
+#formulaire input{ padding: 0.5em ;}
+
+#formulaire [name="pseudo"] {
+	
+    width : 20% ;
+}
+
+#formulaire [name="message"] {
+	
+    -webkit-box-flex : 1 ;
+    -ms-flex : 1 ;
+    flex : 1 ;
+}
+#formulaire input[type="submit"] {
+    background-color: #0097A7;
+    color: #fff;outline: none;
+    border: none;
+    font-family: inherit;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.5);
+    box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.5);
+}
+#formulaire input[type="submit"]:hover {
+    background-color: #00ACC1;
+}
+#formulaire input[type="submit"]:active {
+    background-color: #00838F;
+}

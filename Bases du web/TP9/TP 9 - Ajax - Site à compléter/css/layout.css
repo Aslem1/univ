@@ -1,0 +1,84 @@
+/*** layout.css ***/
+
+*, *::after, *::before{box-sizing: border-box ;}
+body{
+    padding : 0 2rem ;
+    position: relative ;
+    height : 100vh ;
+     max-width: 600px ;
+    margin : auto ;
+}
+
+article{
+    padding : 1rem ;
+}
+
+ h2{
+    font-size: 2rem ;
+    padding-bottom: 0.5rem ;
+}
+h3{
+    font-size: 1.5rem ;
+    padding-bottom: 0.5rem ;
+}
+
+
+article ul{
+    padding : 1rem ;
+    list-style-type: circle ;
+    list-style-position: inside ;
+}
+
+article li{line-height: 1.3}
+
+article p{padding : 0.5rem 1rem ;}
+
+.bouton{
+    display: inline-block;
+    margin : 0.5rem ;
+    padding : 0.3rem 1rem ;
+    border: solid #EEE 1px ;
+    border-radius : 1rem ;
+    cursor: pointer ;
+    transition : all 0.3s ease ;
+}
+.bouton:hover{
+    background: #555 ;
+    padding-right: 1.5rem ;
+}
+
+#galerie figure{
+    margin-bottom: 1rem ;
+}
+
+#vignettes{
+    margin-bottom : 2rem ;
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+
+#vignettes img{
+    width : 4.5rem ;
+    margin-bottom: 0.5rem ;
+}
+
+#vignettes li:last-of-type img{ margin-right: 0 ;}
+
+#grandeImage {
+	width: 100% ;
+}
+
+#titreImage{min-height: 3.5rem ;
+    padding : 0.5rem 0 1rem  0;
+    font-size: 1.5rem ;
+}
+
+body>footer{
+    position: absolute;
+    width : 100% ;
+    bottom: 0 ;
+    left : 0 ;
+    padding: 0.5rem 1rem  ;
+    text-align: right ;
+}

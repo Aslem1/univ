@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP Firebase</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediumSize.css">
+    <link rel="stylesheet" href="css/metier.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+
+    <script src="js/chat.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="actif" href="index.html">Accueil</a>
+        <a href="#">Page 2</a>
+        <a href="#">Page 3</a>
+        <a href="#">Page 4</a>
+
+    </nav>
+    <main>
+        <header>
+            <h1>Programmation Javascript</h1>
+        </header>
+        <article>
+            <h2 id="nomChat">Nom du Chat</h2>
+            <ul id="messages">
+                
+            </ul>
+        </article>
+        <form id="formulaire">
+            <input type="text" name="pseudo" placeholder="Votre pseudo" />
+            <input type="text" name="message" placeholder="Votre message" />
+            <input type="submit" value="Envoyer" id="envoiMessage" />
+        </form>
+
+    </main>
+    <footer>
+        <p>Mineure Web - L1</p>
+        <p><a href="www.univ-larochelle.fr">Université de La Rochelle</a></p>
+    </footer>
+
+</body>
+
+</html>

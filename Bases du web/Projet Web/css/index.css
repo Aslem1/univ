@@ -1,0 +1,117 @@
+/*index.css*/
+
+*{
+
+    /*Couleurs*/
+    --fond: #151515;
+    --jaune: #f9cd2e;
+    --blanc: #cccccc;
+
+    text-decoration: none;
+    /*font-family:'Special Elite', cursive;*/
+}
+
+/***body***/
+body {
+    font-size: 90px;
+    color: white;
+    top: 20px;
+}
+
+h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    color: var(--jaune);
+    font-size: 90px;
+    text-align: center;
+    margin:15px;
+}
+
+/***Nav***/
+nav {
+    font-size: 30px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+nav li{
+    display: inline;
+    margin: 5px;
+}
+
+nav a {
+    color: var(--blanc);
+}
+
+nav a:hover{
+    border-bottom:solid 2px var(--jaune);
+    color: var(--jaune);
+    transition: 0.9s ease;
+}
+
+
+/*img*/
+img {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*Media queries*/
+@media only screen and (min-width: 0em) and (max-width: 20em) {
+    img {
+        width: 200%;
+        left: -50%;
+    }
+}
+
+@media only screen and (min-width: 20em) and (max-width: 36em) {
+    img {
+        width: 160%;
+        left: -30%;
+    }
+}
+
+@media only screen and (min-width: 36em) and (max-width: 48em) {
+    img {
+        width: 120%;
+        left: -10%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    img {
+        width: 100%;
+        left: 0%;
+    }
+}
+
+/*Bouton*/
+.bouton {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:10px;
+	background:#151515;
+	font:bold 15px Arial;
+	color:#fff;
+    display: block;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    margin: auto;
+    margin-top:10%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 5rem;
+    vertical-align: middle;
+    line-height: 2em;
+}

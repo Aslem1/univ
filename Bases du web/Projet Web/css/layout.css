@@ -1,0 +1,171 @@
+/*** layout.css **/
+
+*{
+
+    /*Couleurs*/
+    --fond: #151515;
+    --jaune: #f9cd2e;
+    --blanc: #cccccc;
+
+    text-decoration: none;
+}
+
+/***Body**/
+body {
+    background-color: var(--fond);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h1 a{
+    color: var(--jaune);
+}
+
+/***Header***/
+header {
+    background-image: url(../Images/rock-2823831_960_720%20-%20Copie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+    display: block;
+
+}
+
+/***Nav***/
+nav {
+    font-size: 25px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+nav li{
+    margin: 5px;
+    display:inline-flex;
+}
+
+nav a {
+    color: var(--blanc);
+}
+
+nav a:hover{
+    border-bottom:solid 2px var(--jaune);
+    color: var(--jaune);
+    transition: 0.9s ease;
+}
+
+
+/*Media queries*/
+@media only screen and (min-width: 0em) and (max-width: 20em) {
+    header {
+        width: 200%;
+        left: -50%;
+    }
+
+    .musique {
+        width: 200%;
+        left: -50%;
+    }
+}
+
+@media only screen and (min-width: 20em) and (max-width: 36em) {
+    header {
+        width: 160%;
+        left: -30%;
+    }
+
+    .musique {
+        width: 160%;
+        left: -30%;
+    }
+}
+
+@media only screen and (min-width: 36em) and (max-width: 48em) {
+    header {
+        width: 120%;
+        left: -10%;
+    }
+
+    .musique {
+        width: 120%;
+        left: -10%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    header {
+        width: 100%;
+        left: 0%;
+    }
+
+    .musique {
+        width: 100%;
+        left: 0%;
+    }
+}
+
+
+
+article p {
+    font-size: 22px;
+    text-align: justify;
+    margin: 1rem;
+    color: var(--blanc);
+}
+
+ul {
+    font-size: 22px;
+    text-align: justify;
+    margin: 1rem;
+    color: var(--blanc);
+}
+
+
+/*Icones musiques*/
+.musiques {
+    padding: 0 1rem;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.musique{
+    flex: 1 0 15rem;
+}
+
+
+.citations{
+    font-family:'Special Elite', cursive;
+}
+
+/*Menu Burger
+header p.burger{
+line-height: 1;
+font-size:3rem;
+color: #DDD;
+}
+
+header p.burger::before {
+content: '\2630';
+}
+
+nav.ouvert{
+left : 0 ; /* Ramener le décalage du menu à 0 */
+/*
+}
+
+*/ /*
+#fermeture_menu{
+text-align: right ;
+border : none ;
+padding : 0 ;
+padding-bottom: 2rem ;
+}
+
+#fermeture_menu::before {
+content: '\2716';
+*/
+
+/***Footer***/
+
+

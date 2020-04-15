@@ -1,0 +1,24 @@
+/**** Look.css ********/
+body{
+    background-color: #222 ;
+    color : #DDD ;
+    font-family: "Roboto Condensed";
+}
+
+h1{
+    font-size: 3rem ;
+    padding: 2rem 0;
+    color : #EEE ;
+}
+
+#vignettes li{
+	cursor: pointer ;
+}
+
+#titreImage{
+    color : #AAA ;
+}
+
+footer{
+    color : #AAA ;
+}

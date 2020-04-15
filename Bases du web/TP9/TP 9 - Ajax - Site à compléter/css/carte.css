@@ -1,0 +1,10 @@
+#carte{height : 25rem}
+#carte h2{
+    font-size: 1rem ;
+    font-weight: bold ;
+}
+
+#carte p{
+    padding : 0 ;
+    margin : 0 ;
+}
