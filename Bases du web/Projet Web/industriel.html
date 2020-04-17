@@ -8,12 +8,13 @@
         <meta charset="UTF-8" />
         <link type="text/css" rel="stylesheet" href="css/reset.css"/>
         <link type="text/css" rel="stylesheet" href="css/layout.css"/>
+        <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+        <script type="text/javascript" src="js/comportement_mobile.js"></script>
         <title>Projet Web</title>
     </head>
     <body>
         <header>
             <h1><a href="#">Le Power Metal</a></h1>
-            <p id="ouverture_menu" class="burger"></p>
 
             <nav id="menu">
                 <ul>
@@ -21,8 +22,9 @@
                     <li><a href="death.html">Le Death Metal</a></li>
                     <li><a href="folk.html">Le Folk Metal</a></li>
                     <li><a href="power.html">Le Power Metal</a></li>
-                    <li><a href="industriel.html">Le Metal Industriel</a></li>
+                    <li><a href="industriel.html" class="active">Le Metal Industriel</a></li>
                     <li><a href="femmes.html">Les femmes dans le Metal</a></li>
+                    <li id="fermeture_menu"></li>
                 </ul>
             </nav>
         </header>
@@ -34,18 +36,24 @@
                 <li class="musique"><p>Rammstein est un groupe Allemand formé en 1994.</p>
                     <iframe src="https://open.spotify.com/embed/track/5awDvzxWfd53SSrsRZ8pXO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>C’est un incontournable du genre. Leurs textes sont majoritairement en Allemand ce qui en fait le germanophone le plus vendu dans le monde. Le groupe est connu pour ses shows pyrotechniques impressionnants.</p>
+                    <p><a href="https://fr.wikipedia.org/wiki/Rammstein" class="bouton">En savoir +</a>
                 </li>
 
                 <li class="musique"><p>Rob Zombie de son vrai nom Robert Bartleh Cummings est musicien, réalisateur, et scénariste.</p>
                     <iframe src="https://open.spotify.com/embed/track/6Nm8h73ycDG2saCnZV8poF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>Sa musique à l’image de ses films s’inspire du thème de l’horreur.  Ses shows spectaculaires n’ont également rien à envier à ses confrères Allemands Rammstein.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Rob_Zombie" class="bouton">En savoir +</a>
                 </li>
 
                 <li class="musique"><p>Ministry est un groupe originaire de Chicago. Il connait un grand succès auprès du public dans les années 1990.</p>
                     <iframe src="https://open.spotify.com/embed/track/0BX3ysoHJvxmLEhPMAfb2z" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>Le groupe est considéré comme le père fondateur du genre. Durant les années ils ont su garder leur identité si particulière.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Ministry" class="bouton">En savoir +</a>
                 </li>
             </ul>
         </article>
+        <footer>
+            <p id="ouverture_menu" class="burger"></p>
+        </footer>
     </body>
 </html>

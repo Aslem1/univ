@@ -1,0 +1,141 @@
+/*** mobile.css **/
+
+@media screen and (min-width: 0em) and (max-width: 40em) {
+    /*@media handheld {*/
+    *{
+
+        /*Couleurs*/
+        --fond: #151515;
+        --jaune: #f9cd2e;
+        --blanc: #cccccc;
+
+    }
+
+    /***Body**/
+    body {
+        margin-bottom: 4em;
+    }
+
+
+    header {
+        width : 100% ;
+        min-height: 15vh;
+        padding: 1rem 0.5rem;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: center ;
+        font-size: 2rem ;
+    }
+
+    header h1 a {
+        color:var(--jaune);
+        text-decoration: none;
+        font-size: 4vh;
+    }
+
+
+    nav a:hover{
+        border-bottom:none;
+    }
+
+    a.active {
+        border-bottom:none;
+    }
+
+    /**** Burger **********/
+
+    footer p.burger{
+        line-height: 1;
+        font-size:3rem;
+        color: var(--jaune);
+    }
+
+    /* Ajout de l'icône "burger" */
+    #ouverture_menu::before {
+        content: '\2630';
+        position: fixed;
+        bottom: 0;
+        right: 1em;
+        margin: 0.2em auto;
+    }
+
+
+    /*** Menu à déployer **********/
+
+    header nav{
+        z-index: 10 ; /* Pour placer le menu au-dessus des autres éléments */
+        position: fixed; /* Pour créer un calque spécial pour le menu */
+        top : 0 ;  /* position en y*/
+        left : -100vw ; /* position en x */
+        height : 100vh;
+        width : 100vw; 
+        font-size: 2.5rem;
+        text-align: center;
+        background: var(--fond);
+        /*Transition du menu*/
+        transition: left ease-in 0.5s;
+    }
+
+    nav.ouvert{
+        left : 0 ; /* Ramener le décalage du menu à 0 */
+    }
+
+    /**** Icone de fermeture du menu */
+    #fermeture_menu{
+        text-align: right ;
+        border : none ;
+        padding : 0 ;
+        padding-bottom: 2rem ;
+    }
+
+    /* Ajout de l'icône de fermeture */
+    #fermeture_menu::before {
+        content: '\2716';
+        font-size: 2.5rem;
+    }
+
+    header nav li{
+        border-bottom: solid 1px #EEE ;
+        padding : 2.5rem 0 ;
+        display: block;
+    }
+
+    header nav li:last-of-type{
+        border : none ;
+    }
+
+    header nav ul a {
+        display:block;
+        color:#EEE;
+        text-decoration:none;
+    }
+
+    footer {
+        color: var(--jaune);
+        background-color: var(--fond);
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 4em;
+    }
+
+    footer ul {
+        font-family: "icons";
+        font-size:1.5rem;
+        display: flex;
+        justify-content: space-around ;
+    }
+
+
+    footer p {
+        margin-top: 1rem;
+        text-align: center;
+        color : #BBB ;
+    }
+
+}

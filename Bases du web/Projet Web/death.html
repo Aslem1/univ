@@ -8,21 +8,23 @@
         <meta charset="UTF-8" />
         <link type="text/css" rel="stylesheet" href="css/reset.css"/>
         <link type="text/css" rel="stylesheet" href="css/layout.css"/>
+        <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+        <script type="text/javascript" src="js/comportement_mobile.js"></script>
         <title>Projet Web</title>
     </head>
     <body>
         <header>
             <h1><a href="#">Le Death Metal</a></h1>
-            <p id="ouverture_menu" class="burger"></p>
 
             <nav id="menu">
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="death.html">Le Death Metal</a></li>
+                    <li><a href="death.html" class="active">Le Death Metal</a></li>
                     <li><a href="folk.html">Le Folk Metal</a></li>
                     <li><a href="power.html">Le Power Metal</a></li>
                     <li><a href="industriel.html">Le Metal Industriel</a></li>
                     <li><a href="femmes.html">Les femmes dans le Metal</a></li>
+                    <li id="fermeture_menu"></li>
                 </ul>
             </nav>
         </header>
@@ -33,19 +35,25 @@
                 <li class="musique"><p>Le groupe children of bodom tout droit venu de Finlande.</p>
                     <iframe src="https://open.spotify.com/embed/track/2T2vudIHfVMA5ychWTU3KA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>Leur nom est une référence aux meurtres tragiques survenu au lac bodom. Leur mascotte est d’ailleurs une grande faucheuse. </p>
+                    <a href="https://fr.wikipedia.org/wiki/Children_of_Bodom" class="bouton">En savoir +</a>
                 </li>
 
                 <li class="musique"><p>Insomnium est un groupe de death metal finlandais formé en 1997.</p>
                     <iframe src="https://open.spotify.com/embed/track/64VLqyvVCCAXyqKCqs40z8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>Leur musique est inspirée du death metal scandinave et d’airs traditionnels finlandais. Leur musique est progressive, mélodique et brutale.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Insomnium" class="bouton">En savoir +</a>
                 </li>
 
                 <li class="musique"><p>Enfin Dagoba, un groupe originaire de Marseille qui s’est formé en 1997.</p>
                     <iframe src="https://open.spotify.com/embed/track/21iLHCYssMRkwKJABLsRC1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <p>Le nom du groupe est une référence à la planète Dagobah dans Star Wars épisode V.</p>
+                    <a href="https://fr.wikipedia.org/wiki/Dagoba" class="bouton">En savoir +</a>
                 </li>
 
             </ul>
         </article>
+        <footer>
+            <p id="ouverture_menu" class="burger"></p>
+        </footer>
     </body>
 </html>

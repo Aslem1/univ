@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+html{
+    font-family:helvetica, arial, sans-serif;
+    background-size: auto 100%;   
+}
+
 /***Body**/
 body {
     background-color: var(--fond);
@@ -17,6 +22,7 @@ body {
 
 h1 {
     font-size: 30px;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 h1 a{
@@ -55,6 +61,10 @@ nav a:hover{
     transition: 0.9s ease;
 }
 
+a.active {
+    border-bottom:solid 2px var(--jaune);
+    color: var(--jaune);
+}
 
 /*Media queries*/
 @media only screen and (min-width: 0em) and (max-width: 20em) {
@@ -138,34 +148,19 @@ ul {
     font-family:'Special Elite', cursive;
 }
 
-/*Menu Burger
-header p.burger{
-line-height: 1;
-font-size:3rem;
-color: #DDD;
+
+.bouton {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:10px;
+	background-color: var(--jaune);
+	font:bold 15px Arial;
+	color:var(--fond);
+    display: block;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    vertical-align: middle;
+    line-height: 2em;
 }
-
-header p.burger::before {
-content: '\2630';
-}
-
-nav.ouvert{
-left : 0 ; /* Ramener le décalage du menu à 0 */
-/*
-}
-
-*/ /*
-#fermeture_menu{
-text-align: right ;
-border : none ;
-padding : 0 ;
-padding-bottom: 2rem ;
-}
-
-#fermeture_menu::before {
-content: '\2716';
-*/
-
-/***Footer***/
-
-

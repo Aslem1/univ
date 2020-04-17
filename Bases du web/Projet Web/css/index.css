@@ -68,28 +68,28 @@ img {
 
 
 /*Media queries*/
-@media only screen and (min-width: 0em) and (max-width: 20em) {
+@media screen and (min-width: 0em) and (max-width: 20em) {
     img {
         width: 200%;
         left: -50%;
     }
 }
 
-@media only screen and (min-width: 20em) and (max-width: 36em) {
+@media screen and (min-width: 20em) and (max-width: 36em) {
     img {
         width: 160%;
         left: -30%;
     }
 }
 
-@media only screen and (min-width: 36em) and (max-width: 48em) {
+@media screen and (min-width: 36em) and (max-width: 48em) {
     img {
         width: 120%;
         left: -10%;
     }
 }
 
-@media only screen and (min-width: 48em) {
+@media screen and (min-width: 48em) {
     img {
         width: 100%;
         left: 0%;

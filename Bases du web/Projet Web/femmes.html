@@ -8,13 +8,13 @@
         <meta charset="UTF-8" />
         <link type="text/css" rel="stylesheet" href="css/reset.css"/>
         <link type="text/css" rel="stylesheet" href="css/layout.css"/>
+        <link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+        <script type="text/javascript" src="js/comportement_mobile.js"></script>
         <title>Projet Web</title>
     </head>
     <body>
         <header>
             <h1><a href="#">Le Power Metal</a></h1>
-            <p id="ouverture_menu" class="burger"></p>
-
             <nav id="menu">
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
@@ -22,14 +22,39 @@
                     <li><a href="folk.html">Le Folk Metal</a></li>
                     <li><a href="power.html">Le Power Metal</a></li>
                     <li><a href="industriel.html">Le Metal Industriel</a></li>
-                    <li><a href="femmes.html">Les femmes dans le Metal</a></li>
+                    <li><a href="femmes.html" class="active">Les femmes dans le Metal</a></li>
+                    <li id="fermeture_menu"></li>
                 </ul>
             </nav>
         </header>
         <article>
             <p class="citations">« Le metal, c’est un truc de mecs. »</p>
             <p class="citations">« T’es vachement féminine pour une fille qui fait du metal ! »</p>
+            <p>Même si le genre est majoritairement masculin on retrouve aussi des femmes. En 2015 on retrouvait au Hellfest un public féminin en hausse (19% en 2011 contre 23% en 2015). </p>
+            <p>Blabla sur scène ça donne quoi ?</p>
+            <ul>
+                <li class="musique"><p>Eluveitie blablabla</p>
+                    <iframe src="https://open.spotify.com/embed/track/75fAndU7jHOc4iEFR0HcVe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <p>blabla</p>
+                    <a href="https://fr.wikipedia.org/wiki/Eluveitie" class="bouton">En savoir +</a>
+                </li>
+
+                <li class="musique"><p>Crucidied barbara blablabla</p>
+                    <iframe src="https://open.spotify.com/embed/track/4g5txJnGsvbWihcsM7iaev" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <p>blabla</p>
+                    <a href="https://fr.wikipedia.org/wiki/Crucified_Barbara" class="bouton">En savoir +</a>
+                </li>
+                
+                <li class="musique"><p>Arch Enemy blablabla</p>
+                    <iframe src="https://open.spotify.com/embed/track/45eGeRq5VjhY6RTN1TOefI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <p>blabla</p>
+                    <a href="https://fr.wikipedia.org/wiki/Arch_Enemy" class="bouton">En savoir +</a>
+                </li>
+            </ul>
         </article>
+        <footer>
+            <p id="ouverture_menu" class="burger"></p>
+        </footer>
     </body>
 
 </html>
