@@ -1,37 +1,72 @@
 /*** layout.css **/
+/* CSS général */
 
+/* Général */
 *{
-
     /*Couleurs*/
     --fond: #151515;
+    --gris: #212121;
     --jaune: #f9cd2e;
+    --jaune_fonce: #755d04;
     --blanc: #cccccc;
+    --blanc_clair: #eee;
 
     text-decoration: none;
 }
 
 html{
-    font-family:helvetica, arial, sans-serif;
+    font-family: helvetica, arial, sans-serif;
     background-size: auto 100%;   
 }
 
-/***Body**/
-body {
-    background-color: var(--fond);
-}
-
-h1 {
-    font-size: 30px;
-    font-family: 'Black Han Sans', sans-serif;
-}
-
 h1 a{
+    font-size: 40px;
+    font-family: 'Black Han Sans', sans-serif;
     color: var(--jaune);
 }
 
-/***Header***/
+h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+    padding: 1.5rem 0.5rem;
+    line-height: 1.3;
+    background-color: var(--jaune_fonce);
+    color: var(--blanc_clair);
+}
+
+p {
+    text-align: justify;
+}
+
+.bouton {
+    border:none;
+    padding:6px 0 6px 0;
+    border-radius:10px;
+    background-color: var(--jaune);
+    font:bold 15px Arial;
+    color:var(--fond);
+    display: block;
+    width: 10em;
+    height: 2em;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+ul {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0.5rem;
+    color: var(--blanc);
+}
+
+/* Header */
 header {
-    background-image: url(../Images/rock-2823831_960_720%20-%20Copie.jpg);
+    background-image: url(../Images/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 25vh;
@@ -39,20 +74,21 @@ header {
 
 }
 
-/***Nav***/
+/* Menu */
 nav {
-    font-size: 25px;
     margin-right: 15px;
     text-align: center;
 }
 
 nav li{
-    margin: 5px;
+    margin: 1px;
     display:inline-flex;
 }
 
 nav a {
     color: var(--blanc);
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 nav a:hover{
@@ -64,6 +100,62 @@ nav a:hover{
 a.active {
     border-bottom:solid 2px var(--jaune);
     color: var(--jaune);
+}
+
+
+/***Body**/
+body {
+    background-color: var(--fond);
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.articles { /* Contenant les articles de la page principale */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section > article {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+article {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.3;
+    background-color: var(--gris);
+}
+
+.articles article {
+    min-height: 20rem;
+    flex: 1 0 15rem;
+}
+
+
+article p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 1rem;
+    color: var(--blanc);
+}
+
+/*Icones musiques*/
+.musiques {
+    padding: 0 1rem;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.musique{
+    flex: 1 0 15rem;
 }
 
 /*Media queries*/
@@ -113,54 +205,4 @@ a.active {
         width: 100%;
         left: 0%;
     }
-}
-
-
-
-article p {
-    font-size: 22px;
-    text-align: justify;
-    margin: 1rem;
-    color: var(--blanc);
-}
-
-ul {
-    font-size: 22px;
-    text-align: justify;
-    margin: 1rem;
-    color: var(--blanc);
-}
-
-
-/*Icones musiques*/
-.musiques {
-    padding: 0 1rem;
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.musique{
-    flex: 1 0 15rem;
-}
-
-
-.citations{
-    font-family:'Special Elite', cursive;
-}
-
-
-.bouton {
-	border:none;
-	padding:6px 0 6px 0;
-	border-radius:10px;
-	background-color: var(--jaune);
-	font:bold 15px Arial;
-	color:var(--fond);
-    display: block;
-    width: 6em;
-    height: 2em;
-    text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
-    vertical-align: middle;
-    line-height: 2em;
 }

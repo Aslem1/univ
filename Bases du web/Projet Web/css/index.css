@@ -18,12 +18,11 @@ body {
     top: 20px;
 }
 
-h1 {
+h1 a {
     font-family: 'Black Han Sans', sans-serif;
     color: var(--jaune);
     font-size: 90px;
-    text-align: center;
-    margin:15px;
+    margin: 15px;
 }
 
 /***Nav***/
