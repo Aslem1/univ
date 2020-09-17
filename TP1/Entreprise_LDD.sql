@@ -15,7 +15,6 @@ create table societe (
 	ville varchar(50) not null,
 	codepostal integer not null,
 	PRIMARY KEY(code_societe),
-	FOREIGN KEY (no_contrat) REFERENCES no_type (no_contrat, no_type)
 );
 
 create table contrat (
@@ -25,7 +24,7 @@ create table contrat (
 	montant real not null,
 	societe integer not null,
 	PRIMARY KEY(no_contrat),
-	FOREIGN KEY (societe) REFERENCES societe (code_societe)
+	FOREIGN KEY (materiel) REFERENCES societe (code_societe)
 );
 
 create table materiel (
