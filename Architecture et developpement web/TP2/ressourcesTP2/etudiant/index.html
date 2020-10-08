@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulaire</title>
+    </head>
+
+    <body>
+        <form id="formulaire" method="get" action="traitement.php">
+            <fieldset >
+                <legend>Recherche d'emploi : Fiche</legend>
+                <p>
+                    <label for="nom" >Nom*</label>
+                    <input type="text" id="nom" name="nom"   />
+                </p>
+                <p>
+                    <label for="prenom">prenom*</label>
+                    <input type="text" id="prenom" name="prenom"  />
+                </p>
+                <p>
+                    <label for="age" >Age*</label>
+                    <input type="text" id="age" name="age"  />
+                </p>
+
+
+
+            </fieldset>
+            <p class="submit">
+                <input type="submit" id="btnSubmit" value="Continuer" />
+                <input type="reset" id="btnReset" value="Annuler" />      
+            </p>
+            <p class="note">* information obligatoire</p>
+        </form> 
+
+
+    </body>
+</html>
