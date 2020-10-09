@@ -1,0 +1,109 @@
+/* Question 1 */
+ nompers  | nbre_films_vus
+----------+----------------
+ Amirault |             12
+ Andreu   |              5
+ Arnault  |              6
+ Barbot   |              7
+ Barre    |              4
+ Bernard  |              7
+ Besse    |              6
+ Besson   |              8
+ Bonneau  |              3
+ Bouyer   |              6
+ Breart   |              7
+ Brisson  |              6
+ Caillaud |              6
+ Cerdan   |             12
+ Cheam    |              4
+ Claveau  |              5
+ Cornuaud |              6
+ Deferre  |              3
+ Dejollat |              6
+ Drouet   |              3
+ Dupont   |              1
+ Gaillard |              7
+ Got      |              8
+ Hay      |              6
+ Jegou    |              8
+ Lauer    |              3
+ Luneau   |              6
+ Martin   |              3
+ Matthieu |              2
+ Maurat   |              7
+ Muron    |              4
+ Nguyen   |              4
+ Paire    |              8
+ Petiton  |              6
+ Ravard   |              2
+ Ravaud   |              3
+ Yaly     |              7
+(37 lignes)
+
+/* Question 2 */
+ nopers | nompers
+--------+---------
+ P12    | Jegou
+ P9     | Arnault
+ P7     | Claveau
+(3 lignes)
+
+/* Question 3 */
+ nofilm | titre
+--------+-------
+ F06    | film6
+ F02    | film2
+ F04    | film4
+ F01    | film1
+(4 lignes)
+
+/* Question 4 */
+ titre  | nbre_spectateurs
+--------+------------------
+ film12 |                2
+ film11 |                4
+(2 lignes)
+
+
+/* Question 5 */
+ nbre_films_de_matthieu_aimes
+------------------------------
+                           19
+(1 ligne)
+
+/* Question 6 */
+ nbre
+------
+   5
+(1 ligne)
+
+/* Question 7 */
+ nopers | nompers
+--------+---------
+ P9     | Arnault
+ P12    | Jegou
+ P18    | Paire
+ P7     | Claveau
+(4 lignes)
+
+/* Question 8 */
+ nopers | nompers
+--------+----------
+ P36    | Matthieu
+ P37    | Ravard
+ P27    | Luneau
+ P3     | Ravaud
+(4 lignes)
+
+/* Question 9 */
+ nofilm
+--------
+ F11
+ F12
+(2 lignes)
+
+/* Question 10 */
+ nopers | nompers
+--------+---------
+ P2     | Dupont
+(1 ligne)
