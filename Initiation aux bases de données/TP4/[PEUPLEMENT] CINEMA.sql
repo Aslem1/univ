@@ -593,6 +593,3 @@ insert into AIMER values ( 'F05','P8');
 
 insert into AIMER values ( 'F05','P10');
 
-
-
-
