@@ -1,0 +1,80 @@
+-- Question 03
+
+"Burton"	"Cliff"	"1962-02-10"	"1986-10-27"	"B-R"	"Metallica"
+"Butler"	"Geezer"	"1949-07-17"		"B-R"	"Black Sabbath"
+"Cook"	"Johnny"	"1956-01-13"		"G-R"	"Ozzy Osbourne"
+"Cox"	"Billy"	"1941-10-18"		"B-R"	"The Jimi Hendrix Experience"
+"Daisley"	"Robert John"	"1950-02-13"		"B-R"	"Ozzy Osbourne"
+"Densmore"	"John"	"1944-12-01"		"D-B"	"The Doors"
+"Forsyth"	"Drew"	"1951-11-21"		"D-R"	"Quiet Riot"
+"Garni"	"Kelly"	"1957-05-14"		"B-R"	"Quiet Riot"
+"Hammett"	"Kirk"	"1962-11-18"		"G-R"	"Metallica"
+"Hendrix"	"Jimi"	"1942-11-27"	"1970-09-18"	"G-R"	"Jimi Hendrix"
+"Hendrix"	"Jimi"	"1942-11-27"	"1970-09-18"	"G-R"	"The Jimi Hendrix Experience"
+"Hetfield"	"James"	"1963-08-03"		"V-R"	"Metallica"
+"Iommi"	"Tony"	"1948-02-19"		"G-R"	"Black Sabbath"
+"Kerslake"	"Lee"	"1967-04-16"		"D-R"	"Ozzy Osbourne"
+"Krieger"	"Robby"	"1944-01-08"		"G-B"	"The Doors"
+"Manzarek"	"Ray"	"1939-02-12"		"P-B"	"Jimi Hendrix"
+"Manzarek"	"Ray"	"1939-02-12"		"P-B"	"The Doors"
+"McGorvey"	"Ron"	"1962-11-02"		"B-R"	"Metallica"
+"Mitchell"	"Mitch"	"1947-07-06"	"2008-11-12"	"D-R"	"The Jimi Hendrix Experience"
+"Morrison"	"Jim"	"1943-12-08"	"1971-07-03"	"V-B"	"The Doors"
+"Mustaine"	"Dave"	"1961-09-13"		"G-R"	"Megadeth"
+"Mustaine"	"Dave"	"1961-09-13"		"G-R"	"Metallica"
+"Osbourne"	"John Michael"	"1948-12-03"		"V-R"	"Ozzy Osbourne"
+"Redding"	"Noel"	"1945-12-25"	"2003-05-11"	"B-R"	"The Jimi Hendrix Experience"
+"Rhoads"	"Randall William"	"1956-12-06"	"1982-03-19"	"G-R"	"Ozzy Osbourne"
+"Rhoads"	"Randall William"	"1956-12-06"	"1982-03-19"	"G-R"	"Quiet Riot"
+"Ulrich"	"Lars"	"1963-12-26"		"D-R"	"Metallica"
+
+-- Question 04
+
+"Epic Records"	"*"	4	12500000
+"Elektra"	"RoBl"	1	2000000
+"Sanctuary Records"	"ReRoMe"	1	500000
+
+-- Question 05
+
+"Jimi Hendrix"	54.7282683093771390
+"Megadeth"	59.0636550308008214
+"Metallica"	52.2569016655258955
+"Ozzy Osbourne"	57.1947980835044490
+"Quiet Riot"	52.5183664156970112
+"The Jimi Hendrix Experience"	56.3764544832306639
+
+-- Question 06
+
+"Butler"	"Geezer"	1	25000
+"Cox"	"Billy"	2	580000
+"Daisley"	"Robert John"	1	35000
+"Densmore"	"John"	1	100000
+"Hendrix"	"Jimi"	3	590000
+"Iommi"	"Tony"	1	25000
+"Kerslake"	"Lee"	1	35000
+"Krieger"	"Robby"	1	100000
+"Manzarek"	"Ray"	2	110000
+"Mitchell"	"Mitch"	2	580000
+"Morrison"	"Jim"	1	100000
+"Osbourne"	"John Michael"	1	35000
+"Rhoads"	"Randall William"	1	35000
+
+-- Question 07
+
+"Black Sabbath"	"1968-01-01"	1	2
+"Jimi Hendrix"	"1963-01-01"	1	2
+"Ozzy Osbourne"	"1968-01-01"	2	5
+"Quiet Riot"	"1975-01-01"	1	3
+"The Doors"	"1965-01-01"	2	4
+"The Jimi Hendrix Experience"	"1966-01-01"	2	4
+
+-- Question 08
+
+5	"BluesNRock Los Angeles"	"USA"	100000	11	5
+6	"Rock With Jimi"	"FR"	10000	12	6
+
+-- Question 09
+
+1	"Epic Records"	"*"
+
+
