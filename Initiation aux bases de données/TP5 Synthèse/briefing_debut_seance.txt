@@ -1,0 +1,12 @@
+- LDD
+-LMD : ne pas changer les données
+-LID: resultats 
+	-> left uniquement
+	-> IN EXISTS, division, agrégats
+	
+Moodle
+	- Pas RIGHT
+	- Pas EXCEPT
+	- Pas de () de GROUP BY
+	- /!\ ALIAS casse 
+	- Malus de 10%
