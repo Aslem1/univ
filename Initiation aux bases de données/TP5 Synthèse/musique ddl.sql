@@ -4,6 +4,7 @@ set datestyle to 'european';
 -------------------------------------------
 /* Inserez ICI les creations de domaines */
 -------------------------------------------
+drop domain if exists D_TYPE_PRODUCTION, D_INSTRUMENT;
 /* 5. Créez une contrainte de domaine, appelée D_TYPE_PRODUCTION, 
 sur l’attribut “type_production” de la table “labels”. */
 CREATE DOMAIN 
@@ -23,15 +24,15 @@ CREATE DOMAIN
 
 -- TABLE labels
 create table labels (
-	id_label serial	primary key,
+	id_label integer primary key,
 	nom char(50) not null,
 	type_production D_TYPE_PRODUCTION default 'NC'
 	);
 
 -- TABLE groupes
 create table groupes (
-	id_groupe serial primary key,
-	nom char(60) not null,
+	id_groupe integer primary key,
+	nom char(50) not null unique,
 	date_creation date not null,
 	date_fin date,
 	label integer references labels(id_label) on delete cascade on update cascade
@@ -54,7 +55,7 @@ create table musiciens (
 create table formations (
 	id_formation serial primary key,
 	date_creation date not null,
-	date_fin date not null,
+	date_fin date,
 	groupe char(50) references groupes(nom)
 );
 
@@ -67,8 +68,8 @@ create table membres (
 	id_membre serial primary key,
 	musicien char(50) not null,
 	formation char(50) not null,
-	date_debut_participation date references formations(date_creation),
-	date_fin_participation date references formations(date_fin)
+	date_debut_participation date,
+	date_fin_participation date
 );
 
 -- TABLE contrats
