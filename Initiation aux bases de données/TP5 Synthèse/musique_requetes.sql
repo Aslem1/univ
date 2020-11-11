@@ -1,7 +1,8 @@
 /* 3. La date de création d'un groupe doit être inférieure à sa date de fin */
 SELECT *
 FROM
-	groupes g
+	musiciens m
+	
 WHERE 
 	g.date_creation > g.date_fin;
 
