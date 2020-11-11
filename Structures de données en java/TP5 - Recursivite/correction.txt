@@ -1,0 +1,34 @@
+- Pour la méthode trouver() soit getPremier() = ValeurCherchée alors VRAI
+- Sinon il faut rechercher dans le reste de la liste
+- Bien sûr FAUX si c'est une listeVide
+
+-Pensez à tester vos méthodes ainsi :
+L = L.copie(); et pas L.copie(); ce sont des fonctions
+
+-COORECTION TROUVER : public boolean trouver( String val )
+{
+if (val.equals( this.getPremier() ) )
+return true;
+else
+return this.getReste().trouver(val);
+}
+
+- CORRECTION de CONCAT public Liste concat( Liste L1 )
+{
+return new ListeCons( getPremier(), getReste().concat( L1) );
+}
+
+- Pour ListeVide public Liste concat( Liste L1 )
+{
+return L1.copie();
+}
+
+-Pour INVERSER une liste il faut utiliser placerFin()
+
+-Pour INVERSER pas besoin de constructeur car placerFin() reconstruit la liste
+
+- On peut imaginer que inserer("A") dans une listevide retourne une liste { A }
+
+- Je vous donne intersection () qui utilise la méthode trouver pour savoir si un élément est présent dans une liste.
+
+-la solution on peut si rang =1 return new ListeCons( s, this.copie() ); pour ne pas oublier l'element sur lequel on est.
