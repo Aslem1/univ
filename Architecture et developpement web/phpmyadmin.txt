@@ -1,0 +1,3 @@
+mdp phpmyadmin
+indentifiant: root
+mdp: 
