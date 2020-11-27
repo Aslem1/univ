@@ -193,9 +193,6 @@ public class Fenetre extends JFrame implements ActionListener {
 		
         if (arg.equals("Exemple")) {
             // construire ici un arbre en l'accrochant à this.arb
-            this.racine = null;
-            this.Ag = new ArbreCons(arg);
-            this.Ad = new ArbreCons(arg);
    	}
    
 //bouton recherche
