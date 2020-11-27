@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55fcd418-5c75-4331-aa3f-23fdd2681286" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/.ipynb_checkpoints/[ENONCE] 2020-2021 Resolutions-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/[ENONCE] 2020-2021 Resolutions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/graph_newton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/.ipynb_checkpoints/[ENONCE] 2020-2021 Interpolation-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/Feuille.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/[ENONCE] 2020-2021 Interpolation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/[ENONCE] 2020-2021 Interpolation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/arbre.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/brisee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/interp1d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/TDTP9.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/TDTP9.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Arbre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Arbre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreCons.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreCons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreVide.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreVide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Fenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/TestTournoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/TestTournoi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Arbre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Arbre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Fenetre.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1kmrv2BuA0UsvxQ6ieX48ejuU5N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TP6" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55fcd418-5c75-4331-aa3f-23fdd2681286" name="Default Changelist" comment="" />
+      <created>1606316834751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606316834751</updated>
+      <workItem from="1606316835912" duration="8454000" />
+      <workItem from="1606383218087" duration="11263000" />
+      <workItem from="1606490804127" duration="2025000" />
+      <workItem from="1606506631656" duration="785000" />
+      <workItem from="1606507711886" duration="1967000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="178" key="#CLI_Interpreters" timestamp="1606319548138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="178" key="#CLI_Interpreters/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606319548138" />
+    <state x="311" y="166" key="#PHP" timestamp="1606319330688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="311" y="166" key="#PHP/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606319330688" />
+    <state x="409" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1606385777392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="409" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606385777392" />
+    <state x="0" y="152" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606321702128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="152" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606321702128" />
+    <state x="384" y="278" key="FileChooserDialogImpl" timestamp="1606508441054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="384" y="278" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606508441054" />
+    <state x="577" y="243" key="NewPhpClassDialog" timestamp="1606316939293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606316939293" />
+    <state x="438" y="447" key="NewPhpFileDialog" timestamp="1606492036505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="438" y="447" key="NewPhpFileDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606492036505" />
+    <state x="105" y="168" key="SettingsEditor" timestamp="1606319562517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="105" y="168" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606319562517" />
+  </component>
+</project>
