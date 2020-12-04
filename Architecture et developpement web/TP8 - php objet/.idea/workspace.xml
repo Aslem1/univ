@@ -19,28 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55fcd418-5c75-4331-aa3f-23fdd2681286" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/.ipynb_checkpoints/[ENONCE] 2020-2021 Resolutions-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/[ENONCE] 2020-2021 Resolutions.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP1/graph_newton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/.ipynb_checkpoints/[ENONCE] 2020-2021 Interpolation-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/Feuille.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/[ENONCE] 2020-2021 Interpolation.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/[ENONCE] 2020-2021 Interpolation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/arbre.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/brisee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Methodes numeriques/TP2/interp1d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/TDTP9.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/TDTP9.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Arbre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Arbre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreCons.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreCons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreVide.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/ArbreVide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/Fenetre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/TestTournoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/build/classes/TestTournoi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Arbre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Arbre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/src/Fenetre.java" afterDir="false" />
-    </list>
+    <list default="true" id="55fcd418-5c75-4331-aa3f-23fdd2681286" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TP6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../projet-tea-s3-archi-web" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -80,6 +59,7 @@
       <workItem from="1606490804127" duration="2025000" />
       <workItem from="1606506631656" duration="785000" />
       <workItem from="1606507711886" duration="1967000" />
+      <workItem from="1606659300867" duration="28000" />
     </task>
     <servers />
   </component>
@@ -115,10 +95,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="152" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606321702128" />
-    <state x="384" y="278" key="FileChooserDialogImpl" timestamp="1606508441054">
+    <state x="384" y="278" key="FileChooserDialogImpl" timestamp="1606659333581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="384" y="278" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606508441054" />
+    <state x="384" y="278" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1606659333581" />
     <state x="577" y="243" key="NewPhpClassDialog" timestamp="1606316939293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
