@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7188a874-7691-4ef4-84fa-7c224a65b0c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Architecture et developpement web/TP8 - php objet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture et developpement web/TP8 - php objet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/.codacy.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/CPPLINT.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/CppCheckSuppressions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindCcLint.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindClangFormat.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindCoverage.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindCppCheck.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindFlawFinder.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindHtmlCoverage.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindSphinx.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/cmake/FindValgrind.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/api.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/ga.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/docs/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/.indent.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/.makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/announcement.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/bootstrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/doc/doxygen.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/docker/README.mkd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/docker/alpine-3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/docker/fedora-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/docker/ubuntu-14.04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/docker/ubuntu-16.04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/anchors.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/array.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/global-tag.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/json.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/mapping.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/numbers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/strings.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/tags.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/examples/yaml-version.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/include/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/include/yaml.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/regression-inputs/clusterfuzz-testcase-minimized-5607885063061504.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/api.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/dumper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/emitter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/loader.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/reader.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/scanner.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/writer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/src/yaml_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/tests/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/tests/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/yaml-0.1.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/libyaml-master/yamlConfig.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/include/yaml.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/ga.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/ga.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/ga.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/ga.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/ga/gaConfig.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/sudoku/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/src/sudoku/sudoku.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-copy-clone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-create-destroy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-individual.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-init-finish.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-population-next.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projet/test/ga/test-to-string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Structures de données en java/TDTP9 - Tournoi/Tournoi_etud/build/classes/Arbre.rs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1l6RK6NdTc8OySSn6FdXXHOM6W7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7188a874-7691-4ef4-84fa-7c224a65b0c2" name="Default Changelist" comment="" />
+      <created>1606915487893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606915487893</updated>
+      <workItem from="1606915489156" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

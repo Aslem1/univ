@@ -1,0 +1,99 @@
+#include "conversion.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char* convertDate(int day, int month, int year) {
+    char *months[] = {
+            "Janvier", "Février", "Mars", "Avril",
+            "Mai", "Juin", "Juillet", "Août",
+            "Septembre", "Octobre", "Novembre", "Decembre",
+    };
+
+    char* convertNumber(char *num) {
+        int len = strlen(num);
+
+        //The year must not exceed 4 digits
+        if (len == 0) {
+            fprintf(stderr,"empty string\n");
+            return;
+        }
+        if (len > 4) {
+            fprintf(stderr, "Length over 4, please try again\n");
+            return;
+        }
+
+        //One digit
+        char *single_digits[] = {
+                "zero", "un", "deux",
+                "trois", "quatre", "cinq",
+                "six", "sept", "huit", "neuf"
+        };
+
+        //Two digits
+        char *two_digits[] = {
+                "", "dix", "onze", "douze",
+                "treize", "quatorze", "quinze",
+                "seize", "dix-sept", "dix-huit", "dix-neuf"
+        };
+
+        //Ten multiples
+        char *ten_multiple[] = {
+                "", "", "vingt", "trente", "quarante",
+                "cinquante", "soixante", "soixante-dix",
+                "quatre-vingts", "quatre-vingt-dix"
+        };
+
+        //Ten power
+        char *ten_power[] = {
+                "cent", "mille"
+        };
+
+        //Code for one digit
+        if (len == 1) {
+            printf("%s\n", single_digits[*num - '0']);
+            return;
+        }
+
+        //Iteration if the number is not 0
+        while (*num != '\0') {
+            //Code for two digits
+            if (len >= 3) {
+                if (*num - '0' != 0) {
+                    printf("%s " ,single_digits[*num - '0']);
+                    printf("%s ",ten_power[len-3] );
+                }
+            }
+
+            //Code for the last two digits
+            if (*num == '1') {
+                int sum = *num - '0' + *(num + 1)- '0';
+                printf("%s\n", two_digits[sum]);
+                return;
+            }
+
+                //Code to manage the twenty
+            else if (*num == '2' && * (num+1) == '0') {
+                printf("vingt\n");
+                return;
+            }
+
+                //Remaining digits from twenty-one to ninety-nine
+            else {
+                int i = *num - '0';
+                printf("%s ", i? ten_multiple[i]: "");
+                ++num;
+                if (*num != '0')
+                    printf("%s ", single_digits[*num - 0]);
+            }
+        }
+        ++num;
+
+    printf("%d %s %d ", day, months[month - 1], year);
+    char result[50];
+    //sprintf(result, "%d %s %d ", day, months[month - 1], year);
+
+    return result;
+}
+
+}

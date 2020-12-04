@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/projetExec.dir/main.c.o CMakeFiles/projetExec.dir/conversion.c.o  -o projetExec 

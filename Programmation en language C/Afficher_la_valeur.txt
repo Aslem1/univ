@@ -1,0 +1,48 @@
+/* Driver program to test above function */
+int main(void)
+{
+int fin = 0;
+
+   while (!fin)
+   {
+      long choix = 0;
+
+      printf ("Bienvenu dans ce programme de traduction d'une valeur numéral à un texte \n");
+      printf ("1 - en Francais\n"
+              "2 - en Belge\n"
+	      "3 - en Francais Africain\n"
+	      "4 - en Francais Date\n"
+	      "5 - en Roman\n"
+	      "6 - Quitter\n");
+      printf ("Quel est vote choix?\n");
+      scanf("%ld",&choix);;
+
+      switch (choix)
+      {
+      case 1:
+         rechercher ("projetv1.c","Francais");
+         break;
+      case 2:
+         rechercher ("dicoBE.txt","Belge");
+         break;
+      case 3:
+         rechercher ("dicoFRD.txt","Francais Date");
+         break;
+      case 4:
+         rechercher ("dicoFRA.txt","Francais Africain");
+         break;
+      case 5:
+         rechercher ("dicoRM.txt","Roman");
+         break;
+      case 6:
+         fin = 1;
+         break;
+      default:
+         printf ("Entrez un nombre correct SVP\n");
+      }
+   }
+   return 0;
+}
+
+
+
