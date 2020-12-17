@@ -1,0 +1,37 @@
+{
+	"nhits": 4,
+	"format":"json",
+	"records":
+			[
+
+				{
+					"datasetid":"villeVoyage",
+
+					"fields": {
+							"nom":"negombo",
+							"pop":121701,
+							"pays":"Sri lanka",
+							"geo":
+								[
+									7.2083,
+									79.8358
+								]
+						}
+				},
+
+				{
+					"datasetid":"villeVoyage",
+
+					"fields": {
+							"nom":"Anuradhapura",
+							"pop":50595,
+							"pays":"Sri lanka",
+							"geo":
+								[
+									8.31223,
+									80.41306
+								]
+						}
+				}
+			]
+}
