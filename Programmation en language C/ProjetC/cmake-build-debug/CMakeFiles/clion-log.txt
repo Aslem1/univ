@@ -1,0 +1,11 @@
+/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC"
+CMake Error at /home/agathe/cmake-3.17.5/Modules/FindPackageHandleStandardArgs.cmake:164 (message):
+  Failed to find sphinx-build executable (missing: SPHINX_EXECUTABLE)
+Call Stack (most recent call first):
+  /home/agathe/cmake-3.17.5/Modules/FindPackageHandleStandardArgs.cmake:445 (_FPHSA_FAILURE_MESSAGE)
+  cmake/FindSphinx.cmake:9 (find_package_handle_standard_args)
+  docs/CMakeLists.txt:19 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log".

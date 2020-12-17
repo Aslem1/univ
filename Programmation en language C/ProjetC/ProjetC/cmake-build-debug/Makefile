@@ -59,58 +59,68 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = /home/agathe/cmake-3.17.5/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = /home/agathe/cmake-3.17.5/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/martinehlinger/CLionProjects/ProjetC
+CMAKE_SOURCE_DIR = "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug
+CMAKE_BINARY_DIR = "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/agathe/cmake-3.17.5/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/agathe/cmake-3.17.5/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -122,33 +132,23 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/agathe/cmake-3.17.5/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/agathe/cmake-3.17.5/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug/CMakeFiles /Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/CMakeFiles" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -177,60 +177,174 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named library-fr-FR
+# Target rules for targets named main
 
 # Build rule for target.
-library-fr-FR: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-FR
-.PHONY : library-fr-FR
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-library-fr-FR/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/library-fr-FR.dir/build.make CMakeFiles/library-fr-FR.dir/build
-.PHONY : library-fr-FR/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named affichage
+# Target rules for targets named spell-number-fr-fr
 
 # Build rule for target.
-affichage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 affichage
-.PHONY : affichage
+spell-number-fr-fr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spell-number-fr-fr
+.PHONY : spell-number-fr-fr
 
 # fast build rule for target.
-affichage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/affichage.dir/build.make CMakeFiles/affichage.dir/build
-.PHONY : affichage/fast
+spell-number-fr-fr/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/build.make src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/build
+.PHONY : spell-number-fr-fr/fast
 
-Affichage.o: Affichage.c.o
+#=============================================================================
+# Target rules for targets named library-fr-fr
 
-.PHONY : Affichage.o
+# Build rule for target.
+library-fr-fr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-fr
+.PHONY : library-fr-fr
+
+# fast build rule for target.
+library-fr-fr/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-fr/CMakeFiles/library-fr-fr.dir/build.make src/library-fr-fr/CMakeFiles/library-fr-fr.dir/build
+.PHONY : library-fr-fr/fast
+
+#=============================================================================
+# Target rules for targets named library-fr-african
+
+# Build rule for target.
+library-fr-african: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-african
+.PHONY : library-fr-african
+
+# fast build rule for target.
+library-fr-african/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-african/CMakeFiles/library-fr-african.dir/build.make src/library-fr-african/CMakeFiles/library-fr-african.dir/build
+.PHONY : library-fr-african/fast
+
+#=============================================================================
+# Target rules for targets named spell-number-fr-african
+
+# Build rule for target.
+spell-number-fr-african: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spell-number-fr-african
+.PHONY : spell-number-fr-african
+
+# fast build rule for target.
+spell-number-fr-african/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/build.make src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/build
+.PHONY : spell-number-fr-african/fast
+
+#=============================================================================
+# Target rules for targets named library-fr-date
+
+# Build rule for target.
+library-fr-date: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-date
+.PHONY : library-fr-date
+
+# fast build rule for target.
+library-fr-date/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-date/CMakeFiles/library-fr-date.dir/build.make src/library-fr-date/CMakeFiles/library-fr-date.dir/build
+.PHONY : library-fr-date/fast
+
+#=============================================================================
+# Target rules for targets named spell-number-fr-date
+
+# Build rule for target.
+spell-number-fr-date: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spell-number-fr-date
+.PHONY : spell-number-fr-date
+
+# fast build rule for target.
+spell-number-fr-date/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/build.make src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/build
+.PHONY : spell-number-fr-date/fast
+
+#=============================================================================
+# Target rules for targets named library-fr-be
+
+# Build rule for target.
+library-fr-be: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-be
+.PHONY : library-fr-be
+
+# fast build rule for target.
+library-fr-be/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-be/CMakeFiles/library-fr-be.dir/build.make src/library-fr-be/CMakeFiles/library-fr-be.dir/build
+.PHONY : library-fr-be/fast
+
+#=============================================================================
+# Target rules for targets named spell-number-fr-be
+
+# Build rule for target.
+spell-number-fr-be: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spell-number-fr-be
+.PHONY : spell-number-fr-be
+
+# fast build rule for target.
+spell-number-fr-be/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/build.make src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/build
+.PHONY : spell-number-fr-be/fast
+
+#=============================================================================
+# Target rules for targets named library-fr-roman.c
+
+# Build rule for target.
+library-fr-roman.c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library-fr-roman.c
+.PHONY : library-fr-roman.c
+
+# fast build rule for target.
+library-fr-roman.c/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/build.make src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/build
+.PHONY : library-fr-roman.c/fast
+
+#=============================================================================
+# Target rules for targets named spell-number-fr-roman
+
+# Build rule for target.
+spell-number-fr-roman: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spell-number-fr-roman
+.PHONY : spell-number-fr-roman
+
+# fast build rule for target.
+spell-number-fr-roman/fast:
+	$(MAKE) $(MAKESILENT) -f src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build.make src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build
+.PHONY : spell-number-fr-roman/fast
+
+main.o: main.c.o
+
+.PHONY : main.o
 
 # target to build an object file
-Affichage.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/library-fr-FR.dir/build.make CMakeFiles/library-fr-FR.dir/Affichage.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/affichage.dir/build.make CMakeFiles/affichage.dir/Affichage.c.o
-.PHONY : Affichage.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.o
+.PHONY : main.c.o
 
-Affichage.i: Affichage.c.i
+main.i: main.c.i
 
-.PHONY : Affichage.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Affichage.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/library-fr-FR.dir/build.make CMakeFiles/library-fr-FR.dir/Affichage.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/affichage.dir/build.make CMakeFiles/affichage.dir/Affichage.c.i
-.PHONY : Affichage.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
+.PHONY : main.c.i
 
-Affichage.s: Affichage.c.s
+main.s: main.c.s
 
-.PHONY : Affichage.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Affichage.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/library-fr-FR.dir/build.make CMakeFiles/library-fr-FR.dir/Affichage.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/affichage.dir/build.make CMakeFiles/affichage.dir/Affichage.c.s
-.PHONY : Affichage.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -244,11 +358,20 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... affichage"
-	@echo "... library-fr-FR"
-	@echo "... Affichage.o"
-	@echo "... Affichage.i"
-	@echo "... Affichage.s"
+	@echo "... library-fr-african"
+	@echo "... library-fr-be"
+	@echo "... library-fr-date"
+	@echo "... library-fr-fr"
+	@echo "... library-fr-roman.c"
+	@echo "... main"
+	@echo "... spell-number-fr-african"
+	@echo "... spell-number-fr-be"
+	@echo "... spell-number-fr-date"
+	@echo "... spell-number-fr-fr"
+	@echo "... spell-number-fr-roman"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

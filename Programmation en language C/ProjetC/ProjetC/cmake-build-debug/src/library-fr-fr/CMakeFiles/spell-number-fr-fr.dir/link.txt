@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/spell-number-fr-fr.dir/library-fr-fr.c.o  -o spell-number-fr-fr 

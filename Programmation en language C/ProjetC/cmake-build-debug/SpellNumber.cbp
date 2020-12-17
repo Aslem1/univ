@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SpellNumber"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ProjetC\;CMake Files\ProjetC\src\;CMake Files\ProjetC\src\library-fr-fr\;CMake Files\ProjetC\src\library-fr-date\;CMake Files\ProjetC\src\library-fr-be\;CMake Files\docs\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC"/>
+					<Add directory="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC"/>
+					<Add directory="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-fr">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/spell-number-fr-fr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 spell-number-fr-fr"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-fr/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/spell-number-fr-fr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 spell-number-fr-fr/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-fr">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/liblibrary-fr-fr.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 library-fr-fr"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-fr/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/liblibrary-fr-fr.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 library-fr-fr/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-date">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/liblibrary-fr-date.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 library-fr-date"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-date/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/liblibrary-fr-date.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 library-fr-date/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-date">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/spell-number-fr-date" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 spell-number-fr-date"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-date/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/spell-number-fr-date" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 spell-number-fr-date/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-date/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-be">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/liblibrary-fr-be.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 library-fr-be"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="library-fr-be/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/liblibrary-fr-be.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 library-fr-be/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-be">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/spell-number-fr-be" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 spell-number-fr-be"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spell-number-fr-be/fast">
+				<Option output="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/spell-number-fr-be" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 spell-number-fr-be/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/ProjetC/src/library-fr-be/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Doxygen">
+				<Option working_dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/docs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 Doxygen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/agath/Desktop/Cours\ info/workspace/univ/Programmation\ en\ language\ C/ProjetC/cmake-build-debug/docs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/main.c">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/main.h">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-be/library-fr-be.c">
+			<Option target="library-fr-be"/>
+			<Option target="spell-number-fr-be"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-be/library-fr-be.h">
+			<Option target="library-fr-be"/>
+			<Option target="spell-number-fr-be"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-date/library-fr-date.c">
+			<Option target="library-fr-date"/>
+			<Option target="spell-number-fr-date"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-date/library-fr-date.h">
+			<Option target="library-fr-date"/>
+			<Option target="spell-number-fr-date"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-fr/library-fr-fr.c">
+			<Option target="spell-number-fr-fr"/>
+			<Option target="library-fr-fr"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-fr/library-fr-fr.h">
+			<Option target="spell-number-fr-fr"/>
+			<Option target="library-fr-fr"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/docs/Doxyfile">
+			<Option target="Doxygen"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ProjetC\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-fr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ProjetC\src\library-fr-fr\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-date/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ProjetC\src\library-fr-date\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-be/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ProjetC\src\library-fr-be\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/docs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\docs\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

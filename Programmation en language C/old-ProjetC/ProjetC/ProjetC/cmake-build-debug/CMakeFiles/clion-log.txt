@@ -1,0 +1,16 @@
+/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=~/CLionProjects/Affichage/install -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/ProjetC"
+CMake Error at CMakeLists.txt:16 (add_library):
+  add_library cannot create target "affichage" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory "/mnt/c/Users/agath/Desktop/Cours
+  info/workspace/univ/Programmation en language C/ProjetC/ProjetC/ProjetC".
+  See documentation for policy CMP0002 for more details.
+
+
+CMake Error at CMakeLists.txt:17 (target_include_directories):
+  Cannot specify include directories for target "ProjetC" which is not built
+  by this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log".
