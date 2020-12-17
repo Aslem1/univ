@@ -1,0 +1,8 @@
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/install/local.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/install.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/list_install_components.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/library-fr-African.dir
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/cmake-build-debug/CMakeFiles/spell-number.dir

@@ -1,0 +1,3 @@
+/home/salmeida/Documents/C/projet 2020/build/CMakeFiles/rebuild_cache.dir
+/home/salmeida/Documents/C/projet 2020/build/CMakeFiles/spell-number.dir
+/home/salmeida/Documents/C/projet 2020/build/CMakeFiles/edit_cache.dir

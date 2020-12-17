@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Spell number documentation &mdash; SpellNumber C 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Hello World" href="hello.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> SpellNumber C
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Hello World</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html#titre-principal">Titre principal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Spell number documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#french-library">French Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#french-african-library">French African Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#belgian-french-library">Belgian French Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#french-date-library">French Date Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#roman-numeration-library">Roman Numeration Library</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SpellNumber C</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Spell number documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/library_doc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spell-number-documentation">
+<h1>Spell number documentation<a class="headerlink" href="#spell-number-documentation" title="Permalink to this headline">¶</a></h1>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>file main.c</p></li>
+<li><p>brief Programme de tests(à modifier).</p></li>
+<li><p>author Lucas Dumon, Agathe Perrin, Martin Ehlinger, Alexandre Bouloizeau, Tangui Georgeon</p></li>
+<li><p>version 1.0.0</p></li>
+<li><p>date November/December 2020</p></li>
+<li></li>
+<li><p>Program allowing to represent a whole number in full letters.</p></li>
+<li><p>And a program capable of displaying the representation of a number in a given dialect.</p></li>
+<li></li>
+</ul>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>/</p>
+</dd>
+</dl>
+<p>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;ctype.h&gt;</p>
+<div class="section" id="french-library">
+<h2>French Library<a class="headerlink" href="#french-library" title="Permalink to this headline">¶</a></h2>
+<p>This library displays the numbers in letters of the French language.
+It does not take numbers above a trillion.</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li></li>
+<li><p>static char unit</p></li>
+<li><p>brief stores units</p></li>
+<li></li>
+<li><p>Stores the French language units in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>/</p>
+<p>/**
+* static char tens
+* brief stores tens
+*
+* Stores the French language tens in a 2-dimensional table.
+* It is a string array of 16 characters each.
+*
+<a href="#id5"><span class="problematic" id="id6">*</span></a>/</p>
+<blockquote>
+<div><p>/**</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>static char ten</p></li>
+<li><p>brief stores ten</p></li>
+<li></li>
+<li><p>Stores the French language ten in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+<li></li>
+</ul>
+<p><a href="#id7"><span class="problematic" id="id8">*</span></a>/</p>
+</dd>
+</dl>
+<p>typedef struct _nbre
+{</p>
+<blockquote>
+<div><p>char integer[256];  /<em>!&lt; String of the whole part of the number  */
+char comma[256]; /</em>!&lt; For its decimal part <em>/
+char *str; /</em>!&lt; String including both parts and the semicolon <em>/
+int neg; /</em>!&lt; To know if the number is negative <em>/
+int comm; /</em>!&lt; To find out if there is a comma in the number <a href="#id9"><span class="problematic" id="id10">*</span></a>/</p>
+</div></blockquote>
+<p>}</p>
+</div>
+<div class="section" id="french-african-library">
+<h2>French African Library<a class="headerlink" href="#french-african-library" title="Permalink to this headline">¶</a></h2>
+<p>Chercher prononciation des nombres
+It does not take numbers above a trillion.</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>static char unit</p></li>
+<li><p>brief stores units</p></li>
+<li></li>
+<li><p>Stores the French African language units in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id11"><span class="problematic" id="id12">*</span></a>/</p>
+<p>/**
+* static char tens
+* brief stores tens
+*
+* Stores the French African language tens in a 2-dimensional table.
+* It is a string array of 16 characters each.
+*
+<a href="#id13"><span class="problematic" id="id14">*</span></a>/</p>
+<blockquote>
+<div><p>/**</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>static char ten</p></li>
+<li><p>brief stores ten</p></li>
+<li></li>
+<li><p>Stores the French African language ten in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id15"><span class="problematic" id="id16">*</span></a>/</p>
+</dd>
+</dl>
+<p>typedef struct _nbre
+{</p>
+<blockquote>
+<div><p>char integer[256];  /<em>!&lt; String of the whole part of the number  */
+char comma[256]; /</em>!&lt; For its decimal part <em>/
+char *str; /</em>!&lt; String including both parts and the semicolon <em>/
+int neg; /</em>!&lt; To know if the number is negative <em>/
+int comm; /</em>!&lt; To find out if there is a comma in the number <a href="#id17"><span class="problematic" id="id18">*</span></a>/</p>
+</div></blockquote>
+<p>}</p>
+</div>
+<div class="section" id="belgian-french-library">
+<h2>Belgian French Library<a class="headerlink" href="#belgian-french-library" title="Permalink to this headline">¶</a></h2>
+<p>Unlike French in Belgian French we use “septante” for “soixante-dix” and “nonante” for “quatre-vingt-dix”.
+It does not take numbers above a trillion.</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>static char unit</p></li>
+<li><p>brief stores units</p></li>
+<li></li>
+<li><p>Stores the French African language units in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id19"><span class="problematic" id="id20">*</span></a>/</p>
+<p>/**
+* static char tens
+* brief stores tens
+*
+* Stores the French African language tens in a 2-dimensional table.
+* It is a string array of 16 characters each.
+*
+<a href="#id21"><span class="problematic" id="id22">*</span></a>/</p>
+<blockquote>
+<div><p>/**</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>static char ten</p></li>
+<li><p>brief stores ten</p></li>
+<li></li>
+<li><p>Stores the French African language ten in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id23"><span class="problematic" id="id24">*</span></a>/</p>
+</dd>
+</dl>
+<p>typedef struct _nbre
+{</p>
+<blockquote>
+<div><p>char integer[256];  /<em>!&lt; String of the whole part of the number  */
+char comma[256]; /</em>!&lt; For its decimal part <em>/
+char *str; /</em>!&lt; String including both parts and the semicolon <em>/
+int neg; /</em>!&lt; To know if the number is negative <em>/
+int comm; /</em>!&lt; To find out if there is a comma in the number <a href="#id25"><span class="problematic" id="id26">*</span></a>/</p>
+</div></blockquote>
+<p>}</p>
+</div>
+<div class="section" id="french-date-library">
+<h2>French Date Library<a class="headerlink" href="#french-date-library" title="Permalink to this headline">¶</a></h2>
+<p>The French date library only uses French numbers (It does not contain the specifics of Belgian and African). .
+It manages negative numbers.</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>static char unit</p></li>
+<li><p>brief stores units</p></li>
+<li></li>
+<li><p>Stores the French African language units in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id27"><span class="problematic" id="id28">*</span></a>/</p>
+<p>/**
+* static char tens
+* brief stores tens
+*
+* Stores the French African language tens in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Unlike French in Belgian French we use “septante” for “soixante-dix” and “nonante” for “quatre-vingt-dix”.
+*
+<a href="#id29"><span class="problematic" id="id30">*</span></a>/</p>
+<blockquote>
+<div><p>/**</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>static char ten</p></li>
+<li><p>brief stores ten</p></li>
+<li></li>
+<li><p>Stores the French African language ten in a 2-dimensional table.</p></li>
+<li><p>It is a string array of 16 characters each.</p></li>
+<li></li>
+</ul>
+<p><a href="#id31"><span class="problematic" id="id32">*</span></a>/</p>
+</dd>
+</dl>
+<p>typedef struct _nbre
+{</p>
+<blockquote>
+<div><p>char integer[256];  /<em>!&lt; String of the whole part of the number  */
+char comma[256]; /</em>!&lt; For its decimal part <em>/
+char *str; /</em>!&lt; String including both parts and the semicolon <em>/
+int neg; /</em>!&lt; To know if the number is negative <em>/
+int comm; /</em>!&lt; To find out if there is a comma in the number <a href="#id33"><span class="problematic" id="id34">*</span></a>/</p>
+</div></blockquote>
+<p>}</p>
+</div>
+<div class="section" id="roman-numeration-library">
+<h2>Roman Numeration Library<a class="headerlink" href="#roman-numeration-library" title="Permalink to this headline">¶</a></h2>
+<p>The Roman library is special in that it uses Roman numerals which it translates into numbers and letters.</p>
+<blockquote>
+<div><p>/**
+* static char unit
+* brief stores units
+*
+* Stores the Roman Numeration units in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* I for 1, II for 2, III for 3, and so on.
+*
+<a href="#id35"><span class="problematic" id="id36">*</span></a>/</p>
+<p>/**
+* static char tens
+* brief stores tens
+*
+* Stores the Roman Numeration tens in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* X for 10, XX for 20, XXX for 30, and so on.
+*
+<a href="#id37"><span class="problematic" id="id38">*</span></a>/</p>
+<p>/**
+* static char hundreds
+* brief stores hundreds
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* C for 100, CC for 200, CCC for 300, and so on.
+*
+<a href="#id39"><span class="problematic" id="id40">*</span></a>/</p>
+<p>/**
+* static char thousands
+* brief stores thousands
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* M for 1000, MM for 2000, MMM for 3000, and so on.
+*
+<a href="#id41"><span class="problematic" id="id42">*</span></a>/</p>
+<p>/**
+* static char tensofthousands
+* brief stores tensofthousands
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* X*X for 20 000, X*X*X* for 30 000, X*L* for 40 000, and so on.
+*
+<a href="#id43"><span class="problematic" id="id44">*</span></a>/</p>
+<p>/**
+* static char hundredsofthousands
+* brief stores hundredsofthousands
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* C* for 100 000, C*C* for 200 000, C*C*C* for 300 000, and so on.
+*
+<a href="#id45"><span class="problematic" id="id46">*</span></a>/</p>
+<p>/**
+* static char millions
+* brief stores millions
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* M* for 1 000 000, M*M* for 2 000 000, M*M*M* for 3 000 000, and so on.
+*
+<a href="#id47"><span class="problematic" id="id48">*</span></a>/</p>
+<p>/**
+* static char tensofmillions
+* brief stores tensofmillions
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* X** for 10 000 000, X**X** for 20 000 000, X**X**X** for 30 000 000, and so on.
+*
+<a href="#id49"><span class="problematic" id="id50">*</span></a>/</p>
+<p>/**
+* static char tensofmillions
+* brief stores tensofmillions
+*
+* Stores the Roman Numeration ten in a 2-dimensional table.
+* It is a string array of 16 characters each.
+* Here we use Roman numerals
+* C** for 100 000 000, C**C** for 200 000 000, C**C**C** for 300 000 000, and so on.
+*
+<a href="#id51"><span class="problematic" id="id52">*</span></a>/</p>
+</div></blockquote>
+<p>typedef struct _nbre
+{</p>
+<blockquote>
+<div><p>char integer[256];  /<em>!&lt; String of the whole part of the number  */
+char comma[256]; /</em>!&lt; For its decimal part <em>/
+char *str; /</em>!&lt; String including both parts and the semicolon <em>/
+int neg; /</em>!&lt; To know if the number is negative <em>/
+int comm; /</em>!&lt; To find out if there is a comma in the number <a href="#id53"><span class="problematic" id="id54">*</span></a>/</p>
+</div></blockquote>
+<p>}</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="hello.html" class="btn btn-neutral float-left" title="Hello World" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Lucas Dumon, Agathe Perrin, Martin Ehlinger, Alexandre Bouloizeau, Tangui Georgeon
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

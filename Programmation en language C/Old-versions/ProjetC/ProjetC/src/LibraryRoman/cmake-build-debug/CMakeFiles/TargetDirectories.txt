@@ -1,0 +1,3 @@
+/Users/martinehlinger/CLionProjects/LibraryRoman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/martinehlinger/CLionProjects/LibraryRoman/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/martinehlinger/CLionProjects/LibraryRoman/cmake-build-debug/CMakeFiles/spell-number.dir

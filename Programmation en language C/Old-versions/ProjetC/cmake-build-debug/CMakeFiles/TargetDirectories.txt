@@ -1,0 +1,8 @@
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/install/strip.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/install/local.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/library-fr-FR.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/affichage.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/install.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/list_install_components.dir

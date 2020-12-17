@@ -1,0 +1,2 @@
+/Users/martinehlinger/CLionProjects/Affichage/install/lib/liblibrary-fr-date.dylib
+/Users/martinehlinger/CLionProjects/Affichage/install/include/library-fr-date.h

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o liblibrary-fr-BE.dylib -install_name @rpath/liblibrary-fr-BE.dylib CMakeFiles/library-fr-BE.dir/library-fr-BE.c.o 

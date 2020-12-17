@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibrary-fr-FR.a  CMakeFiles/library-fr-FR.dir/Affichage.c.o
+/usr/bin/ranlib liblibrary-fr-FR.a

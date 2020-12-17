@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/spell-number.dir/library-roman-numeration.c.o  -o spell-number 
