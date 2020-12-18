@@ -1,0 +1,30 @@
+/**
+ * \file main.c
+ * \author Alexandre Bouloizeau, Lucas Dumon, Martin Ehlinger, Tangui Georgeon, Agathe Perrin
+ * \version 1.0.0
+ * \date November, December 2020
+ *
+ * Programm allowing to represent a whole number in full letters.
+ * And a programm capable of displaying the representation of a number in a given dialect.
+ *
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+French Library
+===============
+/** 
+ * Static char unit
+ * Brief stores units
+ * 
+ * Stores the French language units in a 2-dimensional table.
+ * It is a string array of 16 characters each.
+ *
+*/
+ 
+ /**
+ *
+ 

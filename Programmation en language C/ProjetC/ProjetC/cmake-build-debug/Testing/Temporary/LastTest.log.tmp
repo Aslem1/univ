@@ -1,0 +1,66 @@
+Start testing: Dec 18 16:28 CET
+----------------------------------------------------------
+1/5 Testing: test-spell-number-fr-fr
+1/5 Test: test-spell-number-fr-fr
+Command: "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-fr/spell-number-fr-fr"
+Directory: /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-fr
+"test-spell-number-fr-fr" start time: Dec 18 16:28 CET
+Output:
+----------------------------------------------------------
+Usage : /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-fr/spell-number-fr-fr <number to convert to letters>
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"test-spell-number-fr-fr" end time: Dec 18 16:28 CET
+"test-spell-number-fr-fr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: test-spell-number-fr-african
+2/5 Test: test-spell-number-fr-african
+Command: "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-african/spell-number-fr-african"
+Directory: /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-african
+"test-spell-number-fr-african" start time: Dec 18 16:28 CET
+Output:
+----------------------------------------------------------
+Usage : /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-african/spell-number-fr-african <number to convert to letters>
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"test-spell-number-fr-african" end time: Dec 18 16:28 CET
+"test-spell-number-fr-african" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: test-spell-number-fr-date
+3/5 Test: test-spell-number-fr-date
+Command: "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-date/spell-number-fr-date"
+Directory: /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-date
+"test-spell-number-fr-date" start time: Dec 18 16:28 CET
+Output:
+----------------------------------------------------------
+Usage : /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-date/spell-number-fr-date <number to convert to letters>
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"test-spell-number-fr-date" end time: Dec 18 16:28 CET
+"test-spell-number-fr-date" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: test-spell-number-fr-be
+4/5 Test: test-spell-number-fr-be
+Command: "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-be/spell-number-fr-be"
+Directory: /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-be
+"test-spell-number-fr-be" start time: Dec 18 16:28 CET
+Output:
+----------------------------------------------------------
+Usage : /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-be/spell-number-fr-be <number to convert to letters>
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test-spell-number-fr-be" end time: Dec 18 16:28 CET
+"test-spell-number-fr-be" time elapsed: 00:00:00
+----------------------------------------------------------
+

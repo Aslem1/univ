@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/agathe/cmake-3.17.5/bin/cmake
+CMAKE_COMMAND = "/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = /home/agathe/cmake-3.17.5/bin/cmake -E rm -f
+RM = "/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC"
+CMAKE_SOURCE_DIR = /Users/martinehlinger/CLionProjects/ProjetC/ProjetC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend.make
@@ -79,16 +79,16 @@ include src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/flags.make
 
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o: src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/flags.make
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o: ../src/library-fr-roman/library-fr-roman.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o"
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o   -c "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o"
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o   -c /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c
 
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.i"
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c" > CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.i
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c > CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.i
 
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.s"
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c" -o CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.s
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c -o CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.s
 
 # Object files for target spell-number-fr-roman
 spell__number__fr__roman_OBJECTS = \
@@ -100,8 +100,8 @@ spell__number__fr__roman_EXTERNAL_OBJECTS =
 src/library-fr-roman/spell-number-fr-roman: src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o
 src/library-fr-roman/spell-number-fr-roman: src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build.make
 src/library-fr-roman/spell-number-fr-roman: src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable spell-number-fr-roman"
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spell-number-fr-roman.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable spell-number-fr-roman"
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spell-number-fr-roman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build: src/library-fr-roman/spell-number-fr-roman
@@ -109,10 +109,10 @@ src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build: src/library-fr-
 .PHONY : src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build
 
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/clean:
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" && $(CMAKE_COMMAND) -P CMakeFiles/spell-number-fr-roman.dir/cmake_clean.cmake
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman && $(CMAKE_COMMAND) -P CMakeFiles/spell-number-fr-roman.dir/cmake_clean.cmake
 .PHONY : src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/clean
 
 src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend:
-	cd "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-roman" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/martinehlinger/CLionProjects/ProjetC/ProjetC /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman /Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend
 

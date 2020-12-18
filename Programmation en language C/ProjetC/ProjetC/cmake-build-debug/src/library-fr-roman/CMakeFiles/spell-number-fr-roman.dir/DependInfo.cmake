@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o"
+  "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c" "/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/library-fr-roman.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/main.c
+./main.h
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/main.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/main.h
+

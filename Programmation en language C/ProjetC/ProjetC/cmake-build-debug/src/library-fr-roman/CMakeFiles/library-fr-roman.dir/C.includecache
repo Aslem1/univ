@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.c
+library-fr-roman.h
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-roman/library-fr-roman.h
+

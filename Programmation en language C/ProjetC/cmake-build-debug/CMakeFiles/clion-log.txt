@@ -1,11 +1,12 @@
-/home/agathe/cmake-3.17.5/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC"
-CMake Error at /home/agathe/cmake-3.17.5/Modules/FindPackageHandleStandardArgs.cmake:164 (message):
-  Failed to find sphinx-build executable (missing: SPHINX_EXECUTABLE)
+"/Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=~/CLionProjects/../install -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/martinehlinger/CLionProjects/ProjetC
+CMake Error at /Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:164 (message):
+  Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE)
 Call Stack (most recent call first):
-  /home/agathe/cmake-3.17.5/Modules/FindPackageHandleStandardArgs.cmake:445 (_FPHSA_FAILURE_MESSAGE)
-  cmake/FindSphinx.cmake:9 (find_package_handle_standard_args)
-  docs/CMakeLists.txt:19 (find_package)
+  /Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:445 (_FPHSA_FAILURE_MESSAGE)
+  /Users/martinehlinger/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindDoxygen.cmake:633 (find_package_handle_standard_args)
+  docs/CMakeLists.txt:1 (find_package)
 
 
 -- Configuring incomplete, errors occurred!
-See also "/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/martinehlinger/CLionProjects/ProjetC/cmake-build-debug/CMakeFiles/CMakeError.log".
