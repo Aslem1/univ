@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int
+main(void){
+  pid_t pid;
+  int wstatus;
+  
+  char *cmd = "/usr/bin/ps";
+  char *cmd_argv[3];
+  cmd_argv[0] = "ps";
+  cmd_argv[1] = "aux";
+  cmd_argv[2] = NULL;
+  
+  pid = fork();
+
+  switch (pid) {
+    case -1:
+      fprintf(stderr, "Something bad happenned\n");
+      exit(EXIT_FAILURE);
+      break;
+    case 0:
+      execv(cmd, cmd_argv);
+      break;
+    default:
+      printf("Parent Code: pid %ld, parent pid %ld\n", (long)getpid(), (long)getppid());
+      waitpid(pid, &wstatus, 0);
+      if (WIFEXITED(wstatus)) {
+          printf("Process %ld exit with code: %d\n",(long) pid,WEXITSTATUS(wstatus));
+      }
+  }
+  exit(EXIT_SUCCESS);
+}
