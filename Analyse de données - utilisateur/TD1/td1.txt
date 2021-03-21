@@ -1,0 +1,15 @@
+C Q1 = 63.2
+Q1 A 64,55
+Q3 B 68.9
+Q3 A 76
+Q3 C = 74.14
+Q3 A 76
+B 3.304
+A 8.15
+C 6.281
+
+Exercice 2:
+Q1 64.65
+Q3 68.9
+
+Etendue inter quartille : 4.25
