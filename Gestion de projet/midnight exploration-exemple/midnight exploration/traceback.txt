@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 16, in script
+    " [22h05] Appartement de Isaac"
+KeyError: u'22h05'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 16, in script
+    " [22h05] Appartement de Isaac"
+  File "/Applications/renpy-7.4.2-sdk/renpy/ast.py", line 715, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/renpy-7.4.2-sdk/renpy/exports.py", line 1384, in say
+    who(what, *args, **kwargs)
+  File "/Applications/renpy-7.4.2-sdk/renpy/character.py", line 1164, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=True))
+  File "/Applications/renpy-7.4.2-sdk/renpy/character.py", line 1153, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "/Applications/renpy-7.4.2-sdk/renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'22h05'
+
+Darwin-20.3.0-x86_64-i386-64bit
+Ren'Py 7.4.2.1292
+midnight exploration 1.0
+Mon Mar 22 15:44:41 2021
