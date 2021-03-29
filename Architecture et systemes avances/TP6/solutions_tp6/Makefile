@@ -1,0 +1,1 @@
+LDLIBS=-pthread -lrt -lm
