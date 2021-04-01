@@ -1,0 +1,60 @@
+Partie 5: piégés par les méchants
+/*Image pièce délabrée ?*/
+Narrateur: [1h30] - Après ces macabres découvertes, ils décident de sortir de la pièce.
+Isaac: Bon, qu'est-ce qu'on fait maintenant ?
+Lena: On devrait partir au plus vite
+Claire: J'arrive pas à ouvrir cette porte...
+Alexis: Attends, laisse-moi faire.
+Narrateur: La porte semble bloquée
+
+/*Image pièce sombre*/
+Isaac: Oh, fait chier. Comment on va faire pour sortir maintenant !
+Lena: Plutôt que de sortir des injures, aide-nous à chercher une sortie
+Claire: On frappe sur la porte ?
+Alexis: Surtout pas, le SDF pourrait nous repérer...
+[Choix1]: A)Explorer la pièce
+	  [Conséquence]: Alexis: regardez par terre, il y a une clé!
+			 Claire: On va enfin pouvoir sortir de là alors
+			 Lena: Donne la clé, je vais aller ouvrir
+			 Isaac: Et moi j'fais quoi ?
+			 Claire: ...
+			 /*Bruit d'ouverture de porte*/
+			 
+	  B)Utiliser une barette pour crocheter la serrure
+	  [Conséquence]: Isaac: Eh Lena, tu as pas une barette avec toi ?
+			 Alexis: Mais oui !! 
+			 /*Montrer barette*/
+		 	 Claire: J'vais aller crocheter cette serrure. /*Bruit de serrure*/
+			 Narrateur: [Quelques minutes plus tard]
+			 Lena: Ca y est enfin libérés !
+
+	  C)Taper sur cette porte
+	  [Conséquence]: Alexis: Bon je vais mettre un gros coup de poing
+			 /*Bruit porte qui se casse|fissure */
+			 Claire: Enfin libre!
+			 Lena: Allez on sort de cette pièce... morbide
+
+--> même issue pour ces choix : ils sortent de la pièce
+
+Alexis: Pourquoi on s'retrouve dans cette situation sérieux...
+Isaac*soupire*: C'est relou
+Lena: Bah alors les garçons, on a peur maintenant ? /*rires des filles*/
+[Choix2]: D) Se questionner
+	  [Conséquence]: Alexis: j'aurais jamais du vous suivre dans cette galère
+			 Claire*énervée*: On t'as jamais forcé à venir !
+			 Lena: Ouais, c'est vrai.
+			 Isaac: Lena, tu oublie que si t'avais pas décider de sortir, on en serait pas là !!!!!!
+			 Claire: Ca suffit ! On retrouve l'autre porte et on s'en va.
+			 Isaac*surpris*: Mais elle est fermée...
+			 Lena: C'est quoi ce bordel ?
+			 Alexis: On a plus qu'à choisir par ou aller
+
+	  E) Fuir loin de la pièce
+	  [Conséquence]: Claire: il faut rejoindre l'autre porte
+			 Isaac, Lena, Alexis: Okay !
+			 Isaac*surpris*: Mais elle est fermée...
+			 Lena: C'est quoi ce bordel ?
+			 Alexis: On a plus qu'à choisir par ou aller
+
+
+--> même issue pour ces choix : choisir où sortir (morgue, crematoruim etc)

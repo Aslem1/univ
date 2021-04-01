@@ -1,0 +1,77 @@
+3h-> Lorsqu'ils comprennent que les dossiers médicaux ont un lien avec le clodo
+
+/*Bruits de papiers*/
+narrateur: [3h00] - Découverte des dossiers médicaux. Le groupe d'amis commence à douter de l'honneteté du SDF.
+/*Image pièce sombre*/
+Claire: Vous croyez vraiment que ça a un lien avec le sdf de tout à l'heure ?
+Alexis: Mais bien sur ! Tu le reconnait pas sur la photo ? Il se fou de nous, c'est sur...
+Lena: et toi Isaac, t'en penses quoi ?
+Isaac: Bah y'a juste un dossier, rien de bien choquant dans un hopital abandonné
+Lena*agacée*: C'est ça, tu crois que c'est le moment de faire le malin, tu grandiras jamais
+Alexis: On fait quoi ?
+CLaire*en pleine hésitation*: on s'barre ? Ou vous préférez vraiment chercher le SDF...
+[Choix1]: A) Chercher le SDF
+	  [Conséquences]:Lena: On va lui demander des explications.
+		         Alexis: Ouais, on va lui faire cracher le morceau.
+		         Isaac*septique*: Vous etes surs ? 
+		         Claire*découragée*: On a plus qu'à retourner dans cette morgue, affreuse et dégoutante. Beurk!
+		         Narrateur: Ils décident de revenir sur leurs pas et retrouvent la personne amnésique (-->Charles?) dans la morgue.
+		         Isaac: Eh mec, tu nous aurais pas caché quelque chose par hasard.
+		         Lena: Oui, pourquoi t'as un dossier médical ?
+		         Charles: J'vous ai dit que je ne me souviens de rien! 
+		         Alexis: Grrr,te moque pas de nous, on veut la vérité.
+		         Charles: En fait, j'ai été attiré par des amis dans ce lieu. Ils m'ont enfermé dans ce lieu "pour rigoler". J'y suis resté 3 jours sans eau, c'était horrible!
+		         Claire: Pas cool
+		         Narrateur: Quelques minutes après s'être consultés...
+		         Lena: On l'croit ou pas ?
+		         [Choix2]: C)Le croire
+			     	   D)Se méfier et chercher à fuir
+			     	   [Mêmes Conséquence pour C et D]: Narrateur: quelques minutes plus tard...
+		                     			      	    Claire*appeurée*: Le mec nous as suivi !!!!
+							            Lena: Oh non, manquait plus que ça
+							     	    Alexis: ...
+							      	    
+
+	  B) S'enfuir
+	  [Conséquences]: Alexis: Faut chercher une sortie, regardez, une fenetre !
+		   	  Lena: Non merci, je descend pas par ce truc moisi.
+		  	  Isaac*arrogant*: Oh ça va, tu va pas faire ta victime maintenant qu'on est là
+		  	  Claire: Moi je suis pour que l'on cherche une autre sortie
+			  [Choix2]: E) Descendre par la fenetre
+			  	    F) Revenir sur les pas		      
+				    [Mêmes Conséquences Pour E et F]: Narrateur: quelques minutes plus tard...  
+								      Claire*appeurée*: Le mec nous as suivi !!!!
+								      Lena: Oh non, manquait plus que ça.
+								      Alexis: ...
+								      
+
+
+--> tout les décisions mènent à "Le méchant les as suivis"
+Narrateur:[3h50] - Charles rejoint le groupe d'amis...
+/*Musique inquiétante*/
+Charles: Trouvés!
+Isaac/*énervé*/: Mais tu nous veux quoi à la fin ?
+[Choix3]: G) "Vous en savez trop" /*rire diabolique*/
+	  [Conséquence]: Charles: j'vais pas vous laisser sortir !
+		   	 Claire: On veut juste se barrer.
+		   	 Lena: Promis, on dira rien.
+		    	 Alexis: Aller, soit sympa.
+		  	 Isaac: Laisse-nous passer.
+			 [Choix4]: J) Les tuer
+				   [Conséquence]: THE END !! /*Fond noir*/
+				   K) Ils s'enfuient
+				   [Conséquence]:Narrateur: Le SDF vient libérer les jeunes  /*Bruit de clé dans serrure*/
+						 SDF: Fuyez, bande de fous !! /*Cris*/ 
+						 Narrateur : [5h00] - Ils préviennent la police, et le SDF et jeune fou se font arretés /*Musique de fin*/	
+					
+	  H) "Je peux tout vous expliquer"
+	  [Conséquence]: Charles: c'est le SDF qui a créé tout ce scénario pour nous piéger...  /*Drama queen*/
+			 Narrateur: Le SDF vient libérer les jeunes  /*Bruit de clé dans serrure*/
+			            [5h00] - Ils préviennent la police, et le SDF et jeune fou se font arretés /*Musique de fin*/	
+
+	  I) "Aidez-moi, le SDF veut me tuer !"
+	  [Conséquence]: Alexis: Bon, suis-nous.
+			 Narrateur: Le SDF vient libérer les jeunes  /*Bruit de clé dans serrure*/
+				    Les jeunes arrivent à sortir in extremis, non sans avoir eut la peur de leur vie (happy end) /*Musique  zelda lorsqu'il ouvre un coffre ?*/
+
+
