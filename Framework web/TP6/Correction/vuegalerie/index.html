@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie Vue</title>
+    <link rel="stylesheet" href="css/styleGaleriePhoto.css">
+</head>
+<body>
+<main id="app">
+    <ul>
+        <template v-for="p in photos">
+            <li><a href="#" :title="p.titre"><img :src="p.mini" alt="p.titre" @mouseenter="changePhoto(p)"></a></li>
+        </template>
+    </ul>
+    <section class="photo">
+        <h2>{{ titre }}</h2>
+        <p><img :src="image" :alt="titre" /></p>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
