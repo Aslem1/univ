@@ -1,0 +1,50 @@
+main
+{ 
+    width: 410px ; 
+    background: #eed ; 
+    border: 1px solid #dcb ; 
+    padding: 15px ; 
+    margin: 15px 30px ; 
+    text-align: center ; 
+    font: 0.9em Georgia, serif ; 
+} 
+ 
+main ul 
+{ 
+    margin: 0 ; 
+    padding: 0 ; 
+    list-style-type: none ; 
+} 
+ 
+main ul li 
+{ 
+    float: left ; 
+} 
+ 
+main ul li a img 
+{ 
+    margin: 2px 1px ; 
+    border: 1px solid #dcb ; 
+} 
+ 
+section.photo 
+{ 
+    clear: both ; 
+    margin: 0 auto ; 
+} 
+ 
+section.photo h2 
+{ 
+    font: italic 2.5em/1.5em Georgia, serif ; 
+    color: #dcb ; 
+} 
+ 
+section.photo p
+{ 
+    margin: 0 ; 
+} 
+ 
+section.photo img 
+{ 
+    border: 1px solid #dcb ; 
+}
