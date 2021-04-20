@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 11: expected 'word' not found.
+    style.menu_choice_button.xminimum = int(config.screen_width * 0.5)
+         ^
+
+File "game/script.rpy", line 12: expected 'word' not found.
+    style.menu_choice_button.xmaximum = int(config.screen_width * 0.75)
+         ^
+
+Ren'Py Version: Ren'Py 7.4.3.1414
+Mon Mar 29 15:51:15 2021
