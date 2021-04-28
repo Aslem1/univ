@@ -1,17 +1,17 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class TestArbre
-{
-	public static void main( String [] args)
-	{
+public class TestArbre {
+	public static void main( String [] args) {
             ArrayList <Fiche> tabClass = new ArrayList();
             
             ChargementDonnees c = new ChargementDonnees();          
            
             try{
                 tabClass = c.chargementClassement();
-            }catch( IOException e ) {System.out.println("pb lors du chargement");}
+            } catch( IOException e ) {
+                System.out.println("pb lors du chargement");
+            }
             
             // creation d'un ABR avec le classement comme relation d'ordre
            
