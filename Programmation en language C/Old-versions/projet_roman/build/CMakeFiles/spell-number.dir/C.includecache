@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/salmeida/Documents/C/projet 2020/library-roman-numeration.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+

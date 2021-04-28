@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-date/library-fr-date.c
+./library-fr-date.h
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-date/library-fr-date.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/Users/martinehlinger/CLionProjects/ProjetC/ProjetC/src/library-fr-date/library-fr-date.h
+

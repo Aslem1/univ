@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vue</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<main id="test">
+    <h1>{{titre}}</h1>
+    <ul v-if="visible">
+        <li class="list-group-item" v-for="personne in liste">{{personne.nom}}</li>
+    </ul>
+    <button class="btn btn-info" @click="affiche">{{btnTexte}}</button>
+</main>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

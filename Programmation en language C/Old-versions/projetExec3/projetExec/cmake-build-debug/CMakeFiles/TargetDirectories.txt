@@ -1,0 +1,3 @@
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec3/projetExec/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec3/projetExec/cmake-build-debug/CMakeFiles/spell-number.dir
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec3/projetExec/cmake-build-debug/CMakeFiles/edit_cache.dir

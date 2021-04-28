@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,liblibrary-fr-roman.c.so -o liblibrary-fr-roman.c.so CMakeFiles/library-fr-roman.c.dir/library-fr-roman.c.o 

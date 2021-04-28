@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,liblibrary-fr-african.so -o liblibrary-fr-african.so CMakeFiles/library-fr-african.dir/library-fr-african.c.o 

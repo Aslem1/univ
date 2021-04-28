@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,liblibrary-fr-date.so -o liblibrary-fr-date.so CMakeFiles/library-fr-date.dir/library-fr-date.c.o 

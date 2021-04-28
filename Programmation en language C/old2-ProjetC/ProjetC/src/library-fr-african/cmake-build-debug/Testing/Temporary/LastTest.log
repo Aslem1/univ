@@ -1,0 +1,19 @@
+Start testing: Dec 17 15:33 CET
+----------------------------------------------------------
+1/1 Testing: test-spell-number-fr-african
+1/1 Test: test-spell-number-fr-african
+Command: "/Users/martinehlinger/CLionProjects/ProjetC/src/library-fr-african/cmake-build-debug/spell-number-fr-african"
+Directory: /Users/martinehlinger/CLionProjects/ProjetC/src/library-fr-african/cmake-build-debug
+"test-spell-number-fr-african" start time: Dec 17 15:33 CET
+Output:
+----------------------------------------------------------
+Usage : /Users/martinehlinger/CLionProjects/ProjetC/src/library-fr-african/cmake-build-debug/spell-number-fr-african <number to convert to letters>
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test-spell-number-fr-african" end time: Dec 17 15:33 CET
+"test-spell-number-fr-african" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 17 15:33 CET

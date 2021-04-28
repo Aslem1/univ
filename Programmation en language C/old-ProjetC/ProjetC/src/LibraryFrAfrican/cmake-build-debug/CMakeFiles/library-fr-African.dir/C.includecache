@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/library-fr-african.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+library-fr-african.h
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/library-fr-african.h
+
+/Users/martinehlinger/CLionProjects/ProjetC/src/LibraryFrAfrican/library-fr-african.h
+

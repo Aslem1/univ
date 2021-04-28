@@ -1,0 +1,2 @@
+/Users/martinehlinger/CLionProjects/Affichage/install/lib/liblibrary-fr-African.dylib
+/Users/martinehlinger/CLionProjects/Affichage/install/include/library-fr-african.h

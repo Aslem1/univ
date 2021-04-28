@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/spell-number.dir/library-fr-african.c.o  -o spell-number 

@@ -1,0 +1,56 @@
+# Déclarez les personnages utilisés dans le jeu.
+define i = Character('Isaac', color="#7B3FFB")
+define a = Character('Alexis', color="#18394F")
+define l = Character('Lena', color="#B02406")
+define c = Character('Claire', color="#E77EEC")
+
+
+# Le jeu commence ici
+label start:
+
+
+    " \[23h45]\ : Devant l\'hôpital abandonné "
+    scene exterieur1
+
+
+
+    i "Est-ce que vous êtes chauds pour qu'on entre ?"
+    a " Qu'est ce qu'on a perdre? Allons-y"
+    l "On va pas rester dehors toutes seules, on vous suit!"
+
+    "Ils passent la porte"
+    l "Chelou par ici"
+    c "Euh... On va par où du coup?"
+    menu:
+        a "Allons..."
+        "Aller à gauche.":
+            jump gauche
+        "Aller à droite.":
+            jump droite
+
+label gauche:
+    menu:
+        "Se séparer en 2 équipes":
+            c "Moi je vais avec Lena"
+            i "Bon bah nous on va regarder de l'autre coté"
+            jump equipes
+
+        "continuer ensemble":
+            jump suite
+
+
+label droite:
+    jump suite
+
+label equipes:
+    "La porte se ferme bruquement et ils se retrouvent dans le noir"
+    l "comment on va faire maintenant?"
+    menu:
+        "utiliser une bougie ":
+            jump suite
+        " faire demi tour pour retrouver les autres":
+            jump suite
+label suite:
+    c "C'est vraiment éffrayant tout ça"
+    "Ils fouillent la pièce"
+    " \[00h00]\ : Un clodo surgit "

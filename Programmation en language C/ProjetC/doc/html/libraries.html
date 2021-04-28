@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Libraries &mdash; SpellNumber C 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="SpellNumber C" href="spellnumber.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> SpellNumber C
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="spellnumber.html">SpellNumber C</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#technical-details">Technical details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fr-roman-roman-numeration-specificities">fr-roman : Roman Numeration specificities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fr-fr-french">fr-fr : French</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fr-be-french-belgian">fr-be : French belgian</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fr-african-french-african">fr-african : French African</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fr-date-french-date">fr-date : French Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fr-roman-roman-numeration">fr-roman : Roman Numeration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SpellNumber C</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Libraries</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/libraries.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="libraries">
+<h1>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="technical-details">
+<h2>Technical details<a class="headerlink" href="#technical-details" title="Permalink to this headline">¶</a></h2>
+<p>All librairies except fr-roman includes :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;stdio.h&gt;</p></td>
+<td><p>dedicated to entry/exit operations</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;stdlib.h&gt;</p></td>
+<td><p>dedicated to commons operations</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;string.h&gt;</p></td>
+<td><p>dedicated to string manipulation</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;ctype.h&gt;</p></td>
+<td><p>dedicated to commons operations and string manipulation</p></td>
+</tr>
+</tbody>
+</table>
+<p>And have the following 3 arrays :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 21%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>unit</p></td>
+<td><p>static char unit[10][16]</p></td>
+<td><p>Contains the units of the target language</p></td>
+</tr>
+<tr class="row-even"><td><p>ten</p></td>
+<td><p>static char unit[10][16]</p></td>
+<td><p>Contains the specific values for the ten values between 10 and 19 of the target language</p></td>
+</tr>
+<tr class="row-odd"><td><p>tens</p></td>
+<td><p>static char unit[10][16]</p></td>
+<td><p>Contains tens of the target language</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-roman-roman-numeration-specificities">
+<h2>fr-roman : Roman Numeration specificities<a class="headerlink" href="#fr-roman-roman-numeration-specificities" title="Permalink to this headline">¶</a></h2>
+<p>This library is different from the previous ones.</p>
+<p>The Includes are :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>&lt;stdio.h&gt;</p></td>
+<td><p>dedicated to entry/exit operations</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;stdlib.h&gt;</p></td>
+<td><p>dedicated to commons operations</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;string.h&gt;</p></td>
+<td><p>dedicated to string manipulation</p></td>
+</tr>
+</tbody>
+</table>
+<p>And have the following 1 arrays :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>roman_table[]</p></td>
+<td><p>Contains all letters of numeric language</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fr-fr-french">
+<h3>fr-fr : French<a class="headerlink" href="#fr-fr-french" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>value</p></th>
+<th class="head"><p>Full letters traduction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1700</p></td>
+<td><p>Mille sept cents</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1700</p></td>
+<td><p>Moins mille sept cents</p></td>
+</tr>
+<tr class="row-even"><td><p>637</p></td>
+<td><p>Six cent trente-sept</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-be-french-belgian">
+<h3>fr-be : French belgian<a class="headerlink" href="#fr-be-french-belgian" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>value</p></th>
+<th class="head"><p>Full letters traduction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1700</p></td>
+<td><p>Mille sept cents</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1700</p></td>
+<td><p>Moins mille sept cents</p></td>
+</tr>
+<tr class="row-even"><td><p>83</p></td>
+<td><p>Octante trois</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-african-french-african">
+<h3>fr-african : French African<a class="headerlink" href="#fr-african-french-african" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>value</p></th>
+<th class="head"><p>Full letters traduction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1700</p></td>
+<td><p>mille sept cents</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1700</p></td>
+<td><p>Moins mille sept cents</p></td>
+</tr>
+<tr class="row-even"><td><p>83</p></td>
+<td><p>quatre-vingt-et-trois</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-date-french-date">
+<h3>fr-date : French Date<a class="headerlink" href="#fr-date-french-date" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>value</p></th>
+<th class="head"><p>Full letters traduction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1700</p></td>
+<td><p>Dix-sept sept cents</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1700</p></td>
+<td><p>Dix-sept cents avant JC</p></td>
+</tr>
+<tr class="row-even"><td><p>637</p></td>
+<td><p>Six cent trente-sept</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-roman-roman-numeration">
+<h3>fr-roman : Roman Numeration<a class="headerlink" href="#fr-roman-roman-numeration" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>value</p></th>
+<th class="head"><p>Full letters traduction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1700</p></td>
+<td><p>MDCC</p></td>
+</tr>
+<tr class="row-odd"><td><p>437</p></td>
+<td><p>IDXXXVII</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="spellnumber.html" class="btn btn-neutral float-left" title="SpellNumber C" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Alexandre Bouloizeau, Lucas Dumon, Martin Ehlinger, Tangui Georgeon, Agathe Perrin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

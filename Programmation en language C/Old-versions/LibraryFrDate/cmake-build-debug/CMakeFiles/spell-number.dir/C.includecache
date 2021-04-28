@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/LibraryFrDate/library-fr-date.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+

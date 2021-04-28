@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o liblibrary-fr-roman.c.dylib -install_name @rpath/liblibrary-fr-roman.c.dylib CMakeFiles/library-fr-roman.c.dir/library-fr-roman.c.o 

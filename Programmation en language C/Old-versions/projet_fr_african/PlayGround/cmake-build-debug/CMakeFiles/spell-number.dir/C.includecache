@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projet_fr_african/PlayGround/library-fr-african.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+

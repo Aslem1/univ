@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section id="test">
+        <h1>{{titre}}</h1>
+        <p v-if="visible">Bonjour {{ nom }}</p>
+        <ul>
+            <li class="list-group-item" v-for="personne in liste">{{personne.nom}}</li>
+        </ul>
+        <button class="btn btn-info" @click="affiche">{{btnTexte}}</button>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

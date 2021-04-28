@@ -1,0 +1,4 @@
+test-spell-number-fr-african 0 0
+spell-number-fr-african 0 0
+---
+test-spell-number-fr-african

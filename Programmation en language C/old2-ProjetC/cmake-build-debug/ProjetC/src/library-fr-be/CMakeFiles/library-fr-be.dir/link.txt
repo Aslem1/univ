@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,liblibrary-fr-be.so -o liblibrary-fr-be.so CMakeFiles/library-fr-be.dir/library-fr-be.c.o 

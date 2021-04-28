@@ -1,0 +1,34 @@
+dist: trusty
+
+language: c
+
+compiler:
+  - gcc
+
+branches:
+  only:
+  - master
+
+before_install:
+  - sudo pip install --upgrade pip
+
+install:
+  - sudo apt-get install lcov
+  - sudo apt-get install valgrind
+  - sudo apt-get install cppcheck
+  - gem install coveralls-lcov
+  - sudo pip install cclint
+
+script:
+  - cclint --repository=src/ --recursive src/ test/
+  - mkdir build
+  - pushd build
+  - cmake .. -DBUILD_COVERAGE=1 -DTEST_VALGRIND=1
+  - make
+  - make test
+  - make coverage
+  - popd
+
+after_success:
+  - coveralls-lcov build/coverage.info
+

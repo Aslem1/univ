@@ -1,0 +1,2 @@
+/Users/martinehlinger/CLionProjects/ProjetC/lib/liblibrary-fr-roman.dylib
+/Users/martinehlinger/CLionProjects/ProjetC/include/library-fr-roman.h

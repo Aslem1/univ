@@ -1,0 +1,78 @@
+1. Connexion internet
+	Q.1 80.12.13.32/27
+	    Partie adresse : 32 - 27 = 5 bits pour les adresses
+	    2^5 = 32 
+	    Tous les bits d'adresse à 0 : c'est l'adresse du réseau
+	    Tous les bits d'adresse à 1 : c'est l'adresse de diffusion
+	    On dispose de 32 - 2 = 30 adresses
+	
+	Q.2 
+	    27 = 8 + 8 + 8 + 3
+	    32 = 001 00000
+	    80.12.13. 001 00000 : réseaux (pas utilisable)
+	    80.12.13. 001 11111 : diffusion (pas utilisable) 
+	    80.12.13.32 : réseaux
+	    80.12.13.63 : diffusion
+	    premiere adresse machine : 80.12.13.001 00001 (binaire) = 80.12.13.33
+	    11111 - 00001 = 11110
+	    dernière adresse machine : 80.12.13.001 11110 = 80.12.13.62
+	
+	    Exemple: adresse quelconque : 80.12.13.35
+	    Avec un masque /27 : 11111111.11111111.11111111.11100000
+	    adresse réseaux : 80.12.13. 001 00011 ET 11111111.11111111.11111111.11100000 = 80.12.13.001 00000 = 80.12.13.32
+	    la partie machine 00011
+
+2. Réseau local
+	Q1.
+	   Réduire le trafic réseau, meilleure securité, facilite la gestion.
+
+	Q2.
+	   Commutateur = Domaine de diffusion = Couche 2
+           Routeur = Interconnecte les différents domaines = Couche 3
+
+	Q3.
+	   250 / 4 = 62.5
+	   2^7 = 128
+	   128 - 2 = 126 OK
+	   Le masque : 32 - 7 = 25
+
+	   @Réseau 1 : 10.2.0.0/25
+	   @Réseau 2 : 10.2.0.128/25
+	   @Réseau 3 : 10.2.1.0/25
+	   @Réseau 4 : 10.2.1.128/25
+
+	   Réseau privé de l'entreprise : 10.2. 00000000 . 00000000
+	   10.2.00000000. 0   0000000 gauche = réseaux, droite = machine
+
+	   Réseaux 1 : 10.2.00000000.0  0000000 (pour décimal voir plus haut)
+	   Réseaux 2 : 10.2.00000000.1 0000000
+	   Réseaux 3 : 10.2.00000001. 0 0000000
+	   Réseaux 4 : 10.2.00000001. 1 0000000
+
+	Q4.
+	   Il faut les mettre sur un autre réseau.
+	   Réseaux serveur 10.2.00000010.1 0000000 = 10.2.2.128/25 (correspond au réseau 5 pour les serveurs)
+	   Ou alors faire ça : 10.2.128.0 /?? (<- longueur du masque non précisée) 
+	   
+	   10.2.00000000.0 : mumuse
+	   10.2.00000000.1
+	   10.2.00000001.0
+	   10.2.00000001.1
+	   10.2.00000010.0
+	   10.2.10000000.0 : serveur
+
+3. Extension
+	Q1.
+	   Stratégie facile : 10.2.00000010.0 /25 (10.2.3.0)
+	   Stratégie optimale : masque /26
+
+	Q2.
+	   Les masques de longueur variable sont autorisés
+
+	Q3.
+	   10.2.3.0 / 26
+	   Solution pratique : (partie 2 et 3)
+	   Service 1 : 10.2.0.0 / 24
+	   Service 2 : 10.2.1.0 /24
+	   Service 3 : 10.2.2.0 / 24
+	   Service 4 : 10.2.3.0 / 24

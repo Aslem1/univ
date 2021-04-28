@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b14dbe6a-b95c-499c-baab-f5a62c7b7cd4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProjetC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/.idea/ProjetC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/CMakeFiles/main.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/ProjetC.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/ProjetC.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/library-fr-african.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/SpellNumberFrAfrican.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/SpellNumberFrAfrican.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-african/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/library-fr-be.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/SpellNumberFrBe.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/SpellNumberFrBe.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-be/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/library-fr-date.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/SpellNumberFrDate.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/SpellNumberFrDate.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-date/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/SpellNumberFrFr.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/SpellNumberFrFr.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-fr/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/SpellNumberFrRoman.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/SpellNumberFrRoman.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/cmake-build-debug/src/library-fr-roman/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/cmake/FindSphinx.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/library-fr-african.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/library-fr-african.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/spell-number-fr-african.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/CMakeFiles/spell-number-fr-african.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/SpellNumberFrAfrican.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/SpellNumberFrAfrican.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-african/library-fr-african.c" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-african/library-fr-african.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-be/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-be/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-date/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-date/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/library-fr-fr.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/library-fr-fr.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/spell-number-fr-fr.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/CMakeFiles/spell-number-fr-fr.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/SpellNumberFrFr.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-fr/cmake-build-debug/SpellNumberFrFr.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/library-fr-roman.c.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-fr-roman.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number-fr-roman.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/CMakeFiles/spell-number.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/SpellNumber.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/SpellNumberFrRoman.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/SpellNumberFrRoman.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/library-fr-roman.c" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetC/src/library-fr-roman/library-fr-roman.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeDoxyfile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeDoxygenDefaults.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/main.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/ProjetC.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/library-fr-african.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/library-fr-african.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/library-fr-african.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/CMakeFiles/spell-number-fr-african.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/SpellNumberFrAfrican.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-african/liblibrary-fr-african.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/library-fr-be.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/library-fr-be.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/library-fr-be.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/CMakeFiles/spell-number-fr-be.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/SpellNumberFrBe.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-be/liblibrary-fr-be.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/library-fr-date.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/library-fr-date.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/library-fr-date.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/CMakeFiles/spell-number-fr-date.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/SpellNumberFrDate.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-date/liblibrary-fr-date.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/library-fr-fr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/library-fr-fr.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/library-fr-fr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/CMakeFiles/spell-number-fr-fr.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/SpellNumberFrFr.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-fr/liblibrary-fr-fr.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/library-fr-roman.c.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/CMakeFiles/spell-number-fr-roman.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/SpellNumberFrRoman.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetC/src/library-fr-roman/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpellNumber.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/Doxygen.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/docs/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindSphinx.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Doxygen-1.8.20.dmg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doxygen-1.8.20-setup.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dir_5189a50cc59ede9facf637c895309828.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/main_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/dir_5189a50cc59ede9facf637c895309828.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1lnfdgVIifb3KPRYppJvSkOZt2i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b14dbe6a-b95c-499c-baab-f5a62c7b7cd4" name="Default Changelist" comment="" />
+      <created>1608237889947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608237889947</updated>
+      <workItem from="1608237908286" duration="22000" />
+      <workItem from="1608241809044" duration="464000" />
+      <workItem from="1608242290726" duration="271000" />
+      <workItem from="1608242574512" duration="406000" />
+      <workItem from="1608242997124" duration="2019000" />
+      <workItem from="1608299722291" duration="1356000" />
+      <workItem from="1608301092470" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608241852816">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608241852816" />
+    <state x="740" y="237" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1608241852031">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="237" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608241852031" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1608300849857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608300849857" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608301109149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608301109149" />
+    <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1608243217538">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="76" width="585" height="888" key="find.popup/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608243217538" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608244750645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1608244750645" />
+  </component>
+</project>

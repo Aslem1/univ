@@ -1,0 +1,2 @@
+/Users/martinehlinger/CLionProjects/Affichage/install/lib/liblibrary-fr-BE.dylib
+/Users/martinehlinger/CLionProjects/Affichage/install/include/library-fr-BE.h

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec/conversion.c
+conversion.h
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec/conversion.h
+stdio.h
+-
+string.h
+-
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec/conversion.h
+

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec2/convert.c
+convert.h
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec2/convert.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+stdbool.h
+-
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec2/convert.h
+
+/mnt/c/Users/agath/Desktop/Cours info/workspace/univ/Programmation en language C/projetExec2/main.c
+stdio.h
+-
+
