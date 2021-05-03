@@ -227,7 +227,8 @@ public class Fenetre extends JFrame implements ActionListener {
         if (arg.equals("Equilibrer")) {
             ArrayList <Integer> t = new ArrayList(); 
             this.arb.arbreBREnTab(t);
-            
+ //           if (t.size()>0)
+ //               this.arb = new ArbreBRCons( t, 0, t.size()-1);
         }
         
         

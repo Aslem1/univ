@@ -1,8 +1,7 @@
 
 import java.util.Objects;
 
-public class Fiche 
-{
+public class Fiche {
     private int classement;
     private String titre;
     private int annee;
@@ -42,8 +41,7 @@ public class Fiche
         return "Fiche{" + "classement=" + classement + ", titre=" + titre + ", annee=" + annee + ", plateforme=" + plateforme + ", ventes=" + ventes + '}';
     }
     
-    public int compareTo( Fiche fc){
-        
+    public int compareTo( Fiche fc) {
         if (fc.getClassement()> this.getClassement() ) return -1;
         else if (fc.getClassement() == this.getClassement() ) return 0;
              else return 1;
