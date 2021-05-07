@@ -1,20 +1,39 @@
 <template>
   <div class="meteo">
-    <a href="#" :title="ville" @click="getData(ville)">{{ville}}</a>
+    <p>|{{ville}}|</p>
+    <p>{{temps}} : {{temperature}}°C</p>
+    <p>latitude : {{latitude}} | longitude : {{longitude}}</p>
+    <p> -------------------- </p>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'Meteo',
   props: {
-    ville: String
+    ville: String,
+    temps: String,
+    temperature: Number,
+    latitude:Number,
+    longitude:Number,
   },
-  methods : {
-    getData(v) {
-      alert(this.$store.state.urlMeteo)
-      alert(v)
-    }
+
+  mounted : function () {
+    axios
+        .get(this.$store.state.urlMeteo + this.ville + "&appid=" + this.$store.state.cle)
+        .then(response => {
+          console.log(response)
+
+          this.temps = response.data.weather[0].description;
+          this.temperature = response.data.main.temp;
+          this.latitude = response.data.coord.lat;
+          this.longitude = response.data.coord.lon;
+        })
+        .catch(error => {
+          console.log(error)
+        })
   }
 }
 </script>
