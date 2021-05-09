@@ -16,18 +16,10 @@ public class FileSystem {
 
     // Constructeur de FileSystem
     public FileSystem() {
-        this.racine = new Directory(""); // Creation automatique lors de l'instanciation de FIleSystem
+        this.racine = new Directory(""); // Creation automatique lors de l'instanciation de FileSystem
     }
     
-    
-    public static void main(String[] args) {
-        Directory r1 = new Directory("A");
-        Directory r2 = new Directory("B");
-        File f1 = new File("f1");
-        File f2 = new File("f2");
-        r1.addNode(r2);
-        r2.addNode(f2);
-        r1.addNode(f1);
-        r1.explore();
+    public int getSize() {
+        return this.racine.getSize();
     }
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 abstract class Node {
 
     private String name;
+    private Directory parent;
 
     public Node(String nom) {
         this.name = nom;
@@ -14,14 +15,15 @@ abstract class Node {
         return this.name;
     }
 
-    public void explore() {
-        System.out.println(this.getName());
-        if (this instanceof Directory) { // Vérification que l'objet en cours est une instance de Directory
-            Directory rep = (Directory) this;
-            ArrayList<Node> content = rep.getChildren();
-            for (Node n : content) {
-                n.explore();
-            }
-        }
+    public abstract void explore();
+    
+    public Directory getParent() {
+        return parent;
     }
+    
+    public void setParent(Directory parent) {
+        this.parent = parent;
+    }
+
+    public abstract int getSize();
 }

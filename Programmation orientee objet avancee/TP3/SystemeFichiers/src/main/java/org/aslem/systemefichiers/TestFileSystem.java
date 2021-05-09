@@ -5,7 +5,7 @@ public class TestFileSystem {
         Directory dirA = new Directory("A");
         Directory dirB = new Directory("B");
         FileSystem fs = new FileSystem();
-        fs.getRoot().addNode(dirA);
+        fs.getRacine().addNode(dirA);
         File f1 = new File("f1",120);
         File f2 = new File("f2", 340);
         dirA.addNode(dirB);
@@ -18,5 +18,5 @@ public class TestFileSystem {
             throw new Error("Mauvaise gestion du lien parent");
         }
         dirA.explore();
-        }
+    }
 }
