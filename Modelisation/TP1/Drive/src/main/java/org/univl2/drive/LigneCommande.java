@@ -1,28 +1,33 @@
 package org.univl2.drive;
 
-public class LigneCommande extends Produit implements GestionCommande {
+public class LigneCommande {
     private int quantite;
     private double montant;
-    private Commande commande;
+    private Produit produit;
 
     // Constructeur
-    public LigneCommande(int quantite, double montant) {
+    public LigneCommande(Produit produit, int quantite) {
         this.quantite = quantite;
-        this.montant = montant;
+        this.produit = produit;
     }
 
     // Getter
 
-    public int getQuantite() {
-        return quantite;
-    }
-
     public double getMontant() {
         return montant;
     }
-
+    
     public Produit getProduit() {
-        return null; //TODO modifier return
+        return produit;
+    }
+    
+    public int getQuantite() {
+        return quantite;
+    }
+    
+    // Setter
+    public void setQuantite(int quantite) {
+    	this.quantite = quantite;
     }
     
 }

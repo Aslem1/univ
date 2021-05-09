@@ -5,7 +5,7 @@ public class Creneau {
     private String heureDebut;
     private String heureFin;
 
-    // COnstructeur
+    // Constructeur
     public Creneau(String jour, String heureDebut, String heureFin) {
         this.jour = jour;
         this.heureDebut = heureDebut;

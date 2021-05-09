@@ -2,17 +2,19 @@ package org.univl2.drive;
 
 import java.util.List;
 
-public class Client extends Personne implements GestionCommande{
+public class Client extends Personne {
     private String dateInscription;
-    
-    
-    //ajouterCommande
+    private List<Commande> commandes;
 
     // Constructeur
-    public Client(String dateInscription, String nom, String prenom) {
+    public Client(String nom, String prenom) {
         super(nom, prenom);
-        this.dateInscription = dateInscription;
     }
+        
+    // ajouterCommande
+    public void ajouterCommande (Commande commande) {
+    	
+    }
+
     
-    private List<Commande> commande;
 }

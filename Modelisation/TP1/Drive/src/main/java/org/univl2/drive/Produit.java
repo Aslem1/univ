@@ -1,6 +1,6 @@
 package org.univl2.drive;
 
-public class Produit implements GestionCommande {
+public class Produit {
     private int id;
     private String description;
     private double prix;

@@ -1,6 +1,8 @@
 package org.univl2.drive;
 
-public class Commande implements GestionCommande{
+import java.util.List;
+
+public class Commande {
     private int id;
     private String dateCommande;
     private double montantTotal;
@@ -8,40 +10,50 @@ public class Commande implements GestionCommande{
     private String heurePreparation;
     private String dateLivraison;
     private String heureLivraison;
-    private etat EtatCommande;
+    private EtatCommande etat ;
     
     private Personnel preparateur;
     private Client client;
     
-    public LigneCommande[] getLigneCommande() {
-        return this.LigneCommande;
-    }
+    private List<LigneCommande> lignesCommandes;
+    
+    // Constructeur
+    public Commande(Client client) {
+		super();
+		this.client = client;
+	}
     
     //ajouter un produit
-
+    public void ajouterProduit (Produit produit, int quantite) {
+    	
+    }
+    
     // getter preparateur
     public Personnel getPreparateur() {
         return preparateur;
     }
     
-    // setter preparateur
+
+	// setter preparateur
     public void setPreparateur(Personnel preparateur) {
         this.preparateur = preparateur;
     }
     
     // setter date livraison
-    public void setDateLivraison(String dateLivraison) {
-        this.dateLivraison = dateLivraison;
+    public void setDateLivraison(String date, String heure) {
+        this.dateLivraison = date;
+        this.heureLivraison = heure;
     }
     
     // setter date préparation
-    public void setDatePreparation(String datePreparation) {
-        this.datePreparation = datePreparation;
+    public void setDatePreparation(String date, String heure) {
+        this.datePreparation = date;
+        this.heurePreparation = heure;
     }
     
     // setter etat
-    public void setEtatCommande(etat EtatCommande) {
-        this.EtatCommande = EtatCommande;
+    public void setEtat(EtatCommande etat) {
+        this.etat = etat;
     }
     
 }
