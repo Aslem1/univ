@@ -1,0 +1,96 @@
+1. vue create nom projet
+2. choisir configuration personalisée
+  - version 2
+  - vuex et router
+  - eslint "simple"
+  - configuration in a dedicated file
+
+3. regarde le terminal
+
+---------- notes ----------
+
+-------- store/index.js ----------
+vuex est une extension qui permet d'avoir un état global de l'appli (state, getters, ...)
+- les données sont stockées dans le store : store/index.js (c'est vuex)
+- {} en js c'est un objet
+- [] : tableau
+- [{}] : cf test1 store/index.js pour voir un tableau de poneys
+  - jesuisunString : "du texte"
+  - jesuisunnombre : 1
+  - jesuisunboolean : true (ou false)
+
+- En dessous de state (par exemple) on peut ajouter des getters qui sont des méthodes pour récupérer seulment les données qui nous intéressent
+- getter : 
+  getters : {
+    getByUnElementDuTableau(elementEnQuestion)
+  }
+  
+ - Pour accéder aux données du state : this.$store.state.nomDonnees
+ - Pour accéder aux getters : this.$store.getters.nomMethode
+ 
+ 3 == "3" // vrai
+ 3 === "3" // faux
+ false == "false" // vrai
+ false === "false" // faux
+ 
+  return this.$store.state.poneys.filter(elem => elem.nom === nom) 
+    -> la méthode renvoie directement le resultat du filter (avec le return)
+	-> le filter renvoie tous les elements du tableau qui correspondent au test 
+	-> ici on vérifie que le nom est bien égal au nom passé en paramètre
+	
+- let pour déclarer variable : let maVariable
+- const : constante (comme final en java)
+- var : variable globale et commune(comme static en java) /!\ ne pas utiliser /!\ (sauf si spécifié évidemment...)
+
+- les sélecteurs css (mais c'est pas seulement pour le CSS) 
+  -> # : pour les id html
+  -> . : pour les classes html
+  
+  -> > : pour l'enfant direct (article > section par exemple va pointer les sections contenues dans un article)
+  <article>
+	<section></section> #OK
+	<content>
+	  <section></section> #not OK
+    </content>
+  </article>
+  
+  -> caractere espace : fils indirect (article section pointe toutes les sections dans un article même si elles sont contenues dans d'autres sous élements
+  <article>
+	<section></section> #OK
+	<content>
+	  <section></section> #OK
+    </content>
+  </article>
+  
+---------------- Routes ---------------
+ - Pour modifier/ajouter/supprimer une route aller dans le dossier router
+ - Il faut aussi ajouter la route dans App.vue
+ 
+ 
+ ----------- maPageView.vue --------------
+ src/views/nomDuComposant.vue
+ 
+   - Tous les composants qui sont ici sont des vues donc des composants representant une page HTML
+     - Dans une vue, il y a plusieurs "règles" : 
+	   - Pas d'inteligence (pas de if, de for, pas de règles, c'est seulement de l'appel à d'autres composants)
+	   - Pas de CSS
+	   - RIEN d'autre que de l'appel
+	   
+------------ nomDuComposant.vue -------------------
+src/components/nomDuComposant.vue
+
+ - Un composant qui prend des paramètres en entrée doit avoir des props (cf HelloWorld.vue)
+ - EXEMPLE 
+export default {
+  name: "Cheval",
+  props : {
+    nom : String,
+    age : Number,
+    race : String,
+    vivant : Boolean
+  },
+}
+}
+
+ - Il sera appelé comme suis : <Cheval nom="blabla" age=10 race="blabla" vivant=true /> 
+ - Si l'appel se fait dans une boucle, remplacer nom= par :nom=variable 

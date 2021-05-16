@@ -1,0 +1,7 @@
+1. Aller sur le gitlab de la fac
+2. Créer un projet
+3. Cloner avec git kraken le projet en le selectionnant dans gitkraken via gitlab selfmanaged
+4. Développer dans ce dossier
+5. NE PAS OUBLIER DE COMMIT ET PUSH dès qu'un truc est fini !!
+
+6. Si il faut remonter dans le temps : aller sur gitkraken, clic droit sur master, reset master to this commit (choisir hard)
