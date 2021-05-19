@@ -6,6 +6,7 @@ public class CovidTest implements Comparable<CovidTest>{
 	private Soignant testeur;
 	private LocalDate dateTest;
 	private boolean resultat;
+	private TypeCovidTest typeCovidTest;
 	
 	// Constructeur
 	public CovidTest(Personne reference, Soignant test, LocalDate dateTest, boolean resultat) {
@@ -16,7 +17,20 @@ public class CovidTest implements Comparable<CovidTest>{
 		this.resultat = resultat;
 	}
 	
-	// - Setters
+	public CovidTest(Personne reference, Soignant test, LocalDate dateTest, boolean resultat, TypeCovidTest typeCovidTest) {
+		super();
+		this.personne = reference;
+		this.testeur = test;
+		this.dateTest = dateTest;
+		this.resultat = resultat;
+		this.typeCovidTest = typeCovidTest;
+	}
+	
+	public TypeCovidTest getTypeCovidTest() {
+		return typeCovidTest;
+	}
+
+	// Getters - Setters
 	public Personne donnePersonne() {
 		return personne;
 	}

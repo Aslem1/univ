@@ -108,6 +108,12 @@ public abstract class Personne {
 		return test;
 	}
 	
+	public CovidTest seFaireDepister(LocalDate dateDepistage, Soignant soignant, TypeCovidTest typeCovidTest) {
+		CovidTest test = new CovidTest(this, soignant, dateDepistage, contamine, typeCovidTest);
+		depistagesEffectues.add(test);
+		return test;
+	}
+	
 	public List<CovidTest> donneDepistagesEffectues() {
 		Collections.sort(depistagesEffectues);
 		return depistagesEffectues;
