@@ -83,7 +83,7 @@ public abstract class Personne {
 		return true;
 	}
 	
-	
-	
+	// Création de la méthode dureeIsolement
+	public abstract int dureeIsolement();
 	
 }

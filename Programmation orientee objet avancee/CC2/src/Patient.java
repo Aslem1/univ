@@ -48,6 +48,12 @@ public class Patient extends Personne {
 			return false;
 		return true;
 	}
+
+	// Duree d'isolement d'un patient : 10 jours
+	@Override
+	public int dureeIsolement() {
+		return 10;
+	}
 	
 	
 	

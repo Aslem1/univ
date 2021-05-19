@@ -49,6 +49,12 @@ public class Soignant extends Personne {
 			return false;
 		return true;
 	}
+
+	// Duree d'isolement d'un soignant : 7 jours
+	@Override
+	public int dureeIsolement() {
+		return 7;
+	}
 	
 	
 }
