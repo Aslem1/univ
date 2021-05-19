@@ -55,6 +55,8 @@ public class Patient extends Personne {
 		return 10;
 	}
 	
-	
+	public boolean vaccinCompatible(LocalDate date, Vaccin vaccin) {
+		return vaccin.condition(this, date);
+	}
 	
 }
