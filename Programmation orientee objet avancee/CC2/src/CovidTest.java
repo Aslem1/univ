@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class CovidTest implements Comparable<CovidTest>{
 	private Personne personne;
@@ -60,47 +61,27 @@ public class CovidTest implements Comparable<CovidTest>{
 	public String toString() {
 		return "CovidTest [reference=" + personne + ", test=" + testeur + ", dateTest=" + dateTest + ", resultat=" + resultat + "]";
 	}
-	
-	// hashCode
+
+
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((dateTest == null) ? 0 : dateTest.hashCode());
-		result = prime * result + ((personne == null) ? 0 : personne.hashCode());
-		result = prime * result + (resultat ? 1231 : 1237);
-		result = prime * result + ((testeur == null) ? 0 : testeur.hashCode());
-		return result;
+		return Objects.hash(dateTest, personne, resultat, testeur);
 	}
 
-	// equals
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		if (obj == null)
+		}
+		if (obj == null) {
 			return false;
-		if (getClass() != obj.getClass())
+		}
+		if (!(obj instanceof CovidTest)) {
 			return false;
+		}
 		CovidTest other = (CovidTest) obj;
-		if (dateTest == null) {
-			if (other.dateTest != null)
-				return false;
-		} else if (!dateTest.equals(other.dateTest))
-			return false;
-		if (personne == null) {
-			if (other.personne != null)
-				return false;
-		} else if (!personne.equals(other.personne))
-			return false;
-		if (resultat != other.resultat)
-			return false;
-		if (testeur == null) {
-			if (other.testeur != null)
-				return false;
-		} else if (!testeur.equals(other.testeur))
-			return false;
-		return true;
+		return Objects.equals(dateTest, other.dateTest) && Objects.equals(personne, other.personne)
+				&& resultat == other.resultat && Objects.equals(testeur, other.testeur);
 	}
 
 	@Override
