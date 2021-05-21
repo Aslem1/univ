@@ -1,3 +1,4 @@
+package clonage_pb;
 
 /**
  * Classe representant une commande

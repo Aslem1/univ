@@ -1,3 +1,4 @@
+package clonage_ok;
 
 public class TestClonageCommandeV3 {
     public static void main(String[] args) {

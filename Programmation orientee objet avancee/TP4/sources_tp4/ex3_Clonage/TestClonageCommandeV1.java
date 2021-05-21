@@ -1,4 +1,3 @@
-package clonage_pb;
 
 public class TestClonageCommandeV1 {
     public static void main(String[] args) throws Exception {

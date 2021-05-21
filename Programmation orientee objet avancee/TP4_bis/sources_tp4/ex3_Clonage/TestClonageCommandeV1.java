@@ -1,5 +1,6 @@
+package clonage_pb;
 
-public class TestClonageCommandeV2 {
+public class TestClonageCommandeV1 {
     public static void main(String[] args) throws Exception {
         // création de deux commandes
         Commande cmd1 = Commande.creerCommande("Martin");
@@ -13,13 +14,6 @@ public class TestClonageCommandeV2 {
         cmd3.changeNomClient("Dupont");
 
         System.out.println("Apres la copie de la commande");
-        // les noms des clients doivent être différents :
-        // - pour cmd2 ce doit être Durand
-        // - pour cmd3 ce doit être Dupont
-        if (!cmd2.donneNomClient().equals("Durand") ||
-                !cmd3.donneNomClient().equals("Dupont")) {
-            throw new Error("Probleme clonage...");
-        }
         System.out.println(cmd2);
         System.out.println(cmd3);
     }

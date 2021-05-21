@@ -1,3 +1,4 @@
+package clonage_pb;
 
 public class EnteteCommande {
     // nom du client qui a passe la commande
