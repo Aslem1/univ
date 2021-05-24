@@ -1,0 +1,112 @@
+.home {
+    background-color: pink;
+}
+
+.stade main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stade img {
+    width:15vw;
+    height: auto;
+}
+
+.stade > img {
+    width: 100vw;
+}
+
+.postes ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: red;
+}
+
+.postes li {
+    padding: 1em;
+}
+
+.postes a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.liste-joueurs ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.liste-joueurs a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.liste-joueurs li {
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    flex: 0 25%;
+}
+
+.liste-joueurs li:hover {
+    filter: grayscale(0%);
+}
+
+.liste-joueurs figcaption {
+    transform: skew(-25deg);
+    background-color: #fff;
+    width: 75%;
+    margin: auto;
+}
+
+.liste-joueurs figcaption span {
+    transform: skew(25deg);
+    display: block;
+}
+
+.joueur {
+    max-width: 50vw;
+    margin: auto;
+    flex: 0 25%;
+}
+
+.joueur h1 {
+    transform: skew(-25deg);
+    background-color: #fff;
+    width: 75%;
+    margin: auto;
+}
+
+.joueur span {
+    transform: skew(25deg);
+    display: block;
+}
+
+.joueur h2 {
+    transform: skew(-25deg);
+    background-color: red;
+    width: 50%;
+    margin: auto;
+}
+
+.joueur .persona-profile {
+    text-align: left;
+}
+
+.joueur dt {
+    float: left;
+    width: 66.66%;
+    margin: 0;
+}
+
+.joueur dd {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+    font-weight: bold;
+}
