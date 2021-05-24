@@ -1,0 +1,8 @@
+Se connecter en precisant la position d'apparition et la couleur
+Si case occupé : le jeu ne se lance pas
+Sinon : début jeu
+
+Si 1 joueur : 1 pion sur la carte a diriger avec fleches
+Si 2 joueurs = 2 fenetres
+Chaque pion est un joueur qui se déplace librement
+Ne pas aller en dehors de la carte et ne pas aller sur une case occupée
