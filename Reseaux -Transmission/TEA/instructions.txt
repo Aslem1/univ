@@ -6,3 +6,36 @@ Si 1 joueur : 1 pion sur la carte a diriger avec fleches
 Si 2 joueurs = 2 fenetres
 Chaque pion est un joueur qui se déplace librement
 Ne pas aller en dehors de la carte et ne pas aller sur une case occupée
+
+Renvoyer un tableau avec l'état des cases
+Le + important c'est les communications
+clientDraft? add("North", tpPanel); -> Pour afficher le bouton nord
+Erreurs dans les fichiers au départ = normal
+
+----------------- Question - Réponses -------------------------
+"d'accord car pour l'instant quand je une équipe a gagné tous se ferme automatiquement,
+je voulais juste savoir si c'était dans le cahier des charges. 
+Je voudrais savoir, quand un jour perd, a-t-il le droit de continuer de bouger 
+et de jouer où il devient spectateur de la partie ?"
+->Le joueur qui a perdu est bloqué et ne peu plus bouger
+
+"et pourquoi votre code utilise la fonction repaint() et jamais celle qui sont présente dans canvas?"
+->Pour mettre à jour(?)
+"haa et ça execute le paint de la class canvas?"
+->Il faut appeler repaint. On a une hierarchie, le repaint fait un rafraichissement et appelle les paints qui vont bien."
+
+
+"Dans le sujet, pour la soumission de nos travaux, que voulez-vous que l'on vous rendre en parlant d'éxecutable (des .jar ?) ?"
+->Le mieux est de mettre votre commande java ... dans un shell run.sh (en +x)
+
+"j'arrive pas à afficher les pions j'ai des problèmes à cause des catch"
+->Les catch sont pour les échanges réseaux
+->Il y a des entrées/sorties
+
+"quelqu'un a compris comment on fait pour dessiner un joueur avec son code ?"
+->Faut update le truc qui a comme type byte[] dans ton TPClient et ça va le draw
+->Après lui il avait un tableau de 200 de long je sais pas trop pourquoi, en faire un de 100 c'est bon, et du coup les dizaines sont les y et les unités sont les x
+->faut juste modif ça dans son code de TPCanvas, la fonction drawPlayer
+
+
+
