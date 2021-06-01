@@ -9,36 +9,37 @@ import java.net.Socket;
 public class ServerTp5 {
 
 	final static int port = 9632;
-	
+
 	public static void main(String[] args) {
 		try {
 			ServerSocket socketServeur = new ServerSocket(port);
 			System.out.println("Lancement du serveur");
 			ClientHandlerThread clientHandler = new ClientHandlerThread(socketServeur);
-			
+			clientHandler.start();
+
 			while (true) {
-				for(Socket s : clientHandler.getSockets()) {
+				for (Socket s : clientHandler.getSockets()) {
 					String message = "";
 					// InputStream in = socketClient.getInputStream();
 					// OutputStream out = socketClient.getOutputStream();
-					
+
 					BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
 					message = in.readLine();
 					System.out.println(message);
 					if ("fin".equals(message)) {
 						s.close();
 						clientHandler.getSockets().remove(s);
-						for(Socket skt : clientHandler.getSockets()) {
+						for (Socket skt : clientHandler.getSockets()) {
 							PrintStream out = new PrintStream(skt.getOutputStream());
 							out.println("Un utilisateur s'est déconnecté.");
 						}
 					} else {
-						for(Socket skt : clientHandler.getSockets()) {
-							if(!s.equals(skt)) {
+						for (Socket skt : clientHandler.getSockets()) {
+							if (!s.equals(skt)) {
 								PrintStream out = new PrintStream(skt.getOutputStream());
 								out.println(message);
 							}
-							
+
 						}
 					}
 				}

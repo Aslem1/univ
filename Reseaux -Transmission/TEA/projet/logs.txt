@@ -1,0 +1,6 @@
+Lancement du serveur
+Connexion avec : /127.0.0.1
+floup
+floup
+floup
+fin
