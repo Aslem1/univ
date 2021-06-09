@@ -24,8 +24,67 @@ Caractère hexa -> 0 1 2 3 4 5 6 7 8 9 A B C D E F (valable en minuscule aussi)
 14 -> E
 15 -> F
 
+le masque “/24” verrouille les 3 premiers blocs
+masque = 255.255.255.0
 192.168.3.255/24
 Adresse réseau : 192.168.3.0
 Adresse de diffusion : 192.168.3.255
 Adresses disponibles : de 192.168.3.1 à 192.168.3.254
 
+le masque “/18” verrouille un peu plus que les 2 premiers blocs
+masque = 255.255.192.0
+192.168.3.255/18
+Adresse réseau : 192.168.0.0
+Adresse de diffusion : 192.168.63.255
+Adresses disponibles : de 192.168.0.1 à 192.168.63.254
+
+le masque “/16” verrouille les 2 premiers blocs
+masque = 255.255.0.0
+192.168.3.255/16
+Adresse réseau : 192.168.0.0
+Adresse de diffusion : 192.168.255.255
+Adresses disponibles : de 192.168.0.1 à 192.168.255.254
+
+le masque “/8” verrouille le premier bloc
+masque = 255.0.0.0
+192.168.3.255/8
+Adresse réseau : 192.0.0.0
+Adresse de diffusion : 192.255.255.255
+Adresses disponibles : de 192.0.0.1 à 192.255.255.254
+
+
+---------------------------------------------------
+Adresse commutateur : 192.168.1.254 par défaut
+Adresse IPV4 compatible :
+
+Définir adresse ipv4 : [root@waytolearnx ~]# ifconfig eth0 192.168.1.2 netmask 255.255.255.0 up
+Définir passerelle par défaut : [root@waytolearnx ~]# route add default gw 192.168.1.1
+Définir serveur DNS : [root@waytolearnx ~]# echo "nameserver 1.1.1.1" > /etc/resolv.conf
+Ping :[root@waytolearnx ~]# ping google.com
+
+Afficher adresse ip :[root@waytolearnx ~]# ip addr show
+Afficher table routahe: [root@waytolearnx ~]# ip route show
+
+Création vlan 2 : 
+	2960-RG(config)#vlan 2
+	2960-RG(config-vlan)#name administration
+	2960-RG(config-vlan)#ex
+
+Supression vlan 2
+	2960-RG(config)#no vlan 2
+	
+Affichage vlan
+	2960-RG#show vlan
+	VLAN Name Status Ports
+	---- -------------------------------- --------- -------------------------------
+	1 default active Fa0/1, Fa0/2, Fa0/3, Fa0/4
+	Gi0/1
+	2 administration active
+	3 VLAN0003 active
+	4 VLAN0004 active Fa0/5, Fa0/6, Fa0/7, Fa0/8
+	5 VLAN0005 active
+	10 VLAN0010 active Fa0/1
+	1002 fddi-default act/unsup
+	1003 token-ring-default act/unsup
+	
+https://www.clemanet.com/switch-vlan-cisco.php
