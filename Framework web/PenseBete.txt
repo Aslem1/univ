@@ -89,8 +89,120 @@ Si repo git, juste faire
 	npm run serve
 	
 ------------- Créer composant -------------
-  data() {
-    return {
-      photos: []
-    }
-  }
+	<template> <!-- partie affichage d'un composant -->
+		<div class="galerie"> <!-- Il ne doit y avoir qu'un élément dans template, d'où la présence du div -->
+			<ul> <!-- on va boucler, on prépare le ul -->
+				<li v-for="(p, index) in photos" :key="index"> <!-- on boucle, on fait des li, v-for="(p, index) in maListe" ne pas oublier :key="index" -->
+					<a href="#" :title="p.titre"><img :src="imageUrl(p.mini)" :alt="p.titre" @mouseenter="changePhoto(p)"></a> <!-- création du a dans le li, avec les données contenues dans p, l'élément de la liste -->
+				</li>
+			</ul>
+			<image-view :titre="titre" :image="image"/> <!-- appel d'un composant (important, sinon, on utilise jamais ce qu'on créé) -->
+		</div>
+	</template>
+
+	<script>
+		import ImageView from '@/components/ImageView.vue' // import d'un composant
+		export default {
+			name: "galerie",
+			data() { // les datas, utilisable dans le template, directement par leur nom
+				return {
+					titre: this.photos[0].titre,
+					image: this.imageUrl(this.photos[0].lien)
+				}
+			},
+			components: {
+				ImageView // déclaration d'usage d'un composant
+			},
+			props: { // les props, c'est les propriétés de ce composant. Elles sont passées à l'appel (image-view a 2 props, titre et image cf <image-view :titre="titre" :image="image"/>)
+				photos: Array
+			},
+			methods: { // méthodes utilisables par ce composant, directement par leur nom
+				changePhoto(p) {
+					this.image=this.imageUrl(p.lien)
+					this.titre=p.titre
+				},
+				imageUrl(p) {
+					// permet de placer les images dans le dossier assets et que cela fonctionne qu'elle que soit la route...
+					return require('@/assets/' + p)
+				}
+			},
+		    computed: { // données calculées, utilisables directement comme ça : ingredients
+				ingredients() {
+					return this.$store.getters.ingredientsByCategory
+				}
+			},
+			mounted() { // actions réalisées dès le chargement du composant, lors de son affichage à l'écran. Donc là, dès que la page où ce composant est se charge, ça appelle getIngredients.
+				this.$store.dispatch("getIngredients");
+			}
+		}
+	</script>
+
+	<!-- css de ce composant -->
+	<style scoped>
+
+	</style>
+
+------------- Router -------------
+	Les routes se gèrent dans router/index.js
+	
+	const routes = [
+	  {
+		path: '/', // path http à ajouter dans le navigateur
+		name: 'Home', // nom de la route
+		component: Home // composant chargé par la route
+	  },
+	  {
+		path: '/commande',
+		name: 'Commande',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () => import(/* webpackChunkName: "about" */ '../views/CommandeView.vue')
+	  }
+    ]
+
+------------- VueX -------------
+	VueX gère un stockage de données globale à l'application
+	store/index.js
+	
+	export default new Vuex.Store({
+	  state: { // données, accessible dans les autres pages via this.$store.state.categories
+		defaultCategory : -1,
+		recipes : [],
+		categories : [],
+		ingredients : [],
+		panier:[]
+	  },
+
+	  mutations: { // méthodes de modifications de state, appelées par les actions (juste en dessous).
+		SET_INGREDIENTS(state, ingredients) {
+		  state.ingredients = ingredients
+		},
+		SET_CATEGORIES(state, categories) {
+		  state.categories = categories
+		}
+	  },
+	  actions: { // méthodes appelées par les composants pour modifier les données du state. Ces méthodes sont appelées comme suit : this.$store.dispatch("getCategories")
+		getIngredients({commit}) {
+		  axios.get(urlAPI + '/ingredients/')
+			  .then(response => {
+				commit('SET_INGREDIENTS', response.data['hydra:member'])
+			  })
+		},
+		getCategories({commit}) {
+		  axios.get(urlAPI + '/categories/')
+			  .then(response => {
+				commit('SET_CATEGORIES', response.data['hydra:member'])
+			  })
+		}
+	  },
+	  getters: { // méthode de lectures de données avancées (pas forcément besoin), utilisables comme suit : this.$store.getters.ingredientsByCategory
+		ingredientsByCategory: (state) => { // garder ce paramètre state, et utiliser les données de ce state, cf les lignes d'en dessous
+		  if (state.defaultCategory === -1) {
+			return state.ingredients
+		  } else {
+			return state.ingredients.filter(ing => ing.categorie === '/api/categories/' + state.defaultCategory)
+		  }
+		}
+	  }
+	})
