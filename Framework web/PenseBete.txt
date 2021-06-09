@@ -1,0 +1,96 @@
+-------------------------- SI REPO GIT --------------------------
+Ouvrir gitkraken
++
+Clone a repo
+Clone with url
+Sur le porjet dans gitlab Clone with ssh
+Coller l'adresse dans gitkraken
+
+-------------------------- POUR LE PHP -------------------------- utiliser ubuntu
+Si repo git, juste faire 
+	composer install
+
+------------- Créer projet -------------
+	composer create-project symfony/skeleton nomprojet
+	cd nomprojet
+	symfony server:start
+
+------------- assets -------------
+	composer require asset
+	<img src="{{ asset('build/logo.png') }}" alt="ACME logo">
+	https://symfony.com/doc/current/frontend/encore/copy-files.html
+	assets SEULEMENT pour ce qui est dans PUBLIC (img, css, js,...)
+	
+------------- Controller -------------	
+	bin/console make:controller
+	
+------------- BDD -------------
+	composer require orm
+	Ouvrir docker et lancer maria-symfony-v1
+	Créer bdd -> bin/console doctrine:database:create
+	Créer un fichier .env.local (à coté du fichier .env)
+		DATABASE_URL=mysql://root:root@127.0.0.1:3361/nom de la base
+	Créer une nouvelle bdd dans dbeaver
+		clic droit localhost -> bases de données : créer une nouvelle bdd
+
+------------- Entités -------------
+	Créer entitée -> php bin/console make:entity
+	https://symfony.com/doc/current/doctrine.html
+	
+	Si la base n'est pas déja créée
+	php bin/console make:migration
+	php bin/console doctrine:migrations:migrate 
+	
+------------- Liens entre pages -------------
+	Dans le html
+	<li><a href="{{ path('homepage') }}" class="tooltipped" data-tooltip="Revenir à l'accueil">Accueil</a></li>
+	
+	Dans le controller
+	**
+     * @Route("/", name="homepage")
+     */
+	 
+------------- Création d'une nouvelle route -------------	 
+	**
+     * @Route("/produit/test", name="produit")
+     */
+    public function produit(): Response
+    {
+        $produit = new Produit();
+        $produit->setNom("produit1");
+        $produit->setDescription("une description");
+        $produit->setPrix(12);
+        $produit->setImage("une image");
+        return $this->render('default/exo1.html.twig', [
+			'produit'=>$produit
+        ]);
+    }
+	
+------------- Création d'une nouvelle variable -------------
+	$produit = new Produit();
+	$produit->setNom("produit1");
+	$produit->setDescription("une description");
+	$produit->setPrix(12);
+	$produit->setImage("une image");
+		
+------------- Passage d'une variable à une vue -------------		
+	return $this->render('default/exo1.html.twig', [
+        'produit'=>$produit
+	]);
+	
+-------------------------- POUR LE VUEJS -------------------------- utiliser powershell
+Si repo git, juste faire 
+	npm install
+
+------------- Créer projet -------------
+	vue create nomprojet
+		vuex et router
+	cd nomprojet
+	npm run serve
+	
+------------- Créer composant -------------
+  data() {
+    return {
+      photos: []
+    }
+  }
