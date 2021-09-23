@@ -1,0 +1,15 @@
+[ req ]
+	default_bits	=2048	
+	default_keyfile	=/root/minica/private/cakey.pem
+	default_md	=sha256	
+	prompt		=no
+	distinguished_name=root_ca_dn	
+	x509_extensions	=root_ca_ext
+[ root_ca_dn ]
+commonName	=CAulr	
+stateOrProvinceName=PC
+countryName=FR
+emailAddress=minica@univ-lr.fr
+organizationName =ULR
+[ root_ca_ext ]
+basicConstraints =CA:true

@@ -1,0 +1,27 @@
+[ ca ]
+	default_ca	=exemple_ca
+[ exemple_ca ]
+	dir		=/root/minica
+	certificate	= $dir/cacert.pem
+	database	= $dir/index.txt
+	new_certs_dir	= $dir/certs
+	private_key	= $dir/private/cakey.pem
+	serial		=$dir/serial
+
+	default_crl_days=7
+	default_days	=365
+	default_md 	=sha256
+
+	policy		=ca_policy
+	x509_extensions	=certificate_extensions
+
+[ ca_policy ]
+	commonName	=supplied
+	stateOrProvinceName=supplied
+	countryName	=supplied
+	emailAddress	=optional
+	organizationName=supplied
+	organizationalUnitName =supplied
+
+[ certificate_extensions ]
+	basicConstraints=CA:false
