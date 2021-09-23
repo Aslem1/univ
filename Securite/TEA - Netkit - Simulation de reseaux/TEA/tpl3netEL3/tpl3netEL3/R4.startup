@@ -1,0 +1,9 @@
+ifconfig eth0 194.167.235.14 netmask 255.255.255.224
+ifconfig eth1 194.167.235.120 netmask 255.255.255.224
+echo 1 > /proc/sys/net/ipv4/ip_forward
+route add -net 194.167.235.32 netmask 255.255.255.224 gw 194.167.235.12 
+route add -net 194.167.235.64 netmask 255.255.255.224 gw 194.167.235.1
+route add -net 194.167.235.128 netmask 255.255.255.224 gw 194.167.235.124
+route add -net 194.167.235.160 netmask 255.255.255.224 gw 194.167.235.125
+route add default gw 194.167.235.10
+

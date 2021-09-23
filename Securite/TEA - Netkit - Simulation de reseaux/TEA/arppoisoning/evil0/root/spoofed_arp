@@ -1,0 +1,6 @@
+ips="10.0.0.2"
+ipd="10.0.0.101"
+hs="a6:75:44:13:e2:b1"
+hd="46:4e:58:62:6c:76"
+
+ pck=Ether(src=hs,dst=hd)/ARP(op=2,psrc=ips,pdst=ipd,hwdst=hd,hwsrc=hs)

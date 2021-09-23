@@ -1,0 +1,2 @@
+#!/bin/bash
+lstart router pc1 victim evil0 dns

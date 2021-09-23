@@ -1,0 +1,25 @@
+echo "configuring eth0 interface"
+ip link set eth0 up
+ip link set address 00:00:00:00:00:ff dev eth0
+ip address add 10.0.0.232/24 dev eth0
+ip route add default via 10.0.0.1 
+
+
+echo "configuring alias and hide it"
+ip address add 10.0.0.2/24 dev eth0
+arptables -F
+arptables -A INPUT -d 10.0.0.2 -j DROP
+arptables -A OUTPUT -s 10.0.0.2 -j mangle --mangle-ip-s 10.0.0.232
+iptables -A OUTPUT -p icmp -s 10.0.0.2 -j DROP
+iptables -A INPUT -p icmp -d 10.0.0.2 -j DROP
+
+
+/etc/init.d/dnsmasq start
+/etc/init.d/apache2 start
+
+echo "setting DNS nameserver"
+echo "nameserver 10.2.40.230" >> /etc/resolv.conf
+
+echo "installing scapy"
+dpkg -i /root/python-support_1.0.6_all.deb
+dpkg -i /root/python-scapy_2.0.1-1_all.deb
