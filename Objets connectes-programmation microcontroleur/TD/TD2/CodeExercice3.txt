@@ -1,0 +1,29 @@
+void setup()
+{
+	Serial.begin(9600);
+}
+void loop()
+{
+	int min1 = 4095;
+	int min2 = 4095;
+	int value;
+	for(int count = 0 ; count < 10 ; count++) // on effectue 10 mesures
+	{
+		value = analogRead(A0);
+		delay(5); // pause très courte, mais nécéssaire si le capteur reagit lentement
+		if (value < min1 OR value < min2) { //Si value inférieur à l'un des 2 min
+			if (min1 > min2) { // On remplace le plus grand des 2 min
+				min1 = value;
+			}
+			else {
+				min2 = value;
+			}
+		}
+	}
+	Serial.print(value);
+	Serial.print(" ");
+	Serial.println(min1);
+	Serial.print(" ");
+	Serial.println(min2);
+	delay(950);
+}
