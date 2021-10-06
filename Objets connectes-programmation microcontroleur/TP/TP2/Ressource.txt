@@ -1,0 +1,42 @@
+#include <WiFi.h>
+#include <WiFiUdp.h>
+#include <NTPClient.h>
+const char * networkName = "XXXXX";
+const char * networkPswd = "XXXXX";
+const char * ntpAdress = "80.67.184.129";  // OVH NTP server ntp.midway.ovh
+const int ntpOffset = 7200;                // UTC+2 summer time (3600 x 2). Set to 3600 if winter time
+const unsigned int ntpInterval = 60*1000;  // refresh interval
+WiFiUDP ntpUDP;
+// instanciation d'un objet de type NTPClient
+NTPClient timeClient(ntpUDP, ntpAdress, ntpOffset, ntpInterval);
+
+
+void setup() {
+   Serial.begin(115200);
+   //  DO NOT TOUCH
+   //  This is here to force the ESP32 to reset the WiFi and initialise correctly.
+   WiFi.disconnect(true);
+   delay(1000);
+   WiFi.mode(WIFI_STA);
+   delay(1000);
+   //  End WiFi init
+   // connect to Access Point
+   WiFi.begin(networkName, networkPswd);
+   while (WiFi.status() != WL_CONNECTED) {
+        delay(1000);
+        long signalStrength = WiFi.RSSI(); 
+        Serial.printf("RSSi: %ld dBm\n",signalStrength);  // U can use printf with the Serial class !!!
+    }
+    Serial.printf("WiFi connected, output NTP request\n");
+    timeClient.begin();
+    timeClient.update();    // force refresh
+	
+    // si tout ce passe bien, le serveur NTP renvoie la date et l'heure et l'horloge interne de l'ESP32 est reglée.
+}
+
+
+void loop() {
+  String formattedTime = timeClient.getFormattedTime();
+  Serial.println(formattedTime);
+  delay(1000); // ajouter le code pour la mesure et la moyenne glissante
+}
