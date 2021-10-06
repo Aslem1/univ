@@ -1,0 +1,51 @@
+Brouillon TP1 - algo
+
+Sujet : Ecrivez une fonction python qui créé et retourne le graphe orienté des diviseurs sur l’ensemble des entiers compris entre 2 et n (n passé en paramètre) possédant : 
+un sommet pour chaque entier entre 2 et n ; un arc de l’entier x vers l’entier y si y est un multiple de x.
+
+
+La fonction python doit: 
+	- Créer le graphe
+	- L'afficher
+	
+Le graphe est orienté
+
+Il doit retourner les diviseurs des entiers compris entre 2 et n
+n sera passé en paramètre
+
+Chaque sommet sera un entier compris entre 2 et n
+Un arc ira du sommet x qui sera un entier vers le sommet y un entier aussi seulement si y est un multiple de x
+Sinon on fait rien
+
+Si il n'y a pas d'arrêtes ce sera un nombre premier (un nombre pas divisible par un nombre autre que 1 ou lui même)
+Par exemple (3,5,7,11,13,...)
+
+
+
+Ecriture de l'algo "sur papier"
+-On ajoute tout les sommets 1 à 1
+-D'abord de le 2
+- Le 2 va être seul
+-On ne créer pas d'arcs
+-On ajoute le 3
+- 3 n'est pas divisible par 2
+-Donc on ne met pas d'arcs
+- A ce stade on a 2 sommets isolés 
+- Puis on ajoute 4
+- 4 % 2 = 0 
+- On créer un arc entre 2 et 4
+- On ajoute 5
+- 5 n'est pas divisible par 2, par 3 et par 4 donc on ajoute pas d'arc
+- On devrait avoir un graph a 4 sommets
+- 3 et 5 sont isolés
+- 2 et 4 sont reliés
+
+
+--------- Pour l'algo du parcours en largeur ---------
+- On commence par un sommet au hasard
+	On appelera ce sommet a
+- On vérifie les voisins du sommet choisi
+
+
+
+https://128mots.com/index.php/2020/02/11/parcours-en-largeur-python/
