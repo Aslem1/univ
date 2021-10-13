@@ -1,0 +1,53 @@
+Terminal log file
+Date: 07/10/2021 - 15:54:55
+-----------------------------------------------
+177;176;182;176 Moyenne mobile :177
+186;177;176;182 Moyenne mobile :180
+208;186;177;176 Moyenne mobile :186
+189;208;186;177 Moyenne mobile :190
+176;189;208;186 Moyenne mobile :189
+180;176;189;208 Moyenne mobile :188
+176;179;180;176 Moyenne mobile :177
+176;179;180;176 Moyenne mobile :177
+191;176;179;180 Moyenne mobile :181
+176;191;176;179 Moyenne mobile :180
+190;176;191;176 Moyenne mobile :183
+176;190;176;191 Moyenne mobile :183
+178;176;190;176 Moyenne mobile :180
+180;178;176;190 Moyenne mobile :181
+176;180;178;176 Moyenne mobile :177
+192;176;180;178 Moyenne mobile :181
+176;192;176;180 Moyenne mobile :181
+183;176;192;176 Moyenne mobile :181
+174;183;176;192 Moyenne mobile :181
+178;174;183;176 Moyenne mobile :177
+187;178;174;183 Moyenne mobile :180
+171;187;178;174 Moyenne mobile :177
+187;171;187;178 Moyenne mobile :180
+176;187;171;187 Moyenne mobile :180
+177;176;187;171 Moyenne mobile :177
+181;177;176;187 Moyenne mobile :180
+173;181;177;176 Moyenne mobile :176
+195;173;181;177 Moyenne mobile :181
+169;195;173;181 Moyenne mobile :179
+189;169;195;173 Moyenne mobile :181
+175;189;169;195 Moyenne mobile :182
+176;175;189;169 Moyenne mobile :177
+190;176;175;189 Moyenne mobile :182
+173;190;176;175 Moyenne mobile :178
+199;173;190;176 Moyenne mobile :184
+174;199;173;190 Moyenne mobile :184
+182;174;199;173 Moyenne mobile :182
+174;182;174;199 Moyenne mobile :182
+176;174;182;174 Moyenne mobile :176
+193;176;174;182 Moyenne mobile :181
+172;193;176;174 Moyenne mobile :178
+197;172;193;176 Moyenne mobile :184
+176;197;172;193 Moyenne mobile :184
+178;176;197;172 Moyenne mobile :180
+181;178;176;197 Moyenne mobile :183
+177;181;178;176 Moyenne mobile :178
+
+-----------------------------------------------
+Date: 07/10/2021 - 15:55:41
+End log file
