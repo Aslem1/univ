@@ -1,0 +1,30 @@
+// declaration et définitions
+const byte LED_A = 12;
+/*const byte LED_B = 13;
+const byte LED_C = 14;
+const byte LED_D = 15;
+const byte LED_E = 16;
+const byte LED_F = 17;
+const byte LED_G = 18;
+*/
+
+const unsigned char table[] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7C,0x07,0x7F,0x67}; // Pour afficher les chiffres
+
+
+void setup() {
+	for (byte i = 0; i <= 6, i++) { //Pour i = 0 et allant jusqu'a 6, on incremente i
+		pinMode(LED_A + i,OUTPUT); //On passe toutes les LED de 12 à 18 en OUTPUT
+	}
+	
+	byte compteur = 0; //On créer un compteur pour passer à la LED suivante
+}
+
+
+void loop() {
+	// On allume progressivement tous les segments
+	if (compteur <= 6) { //Au maximum on va jusqu'a LED A + 6 pour aller jusqu'a LED G
+		digitalWrite(LED_A + compteur,HIGH); // On allume la LED A + compteur pour passer à la LED suivante
+		delay(1000); //delai de 1s
+		compteur++; //On incremente le compteur
+	}
+}
