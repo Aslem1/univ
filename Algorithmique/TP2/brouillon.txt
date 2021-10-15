@@ -1,0 +1,17 @@
+Calculer la complexité et le temps d’exécution réel des trois algorithmes 
+(à vous de trouverune solution en python, utilisant par exemple time.clock) 
+pour faire une courbe affichant les temps de
+calcul pour n allant de 1 à x 
+(x à choisir de manière raisonnée pour les 3 algorithmes). 
+Vérifiez que la complexité théorique et le temps d’exécution en pratique 
+ont bien la même allure.
+
+--------------------------------------------------
+
+- Les 3 algos seront fibo1, fibo2, et fibo3
+- Calculer la compléxité de 3 algos
+- Calculer le temps de complexité de ces 3 mêmes algos
+- Faire une courbe affichant les temps de calcul
+	Pour n allant de 1 à x
+- x devra être choisi de manière raisonnée pour les 3 algos
+- La complexité théorique et le temps d'execution devron avoir la même allure
