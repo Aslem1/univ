@@ -1,0 +1,51 @@
+const char lignes = 4; // Nombre de lignes
+const char colonnes = 3; // Nombre de colonnes
+
+const char touches[lignes][colonnes] = {
+              {'49','50','51'}, //On remplace les chiffres/symboles par leur code ASCII
+               {'52','53','54'},
+               {'55','56','57'},
+               {'42','48','35'}
+               };
+               
+char lignesPins[lignes] = {16, 17, 18, 19};
+char colonnesPins[colonnes] = {13, 14, 15};
+
+void setup () {
+	Serial.begin(9600);
+
+	for(char l = 0; l < lignes; l++){
+		pinMode(lignesPins[l], INPUT);    //On met les lignes en INPUT
+		digitalWrite(lignesPins[l], HIGH);
+	}
+
+	for(char c = 0; c < colonnes; c++){
+		pinMode(colonnesPins[c], OUTPUT);   //On met les colonnesPins en OUTPUT
+	}
+
+}
+
+void loop() {
+	char touche = getTouche();
+
+	if(touche != 0){
+		Serial.println(touche);
+	}
+}
+
+char getTouche(){
+	char value = 0;
+
+	for(char c = 0; c < colonnes; c++){ //On parcours les colonnes
+		digitalWrite(colonnesPins[c], HIGH);
+		for(char l = 0; l < lignes; l++){ //On parcours les lignes
+			if(digitalRead(lignesPins[l]) == HIGH){
+				delay(20); //20ms pour éviter les rebonds
+				while(digitalRead(lignesPins[l])== HIGH); // ne fait rien tant que, passage bloquant
+				value = touches[l][c];
+			}
+		}
+		digitalWrite(colonnesPins[c], LOW); 
+	}
+	return value;
+}

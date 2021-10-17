@@ -1,0 +1,50 @@
+const char colonne1 = 13;
+const char colonne2 = 14;
+const char colonne3 = 15;
+
+const char ligneA = 16;
+const char ligneB = 17;
+const char ligneC = 18;
+const char ligneD = 19;
+
+char compteur = 0;
+
+void setup(){
+	pinMode(colonne1,INPUT); // On lit donc INPUT
+	pinMode(colonne2,INPUT);
+	pinMode(colonne3,INPUT);
+	
+	pinMode(ligneA,OUTPUT); // On écrit donc OUTPUT
+	pinMode(ligneB,OUTPUT);
+	pinMode(ligneC,OUTPUT);
+	pinMode(ligneD,OUTPUT);
+}
+
+void loop(){
+	digitalWrite(ligneA + compteur, HIGH);
+
+	if(digitalRead(colonne1) == HIGH) {
+		//si le bouton est relaché, sinon on fait rien
+		Serial.print(colonne1); // On affiche le numéro de la colonne
+		Serial.print(ligneA + compteur); //On affiche le numero de la ligne + le compteur
+	}
+	
+	if(digitalRead(colonne2) == HIGH) {
+		Serial.print(colonne2);
+		Serial.print(ligneA + compteur);
+	}
+	
+	if(digitalRead(colonne3) == HIGH) {
+		Serial.print(colonne3);
+		Serial.print(ligneA + compteur);
+	}
+	
+	digitalWrite(ligneA + compteur, LOW);
+	
+	if (compteur >= 3) { // Si on arrive à la 4ème ligne (la dernière)
+		compteur = 0; // On remet le compteur à 0
+	}
+	else {
+		compteur++; //Sinon on continue d'incrémenter le compteur
+	}
+}
