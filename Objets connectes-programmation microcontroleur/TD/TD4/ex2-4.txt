@@ -1,0 +1,69 @@
+const char lignes = 4; // Nombre de lignes
+const char colonnes = 3; // Nombre de colonnes
+
+const char touches[lignes][colonnes] = {
+              {'49','50','51'}, //On remplace les chiffres/symboles par leur code ASCII
+               {'52','53','54'},
+               {'55','56','57'},
+               {'42','48','35'}
+               };
+               
+char lignesPins[lignes] = {16, 17, 18, 19};
+char colonnesPins[colonnes] = {13, 14, 15};
+
+void setup () {
+	Serial.begin(9600);
+
+	//On prépare toutes les lignes en HIGH pour forcer le déclenchement des sorties colonnes en cas d'appui
+	for(char l = 0; l < lignes; l++){
+		pinMode(lignesPins[l], INPUT); //On met les pins dédiés aux lignes en INPUT
+		digitalWrite(lignesPins[l], HIGH); //On met les pins à 1
+	}
+
+	for(char c = 0; c < colonnes; c++){
+		pinMode(colonnesPins[c], OUTPUT);   //On met les pins dédiés aux colonnes en OUTPUT pour les écouter
+	}
+
+	esp_sleep_enable_ext1_wakeup(0x07 <<13,ESP_EXT1_WAKEUP_ANY_HIGH); //On autorise le réveil si l'un des pin de colonnes s'active
+	Serial.println("Mise en sommeil");
+	esp_light_sleep_start(); //On s'endort
+}
+
+
+void loop() {
+	//On est réveillé, on force les pins d'entrée à 0 pour commencer le cycle pour déterminer quelle touche à été appuyée
+	for(char l = 0; l < lignes; l++){
+		digitalWrite(lignesPins[l], LOW); //On met les pins à 0
+	}
+	
+	char touche = getTouche();
+
+	if(touche != 0){
+		Serial.print("Sortie du sommeil par le bouton ");
+		Serial.println(touche);
+	}
+	
+	//On remet les lignes en HIGH pour préparer la prochaine mise en sommeil
+	for(char l = 0; l < lignes; l++){
+		digitalWrite(lignesPins[l], HIGH); //On met les pins à 1
+	}
+	esp_light_sleep_start(); 
+}
+
+char getTouche(){
+	char value = 0;
+
+	for(char c = 0; c < colonnes; c++){ //On parcours les colonnes
+		digitalWrite(colonnesPins[c], HIGH);
+		for(char l = 0; l < lignes; l++){ //On parcours les lignes
+			if(digitalRead(lignesPins[l]) == HIGH){
+				delay(20); //20ms pour éviter les rebonds
+				while(digitalRead(lignesPins[l])== HIGH); // ne fait rien tant que, passage bloquant
+				value = touches[l][c];
+			}
+		}
+		digitalWrite(colonnesPins[c], LOW); 
+	}
+	return value;
+
+}

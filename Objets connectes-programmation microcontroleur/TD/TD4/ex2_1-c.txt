@@ -2,6 +2,8 @@ char colonne1 = 13;
 char colonne2 = 14;
 char colonne3 = 15;
 
+char compteur = 0;
+
 void setup(){
 	pinMode(colonne1,INPUT);
 	pinMode(colonne2,INPUT);
@@ -9,16 +11,14 @@ void setup(){
 }
 
 void loop(){
-	if(digitalRead(colonne1) == HIGH) {
+	if(digitalRead(colonne1 + compteur) == HIGH) {
 		//le bouton est relaché sinon on fait rien
-		Serial.print(colonne1); // On affiche le numéro de la colonne
+		Serial.print(colonne1 + compteur); // On affiche le numéro de la colonne
 	}
-	
-	if(digitalRead(colonne2) == HIGH) {
-		Serial.print(colonne2);
+	if (compteur >= 2){
+		compteur = 0;
 	}
-	
-	if(digitalRead(colonne3) == HIGH) {
-		Serial.print(colonne3);
+	else {
+		compteur++;
 	}
 }
