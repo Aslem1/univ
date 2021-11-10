@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affichage grandeur analogique</title>
+  <style>
+      body {
+          zoom: 200%;
+      }
+  </style>
+</head>
+<body>
+    <form action="" method="GET">
+
+        <input type="range" name="rangeInput" min="0" max="4095" id="myRange">
+        <input type="text" id="mtText" value="">
+    </form>
+
+    <div id="myKnob"></div>
+</body>
+<script src="pureknob.js"></script>
+<script>
+      var myKnob = pureknob.createKnob(300, 300);
+      myKnob.setProperty("valMin",0);
+      myKnob.setProperty("valMax",4095);
+      var node = myKnob.node();
+      var elem = document.getElementById('myKnob');
+      elem.appendChild(node);
+
+      setInterval(ajaxCall, 3000); //3 sec
+      function ajaxCall() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) // ready.State égal 4 signifie ‘‘DONE’’, requête traitée
+              {
+                  document.getElementById("myRange").value = this.responseText;
+                  document.getElementById("mtText").value = this.responseText;
+                  myKnob.setValue(this.responseText);
+              }
+          };
+          xhttp.open("GET", "XXXXXXXX", true); // XXXXXXXX adresse du serveur (http://.....) pour cibler l'ESP32
+          xhttp.send();
+      }
+
+      /*function ajaxCallTest() {
+          console.log("test")
+          var nb =  Math.floor(Math.random() * 4095);
+          document.getElementById("myRange").value = nb;
+          document.getElementById("mtText").value = nb;
+          myKnob.setValue(nb);
+      }*/
+</script>
+</html>
