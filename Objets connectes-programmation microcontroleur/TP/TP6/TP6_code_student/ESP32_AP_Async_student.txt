@@ -1,0 +1,44 @@
+#include <WiFi.h>
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+
+/* Attention aux mise a jours, quelques incompatibilités */
+/* entre ceretaines version de Arduino ESP32 et la bibliothèque ESPAsyncWebServer */
+/* testé chez moi avec Arduino 1.8.12 */
+/* environement ESP32 1.0.4 et bibliotheques Async fournies sur Moodle */
+/* PAS TESTE AVEC ARDUINO 1.8.13 */
+
+AsyncWebServer server(80);
+
+const char* ssid = "YOUR_SSID";                // a remplacer par votre nom, en majuscule
+const char* password = "YOUR_PASSWORD";        // si necessaire
+
+// callback "not found"
+void notFound(AsyncWebServerRequest *request) {
+request->send(404, "text/plain", "Not found");
+}
+
+// callback si requete sur la page d’index
+void index_cb(AsyncWebServerRequest *request) {
+request->send(200, "text/plain", "Hello, world");
+}
+
+void setup()
+{
+Serial.begin(115200);
+Serial.print("Setting AP (Access Point)...");
+WiFi.softAP(ssid); // No password parameter, if you want the AP (Access Point) to be open
+IPAddress IP = WiFi.softAPIP();
+Serial.print("AP IP address: ");
+Serial.println(IP);
+
+// mise en place des callbacks
+server.on("/", HTTP_GET, index_cb);
+server.onNotFound(notFound);
+server.begin();
+}
+
+void loop()
+{
+}
+   

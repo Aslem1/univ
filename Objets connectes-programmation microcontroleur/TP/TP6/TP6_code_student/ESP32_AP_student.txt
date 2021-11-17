@@ -1,0 +1,78 @@
+// Load Wi-Fi library
+#include <WiFi.h>
+
+const char* ssid = "YOUR_SSID";             // a remplacer par votre nom, en majuscule
+const char* password = "YOUR_PASSWORD";     // si necessaire
+
+// Set web server port number to 80
+WiFiServer server(80);
+
+void setup() {
+  Serial.begin(115200);                     // communication vers la machine hote pour le debug
+
+  // ne pas oublier les GPIO qui sont utilisés en E/S numériques
+
+  Serial.print("Setting AP (Access Point)…");                              
+  //WiFi.softAP(ssid, password);            // Si mot de passe
+  WiFi.softAP(ssid);                        // Sans mot de passe, open AP (Access Point)
+
+  IPAddress IP = WiFi.softAPIP();
+  Serial.print("AP IP address: ");
+  Serial.println(IP);
+  
+  server.begin();
+}
+
+void loop(){
+  WiFiClient client = server.available();   // A l'ecoute des clients...
+  if (client) {                             // un client s'est connecté
+    Serial.println("New Client.");          // information sur le canal série de debug
+    String request = "";                    // instanciation d'une chaine vide, pour contenir toute la requete
+    String currentLine = "";                // instanciation d'une chaine vide, remplissage ligne par ligne
+    while (client.connected()) 
+    {                                       // tant que le client est connecté, boucler ici...
+      if (client.available())
+      {                                     // il y a des octets de disponible dans le buffer de reception HTTP
+        char c = client.read();             // Lecture octet par octet
+        Serial.write(c);                    // avec sortie sur le canal serie de debug
+        if (c == '\n')
+        {                                   // le caractère lu est un caractère de fin de chaine
+                                            // si la chaine currentLine est vide, c'est un double "fin de chaine",
+                                            // donc fin de requete. Il faut répondre
+          if (currentLine.length() == 0)
+          {
+            Serial.println("Sending header");
+            // Il faut repondre avec un code d'état et un type de données (type MIME), suivi d'une ligne vide
+            client.println("HTTP/1.1 200 OK");
+            client.println("Content-type:text/html");
+            client.println("Connection: close");
+            // client.println("Connection: Keep-Alive");
+            client.print("\r\n\r\n");                             // ligne vide, separation entete/contenu
+
+            Serial.println("Sending HTML code");
+            client.println("<!DOCTYPE html><html>");
+            client.println("<head><title>ESP32 Web Page</title></head>");
+            client.println("<body>");
+            client.println("<p>Hello World !</p>");
+            client.println("</body>");
+            client.println("</html>");
+            client.print("\r\n\r\n");                              // ligne vide, fin de contenu
+            Serial.println("Done");
+            break;           
+          } 
+          else
+          {                                 // fin de chaine, on efface currentLine
+            currentLine = "";
+          }
+        }
+        else if (c != '\r')
+        {                                   // pour tout caractère autre qu'un retour chariot
+          currentLine += c;                 // on ajoute le caractère à la chaine courante
+        }
+      }
+    }
+    client.stop();                          // Close the connexion 
+    Serial.println("Client disconnected.");
+    Serial.println("");
+  }
+}
