@@ -1,21 +1,20 @@
 package magasin;
 
+import commun.Observable;
 import java.util.List;
-import java.util.Observer;
 import visiteur.Element;
 
-public abstract class Produit implements Element, Observable{
+public abstract class Produit extends Observable implements Element {
 
     //attributs privés de la classe abstraite Produit
     protected String idProduit;
     protected String nom;
     protected double prix;
     protected int dispo;
-    
-    private List<Observer> observers;
 
     //Constructeur du constructeur produit prenant en paramètre un tableau
     public Produit(String idProduit, String nom, double prix, int dispo) {
+        super(); //Appelle le constructeur de la classe parent : observable
         this.idProduit = idProduit;
         this.nom = nom;
         this.prix = prix;
