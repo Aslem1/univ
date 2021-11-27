@@ -1,0 +1,4 @@
+Jardinage;Rat345;50;Rateau;12;Ete
+Jardinage;Rat456;150;Rateau;5;Ete
+Bricolage;Clou12;2;Boite clous;50;Quinquaillerie;Nonelectrique
+Animal;Croq41;14;Croquettes au poulet;7;Chien;11
