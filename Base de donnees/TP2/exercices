@@ -1,0 +1,141 @@
+/*Exercice 2 - Ecrivez les requêtes SQL  permettant  de  transférer  les  éléments  de  n’importe  quel 
+ensemble de tables vers n’importe quel autre ensemble de tables (1FN -> 2FN, 1FN->3FN, 2FN->1FN, 
+2FN->3FN, 3FN->1FN, 3FN->2FN)*/
+-- 3FN -> 2FN --
+TRUNCATE TABLE locations2, dvds2;
+INSERT INTO dvds2 (SELECT NoDVD, dvds3.PrixAchat, films3.Titre, films3.Duree, editeurs3.NomEditeur, editeurs3.AdresseEditeur, films3.Realisateur, films3.AnneeSortie, films3.Genre
+FROM dvds3
+JOIN films3 ON films3.titre = dvds3.titre
+JOIN editeurs3 ON editeurs3.NomEditeur = films3.NomEditeur);
+
+INSERT INTO locations2 (SELECT NoDVD, DateLocation, locations3.NoClient, clients3.NomCLient, clients3.AdresseClient, locations3.DureeLocation
+FROM locations3
+JOIN clients3 ON locations3.NoClient = clients3.NoClient);
+
+SELECT * FROM locations2
+
+
+-- 3FN -> 2FN - Autre version --
+TRUNCATE TABLE locations2, dvds2;
+
+INSERT INTO dvds2(SELECT NoDVD, PrixAchat, films3.Titre, films3.Duree, editeurs3.NomEditeur, editeurs3.AdresseEditeur, films3.Realisateur, films3.AnneeSortie, films3.Genre
+                  FROM dvds3
+                  JOIN films3 ON films3.titre = dvds3.titre
+                  JOIN editeurs3 ON editeurs3.NomEditeur = films3.NomEditeur );
+                  
+INSERT INTO locations2(SELECT NoDVD, DateLocation, locations3.NoClient, clients3.NomClient, clients3.AdresseClient, Dureelocation
+                       FROM locations3 
+                       JOIN clients3 ON locations3.noClient = clients3.noCLient);
+                       
+
+-- 2FN -> 1FN --
+TRUNCATE TABLE locations1;
+
+INSERT INTO locations1(SELECT locations2.NoClient, locations2.NomClient, locations2.AdresseClient, dvds2.NoDVD, dvds2.PrixAchat, dvds2.Titre,
+ dvds2.Duree, dvds2.NomEditeur, dvds2.AdresseEditeur, dvds2.Realisateur, dvds2.AnneeSortie, dvds2.Genre, locations2.DateLocation, locations2.DureeLocation
+                       FROM dvds2
+                       JOIN locations2 ON locations2.NoDVD = dvds2.NoDVD
+                       );
+                       
+SELECT * FROM locations1;
+
+--2FN -> 1FN  --
+TRUNCATE TABLE locations1;
+
+INSERT INTO locations1(SELECT locations2.NoClient, locations2.NomClient, locations2.AdresseClient, dvds2.NoDVD, dvds2.PrixAchat, dvds2.Titre,
+ dvds2.Duree, dvds2.NomEditeur, dvds2.AdresseEditeur, dvds2.Realisateur, dvds2.AnneeSortie, dvds2.Genre, locations2.DateLocation, locations2.DureeLocation
+                       FROM dvds2
+                       JOIN locations2 ON locations2.NoDVD = dvds2.NoDVD
+                       );
+
+SELECT * FROM locations1;
+
+-- 1FN -> 2FN --
+TRUNCATE TABLE dvds2, locations2;
+
+INSERT INTO dvds2(SELECT DISTINCT NoDVD, PrixAchat, Titre, Duree, NomEditeur, AdresseEditeur, Realisateur, AnneeSortie, Genre
+                  FROM locations1);
+                  
+INSERT INTO locations2(SELECT DISTINCT NoDVD, DateLocation, NoClient, NomClient,AdresseClient, Dureelocation
+                       FROM locations1);                  
+
+SELECT * FROM dvds2;
+
+--3FN -> 1FN  --
+TRUNCATE TABLE locations1;
+INSERT INTO locations1
+(SELECT clients3.NoClient, NomClient, AdresseClient, dvds3.NoDVD, PrixAchat, films3.Titre,
+Duree, editeurs3.NomEditeur, AdresseEditeur, Realisateur, AnneeSortie,
+Genre, DateLocation, DureeLocation
+FROM locations3
+JOIN clients3 on clients3.NoClient = locations3.NoClient
+JOIN dvds3 on dvds3.NoDVD = locations3.NoDVD
+JOIN films3 on films3.Titre = dvds3.Titre
+JOIN editeurs3 on editeurs3.NomEditeur = films3.NomEditeur);
+
+select * from locations1;
+
+-- 2FN -> 3FN --
+TRUNCATE TABLE locations3, dvds3, films3, editeurs3, clients3;
+
+INSERT INTO clients3(SELECT DISTINCT locations2.NoClient, locations2.NomClient, locations2.AdresseClient
+                     FROM locations2);
+            
+INSERT INTO editeurs3(SELECT DISTINCT NomEditeur, AdresseEditeur
+                      FROM dvds2);
+                      
+INSERT INTO films3(SELECT DISTINCT Titre, Duree, NomEditeur, Realisateur, AnneeSortie, Genre
+                   FROM dvds2);
+                  
+INSERT INTO dvds3(SELECT DISTINCT NoDVD, PrixAchat, Titre
+                  FROM dvds2);
+                  
+INSERT INTO locations3(SELECT DISTINCT NoDVD, DateLocation, NoClient, Dureelocation
+                       FROM locations2);                  
+                
+SELECT * FROM locations3;
+
+-- Exercice 3 - Convertissez les tables 3FN en 1FN puis inversement. Que remarquez-vous (il y a quelque chose à remarquer) ? --
+--1FN -> 3FN --
+TRUNCATE TABLE locations3, dvds3, films3, editeurs3, clients3;
+INSERT INTO clients3 (SELECT DISTINCT NoClient, NomClient, AdresseClient 
+					  FROM locations1);
+INSERT INTO editeurs3 (SELECT DISTINCT NomEditeur, AdresseEditeur 
+					   FROM locations1);
+INSERT INTO films3 (SELECT DISTINCT Titre, Duree, NomEditeur, Realisateur, AnneeSortie, Genre 
+					FROM locations1);
+INSERT INTO dvds3 (SELECT DISTINCT NoDVD, PrixAchat, Titre 
+				   FROM locations1);
+
+SELECT * FROM locations1;
+
+-- Exercice 4 - Ecrire une requête SQL pour calculer l’occupation de chacun des ensembles de tables(1FN, 2FN et 3FN). Pour savoir l’occupation mémoire d’un type --
+
+-- Exercice 5 - Ecrivez les requêtes suivantes pour chacune des trois versions. --
+-- 1FN --
+-- 1- Titre des films durant au moins deux heures--
+SELECT Titre FROM locations1
+WHERE Duree >= 120;
+
+-- 2- Nom des clients qui ont loué un dvd pendant au moins 10 jours --
+SELECT NomClient FROM locations1
+WHERE DureeLocation >= 10;
+
+-- 3- Nombre de locations par nom d’éditeur --
+SELECT SUM(NoDVD) FROM locations1
+GROUP BY NomEditeur;
+
+-- 4- Nom des clients qui ont loué au moins 55 dvds --
+SELECT NoClient, SUM(DateLocation)
+FROM locations1
+GROUP BY NoClient
+HAVING SUM(DateLocation) >= 55;
+
+-- 5- Genre, nombre de locations, durée totale et moyenne des locations par genre des films --
+
+
+-- 6- Adresse des éditeurs et des clients qui ont loué un dvd de l’éditeur --
+
+
+-- 7- Titre des films qui n’ont jamais été loués --
+
