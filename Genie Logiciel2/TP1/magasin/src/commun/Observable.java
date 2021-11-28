@@ -3,8 +3,8 @@ package commun;
 import java.util.ArrayList;
 import java.util.List;
 import magasin.Produit;
-import visiteur.visiteurPromo;
-import visiteur.visiteurStock;
+import visiteur.VisiteurPromo;
+import visiteur.VisiteurStock;
 
 public class Observable {
     

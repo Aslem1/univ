@@ -2,8 +2,8 @@ package magasin;
 import commun.Observer;
 import java.util.ArrayList;
 import visiteur.Element;
-import visiteur.visiteurPromo;
-import visiteur.visiteurStock;
+import visiteur.VisiteurPromo;
+import visiteur.VisiteurStock;
 
 public class Catalogue implements Element, Observer{
     //On crée une ArrayList privé finale qui représente le lien de composition fort entre Produit et Catalogue
@@ -33,12 +33,12 @@ public class Catalogue implements Element, Observer{
     }
 
     @Override
-    public void accept(visiteurPromo v) {
+    public void accept(VisiteurPromo v) {
         v.visit(this);
     }
 
     @Override
-    public void accept(visiteurStock v) {
+    public void accept(VisiteurStock v) {
         v.visit(this);
     } 
 

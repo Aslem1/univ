@@ -6,7 +6,7 @@ import magasin.Catalogue;
 import magasin.Jardinage;
 
 
-public class visiteurPromo implements ProduitVisitor {
+public class VisiteurPromo implements ProduitVisitor {
 
     @Override
     public void visit(Bricolage e) {

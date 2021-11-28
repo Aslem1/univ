@@ -1,6 +1,6 @@
 package visiteur;
 
 public interface Element {
-    public void accept(visiteurPromo v);
-    public void accept(visiteurStock v);
+    public void accept(VisiteurPromo v);
+    public void accept(VisiteurStock v);
 }

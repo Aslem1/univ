@@ -5,8 +5,8 @@
  */
 package magasin;
 
-import visiteur.visiteurPromo;
-import visiteur.visiteurStock;
+import visiteur.VisiteurPromo;
+import visiteur.VisiteurStock;
 
 public class Animal extends Produit{
     private String animal;
@@ -19,12 +19,12 @@ public class Animal extends Produit{
     }
 
     @Override
-    public void accept(visiteurPromo v) {
+    public void accept(VisiteurPromo v) {
         v.visit(this);
     }
 
     @Override
-    public void accept(visiteurStock v) {
+    public void accept(VisiteurStock v) {
         v.visit(this);
     }
  
