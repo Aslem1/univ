@@ -9,12 +9,12 @@ import java.util.logging.Logger;
 
 import magasin.Catalogue;
 import magasin.Produit;
-import decorateurMagasin.DecorateurIHM;
-import decorateurMagasin.DecorateurIHMAdmin;
-import decorateurMagasin.DecorateurIHMChoixUtilisateur;
-import decorateurMagasin.DecorateurIHMStock;
-import decorateurMagasin.DecorateurIHMVendeur;
-import decorateurMagasin.ImplementationIHM;
+import decorateur.DecorateurIHM;
+import decorateur.DecorateurIHMAdmin;
+import decorateur.DecorateurIHMChoixUtilisateur;
+import decorateur.DecorateurIHMStock;
+import decorateur.DecorateurIHMVendeur;
+import decorateur.ImplementationIHM;
 import magasin.fabriqueMagasin.SimpleFabrique;
 import visiteur.VisiteurPromo;
 import visiteur.VisiteurStock;

@@ -58,4 +58,10 @@ public abstract class Produit extends Observable implements Element {
     public void setDispo(int dispo) {
         this.dispo = dispo;
     }
+    
+    public void vendre (int nbProduit) {
+        if (this.getDispo() > nbProduit) {
+            this.dispo(this.getDispo(-nbProduit));
+        }
+    }
 }
