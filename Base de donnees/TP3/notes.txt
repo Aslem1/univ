@@ -1,0 +1,146 @@
+A montrer : 4-5-7
+
+
+Question 1 - Utiliser SELECT char_length('tést'); qui retourne la longueur en chaine de caracteres.
+Et faire un switch case : https://sql.sh/cours/case
+Ici on a 3 cas : plus long, moins long et egal
+Exemple :
+CASE a 
+       WHEN SELECT char_length('chaine1') >= SELECT char_length('chaine 2') THEN 'plus long'
+       ELSE 'moins long'
+END
+Faire la fonction qui va autour
+
+--------------------------------------------------------------------
+
+Question 2 - 
+SELECT regexp_split_to_array('ici ma super chaine', 'espace le caractere hein') -- {"ici","ma","super","chaine"}
+Faire la fonction qui va autour
+
+CREATE FUNCTION affichage(chaine text) RETURNS TEXT AS $$
+BEGIN
+RETURN regexp_split_to_array(chaine,' ');
+END;$$ LANGUAGE plpgsql;
+
+
+CREATE FUNCTION texteAffiche (x text)
+RETURNS TEXT AS '
+DECLARE
+BEGIN
+    -- Ici, tu mets ton split
+END; ' LANGUAGE plpgsql;
+SELECT chaine ('ici ma super chaine'); 
+--------------------------------------------------------------------
+
+Question 3 - 
+CREATE FUNCTION factorielle(n integer)
+RETURN INTEGER AS
+DECLARE
+BEGIN
+	Faire un while.. qui va de 1 à n (n etant la valeur de la factorielle a calculer)
+	Boucler pour faire (la valeur de 1 a n)*res
+END; 'LANGUAGE plpgsql'
+
+SELECT * FROM test WHERE id = factorielle (5);
+Faire factorielle de -1
+
+--------------------------------------------------------------------
+Question 4 -
+`SELECT SUM(Duree) 
+FROM films
+
+CREATE OR REPLACE FUNCTION sommeDuree()
+RETURNS INTEGER
+AS $$
+DECLARE 
+    somme int :=0;
+    x RECORD;
+BEGIN
+    FOR x IN SELECT Duree FROM films LOOP
+    somme = somme + x.Duree;
+    END LOOP;
+RETURN somme;
+END; $$ LANGUAGE plpgsql;
+
+SELECT sommeDuree();
+
+--------------------------------------------------------------------
+Question 5
+
+SELECT AVG(prixAchat) FROM dvds;
+
+CREATE OR REPLACE FUNCTION moyennePrixAchat ()
+RETURNS REAL AS $$
+DECLARE
+    curs CURSOR FOR select prixAchat FROM dvds;
+    i integer :=0;
+    t RECORD ;
+    Moyenne real :=0;
+    Somme real :=0;
+BEGIN
+    OPEN curs;
+    LOOP
+        FETCH curs INTO t;
+        IF NOT FOUND THEN EXIT; END IF;
+        somme = somme + t.prixAchat;
+        i = i+1;
+    END LOOP;
+    Moyenne = somme/i;
+    CLOSE curs;
+RETURN Moyenne;
+END
+$$ LANGUAGE plpgsql;
+
+SELECT moyennePrixAchat();
+
+--------------------------------------
+
+SELECT ROUND(AVG(PrixAchat),3)
+FROM dvds
+------------------------------------
+CREATE OR REPLACE FUNCTION moyennePrix()
+RETURNS FLOAT
+AS $$
+DECLARE
+    curs CURSOR FOR select PrixAchat from dvds;
+    moyenne float :=0.0;
+    somme float :=0.0;
+    compteur int :=0;
+    x RECORD ;
+BEGIN
+    OPEN curs;
+    LOOP
+        FETCH curs INTO x;
+        IF NOT FOUND THEN EXIT; END IF;
+        somme = somme + x.PrixAchat;
+        compteur = compteur+1;
+    END LOOP;
+    CLOSE curs;
+    moyenne = somme/compteur;
+    RETURN moyenne;
+END
+$$ LANGUAGE plpgsql;
+
+SELECT moyennePrix();
+
+
+
+
+
+
+-- Exercice 7 : Ecrire un trigger (avec la fonction associée) qui lève une exception
+-- si on tente d’insérer ou de modifier un film en mettant une année de sortie inférieure à 1891.
+--  L’exception doit afficher l’année que l’on tente d’insérer.
+CREATE OR REPLACE FUNCTION exception1891()
+RETURN TRIGGER AS $monTrigger$ $$
+BEGIN
+	IF films.AnneeSortie < 1891
+		RAISE EXCEPTION '% n'est pas une entrée valide';
+	END IF;
+RETURN 
+END; $$ LANGUAGE plpgsql;
+
+CREATE TRIGGER monTrigger BEFORE INSERT OR UPDATE on films
+	
+
+SELECT exception1891();
