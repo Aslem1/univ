@@ -1,0 +1,1 @@
+Pour mettre en "mode colonne" -> enlever le if du SetValue
