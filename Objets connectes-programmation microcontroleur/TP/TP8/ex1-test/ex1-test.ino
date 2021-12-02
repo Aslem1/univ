@@ -14,9 +14,8 @@ void setup() {
 void loop() {
   if (nb_tours < 8){
     digitalWrite(PIN_CLOCK, HIGH); //Top d'horloge
-    delay(100);
     digitalWrite(PIN_CLOCK, LOW);
-    delay(900);
+    delay(500);
     nb_tours ++;
   }
 }

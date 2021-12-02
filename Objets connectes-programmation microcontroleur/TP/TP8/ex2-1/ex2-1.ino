@@ -4,7 +4,7 @@
 void setup() {
   pinMode(PIN_DATA, OUTPUT);
   pinMode(PIN_CLOCK, OUTPUT);
-  
+
   digitalWrite(PIN_DATA, HIGH);
   digitalWrite(PIN_CLOCK, LOW); //Force à zero
 }
@@ -22,12 +22,13 @@ void loop() {
 
 void BargraphClear() {
   digitalWrite(PIN_DATA,LOW); //On remet à 0
-
   for(unsigned int i = 0; i < 8 ; i++){
     digitalWrite(PIN_CLOCK, HIGH); //Top d'horloge
-    delay(20); //Pour éviter les rebonds (si pas de rebond enlever ou mettre 1ms)
     digitalWrite(PIN_CLOCK, LOW);
-    delay(20);
+  }
+  for(unsigned int i = 8; i <= 0 ; i--){
+    digitalWrite(PIN_CLOCK, HIGH); //Top d'horloge
+    digitalWrite(PIN_CLOCK, LOW);
   }
 }
 
@@ -36,9 +37,7 @@ void SetValue(unsigned char x) {
   digitalWrite(PIN_DATA, HIGH); //On allume la 1ere LED
   for (int i = 0; i < x; i++) { //On decale x fois cette LED
     digitalWrite(PIN_CLOCK, HIGH); //Top d'horloge
-    delay(20); //Si pas de rebond enlever ou mettre 1ms
     digitalWrite(PIN_CLOCK, LOW);
-    delay(20);
     if (i == 0){ //Si on est au 1er tour
       digitalWrite(PIN_DATA, LOW); //On charge des 0
     }
