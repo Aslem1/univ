@@ -19,7 +19,6 @@ SELECT chaine ('Et enfin', 'le dernier');
 -- Exercice 2 : Ecrire une fonction qui prend un texte et affiche (notice) tous les mots un par un.
 -- N’oubliez pas que les notices s’affichent dans la fenêtre messages.
 -- On considère que les mots sont séparés par des espaces et rien d’autre. 
-DROP FUNCTION IF EXISTS afficheMots(text);
 CREATE OR REPLACE FUNCTION afficheMots (chaine text)
 RETURNS TEXT AS $$
 DECLARE
@@ -39,8 +38,7 @@ SELECT afficheMots('ici une chaine');
 
 -- Exercice 3 :  Ecrire une version itérative de la fonction factorielle. 
 -- Votre fonction doit avoir le même comportement que la version récursive du slide 11 du cours.
-DROP FUNCTION IF EXISTS factorielle(integer);
-CREATE FUNCTION factorielle(n integer)
+CREATE OR REPLACE FUNCTION factorielle(n integer)
 RETURNS INTEGER AS $$
 DECLARE 
     res integer := 1;
@@ -61,11 +59,10 @@ SELECT factorielle(-1); --Devrait retourner -1
 -- Puis faire la même chose avec une fonction parcourant tous les enregistrements un par un (avec for x in et un RECORD) et retournant le même résultat. 
 -- Assurez-vous que les deux méthodes retournent le même résultat.
 SELECT SUM(films.Duree) AS somme_duree
-FROM films
+FROM films;
 
 -- Fonction parcourant tous les enregistrements
-DROP FUNCTION IF EXISTS sommeDuree();
-CREATE FUNCTION sommeDuree()
+CREATE OR REPLACE FUNCTION sommeDuree()
 RETURNS INTEGER AS $$
 DECLARE
 	somme int :=0;
@@ -87,10 +84,9 @@ SELECT sommeDuree();
 -- Assurez-vous que les deux méthodes retournent le même résultat et testez l’exception en vidant la table
 -- (TRUNCATE TABLE)
 SELECT AVG(PrixAchat) 
-	FROM dvds
+	FROM dvds;
 	
 -- Fonction parcourant les enregistrements avec un curseur
-DROP FUNCTION IF EXISTS parcoursCurseur();
 CREATE OR REPLACE FUNCTION parcoursCurseur()
 RETURNS FLOAT AS $$
 DECLARE	
@@ -119,16 +115,62 @@ SELECT parcoursCurseur();
 -- si on tente d’insérer ou de modifier un film en mettant une année de sortie inférieure à 1891.
 --  L’exception doit afficher l’année que l’on tente d’insérer.
 CREATE OR REPLACE FUNCTION exception1891()
-RETURNS TRIGGER AS $monTrigger$ $$
+RETURNS TRIGGER AS $monTrigger$
 BEGIN
 	IF films.AnneeSortie < 1891
-		RAISE EXCEPTION '% n'est pas une entrée valide';
+		RAISE EXCEPTION '% n''est pas une entrée valide';
 	END IF;
-RETURN 
-END;
-$monTrigger$; $$ LANGUAGE plpgsql;
+RETURN 0;
+END; $monTrigger$ LANGUAGE plpgsql;
 
-CREATE TRIGGER monTrigger BEFORE INSERT OR UPDATE on films
+CREATE OR REPLACE TRIGGER monTrigger
+BEFORE INSERT OR UPDATE on films
 	FOR EACH ROW EXECUTE PROCEDURE monTrigger();
 
 SELECT exception1891();	
+
+/* -------- Seconde chance -------- */
+
+-- Si on ajoute un nouveau film, création d'un DVD avec prix à -1 par défaut (prix impossible donc à remplir plus tard)
+CREATE OR REPLACE FUNCTION createDvdFromFilm()
+RETURNS TRIGGER AS $$
+BEGIN
+	INSERT INTO dvds VALUES (
+		(SELECT MAX(nodvd) FROM dvds) + 1, -- récupérer max nodvd actuel
+		-1, -- valeur d'erreur
+		NEW.Titre -- titre du film
+	);
+RETURN NEW;
+END; $$ LANGUAGE 'plpgsql';
+
+CREATE OR REPLACE TRIGGER trigger_createDvdFromFilm
+AFTER INSERT ON films -- on réagit après l'ajout d'un film
+FOR EACH ROW
+	EXECUTE PROCEDURE createDvdFromFilm();
+INSERT INTO films VALUES ('Bohemian Rhapsody', 134, 'Cursus Limited', 'Bryan Singer', 2018, 'biography');
+
+SELECT * FROM dvds WHERE titre = 'Bohemian Rhapsody';
+
+
+-- Si la durée de location n'est pas renseignée, mettre automatiquement 7j
+CREATE OR REPLACE FUNCTION defaultLocationDuration()
+RETURNS TRIGGER AS $$
+BEGIN
+	IF NEW.dureelocation IS NULL THEN
+		UPDATE locations
+		SET dureelocation = 7
+		WHERE 
+			nodvd = NEW.nodvd AND
+			datelocation = NEW.datelocation;
+	END IF;
+RETURN NEW;
+END; $$ LANGUAGE 'plpgsql';
+
+CREATE OR REPLACE TRIGGER trigger_defaultLocationDuration
+AFTER INSERT ON locations -- à la place de l'ajout dans locations
+FOR EACH ROW
+	EXECUTE PROCEDURE defaultLocationDuration();
+
+INSERT INTO locations VALUES (406054, current_date, 84, NULL);
+SELECT * FROM locations WHERE nodvd = 406054 AND datelocation = current_date;
+
