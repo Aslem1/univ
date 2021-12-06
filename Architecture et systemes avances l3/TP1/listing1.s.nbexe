@@ -1,0 +1,26 @@
+0C8 :  LI R1, A 	 // Nb lectures = 0 	 ; Nb executions = 0
+0C9 :  LI R2, B 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CA :  LI R3, C 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CB :  LI R4, N 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CC :  LI R10, N 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CD :  LI R11, N2 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CE : BOUCLE1 LI R5, N 	 // Nb lectures = 0 	 ; Nb executions = 0
+0CF : BOUCLE2 LI R6, N 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D0 :  LI R7, 0 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D1 : BOUCLE3 LI R8, (R1) 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D2 :  LI R9, (R2) 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D3 :  ADD R1, R1, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D4 :  MULT R9, R9, R8 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D5 :  ADD R2, R2, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D6 :  ADD R7, R7, R9 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D7 :  SUB R6, R6, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D8 :  BRNZ R6, BOUCLE3 	 // Nb lectures = 0 	 ; Nb executions = 0
+0D9 :  SI (R3), R7 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DA :  ADD R3, R3, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DB :  SUB R1, R1, R10 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DC :  SUB R5, R5, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DD :  BRNZ R5, BOUCLE2 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DE :  ADD R1, R1, R10 	 // Nb lectures = 0 	 ; Nb executions = 0
+0DF :  SUB R2, R2, R11 	 // Nb lectures = 0 	 ; Nb executions = 0
+0E0 :  SUB R4, R4, 1 	 // Nb lectures = 0 	 ; Nb executions = 0
+0E1 :  BRNZ R4, BOUCLE1 	 // Nb lectures = 0 	 ; Nb executions = 0

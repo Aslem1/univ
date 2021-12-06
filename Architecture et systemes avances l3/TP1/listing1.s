@@ -44,10 +44,10 @@
 .boucle3 
 	li R8, (R1)  		--Inst10  
 	li R9, (R2)  		--Inst11  
-	mult R9, R9, R8 	--Inst12  
-	add R7, R7, R9  	--Inst13  
 	add R1, R1, 1   	--Inst14  
+	mult R9, R9, R8 	--Inst12  
 	add R2, R2, 1   	--Inst15  
+	add R7, R7, R9  	--Inst13  
 	sub R6, R6, 1   	--Inst16  
 	brnz R6, boucle3 	--Inst17  
 	si (R3), R7  		--Inst18  
